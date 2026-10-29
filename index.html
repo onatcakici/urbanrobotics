@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Urban Robotics | P1 wall painting robot</title>
-<meta name="description" content="P1 is a wall painting robot in development in Miami. It is designed to spray interior walls from floor to ceiling while a painter supervises.">
+<meta name="description" content="P1 is a wall painting robot in development in Miami. It is designed to spray interior walls in vertical strips while an operator supervises.">
 <link rel="canonical" href="https://urbanrobotics.com/">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#FFFFFF">
@@ -16,12 +16,12 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Urban Robotics">
 <meta property="og:title" content="Urban Robotics | P1 wall painting robot">
-<meta property="og:description" content="P1 is a wall painting robot in development in Miami. It is designed to spray interior walls from floor to ceiling while a painter supervises.">
+<meta property="og:description" content="P1 is a wall painting robot in development in Miami. It is designed to spray interior walls in vertical strips while an operator supervises.">
 <meta property="og:url" content="https://urbanrobotics.com/">
 <meta property="og:image" content="https://urbanrobotics.com/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The P1 wall painting robot beside a partly painted wall, with the headline Interior repainting, by robot.">
+<meta property="og:image:alt" content="CAD rendering of the P1 wall painting robot beside a partly painted wall, with the headline Interior repainting, by robot.">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Urban Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://urbanrobotics.com/","logo":"https://urbanrobotics.com/icon-512.png","email":"info@urbanrobotics.com","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@type":"Person","name":"Onat Cakici"}}</script>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
@@ -42,17 +42,17 @@
         <li><a href="#company">Company</a></li>
       </ul>
     </nav>
-    <a class="btn small" href="#pilot">Request a pilot</a>
+    <a class="btn small" href="#pilot">Set up a call</a>
   </div>
 </header>
 <main id="main">
   <section class="hero wrap" aria-labelledby="top-h">
     <div>
       <h1 id="top-h">Interior repainting, by robot.</h1>
-      <p class="lead">P1 is a wall painting robot for apartment turnovers and commercial interiors. It drives along a wall and sprays it from floor to ceiling, one strip at a time, while a painter supervises.</p>
+      <p class="lead">P1 is a wall painting robot for apartment turnovers and commercial interiors. It is designed to drive along a wall and spray it in vertical strips, from just above the floor to about 2.6 m (8.5 ft), while an operator supervises.</p>
       <p class="stage">P1 is in development. We are building the first prototype in Miami.</p>
       <div class="actions">
-        <a class="btn" href="#pilot">Request a pilot</a>
+        <a class="btn" href="#pilot">Set up a call</a>
         <a class="more" href="#how">How it works</a>
       </div>
     </div>
@@ -75,10 +75,10 @@
     <h2 id="how-h">How it works</h2>
     <div class="body">
       <ol class="steps">
-        <li><h3>Prep</h3><p>The painter preps the room as usual: clears it, masks trim and floors, and connects P1 to an airless paint pump.</p></li>
+        <li><h3>Prep</h3><p>The room is prepped as usual: cleared, with trim and floors masked. Our operator connects P1 to an airless paint pump.</p></li>
         <li><h3>Scan</h3><p>P1 maps the room with its LiDAR and finds the wall with a depth camera and laser distance sensors.</p></li>
-        <li><h3>Spray</h3><p>It drives along the wall and sprays vertical strips from floor to ceiling, holding the spray tip at a set distance from the surface.</p></li>
-        <li><h3>Finish</h3><p>The painter checks the coat, cuts in edges and trim, and sends P1 to the next wall.</p></li>
+        <li><h3>Spray</h3><p>It drives along the wall and sprays vertical strips from just above the floor to about 2.6 m, holding the spray tip at a set distance from the surface.</p></li>
+        <li><h3>Finish</h3><p>A painter checks the coat and cuts in edges and trim, while the operator moves P1 to the next wall.</p></li>
       </ol>
       <p class="note">This is how P1 is designed to work. We will test each step on the prototype.</p>
       <figure class="film">
@@ -149,7 +149,7 @@
   <section class="section" aria-labelledby="inside-h"><div class="wrap"><div class="inside rule">
     <div>
       <h2 id="inside-h">Inside the base</h2>
-      <p>An aluminum frame holds the battery, drive wheels, controls and safety relay low in the base, which keeps the center of mass low when the mast is raised. P1 is built from standard industrial parts that can be bought and replaced.</p>
+      <p>An aluminum frame holds the battery, drive wheels, controls and safety relay low in the base, which keeps the center of mass low when the mast is raised. P1 is designed around standard industrial parts that can be bought and replaced.</p>
     </div>
     <figure>
       <img src="assets/img/p1_chassis_1580.webp" srcset="assets/img/p1_chassis_800.webp 800w, assets/img/p1_chassis_1580.webp 1580w" sizes="(min-width: 1200px) 760px, (min-width: 900px) 64vw, 100vw" width="1580" height="1053" alt="CAD rendering of the P1 base with its covers removed, showing the aluminum frame, battery, drive wheels and control electronics." loading="lazy" decoding="async">
@@ -161,12 +161,12 @@
     <h2 id="safety-h">Safety</h2>
     <div class="body">
       <ul class="plain">
-        <li>A trained operator supervises every job and can stop P1 at any time.</li>
-        <li>Two emergency stop buttons, on the mast and on the deck, cut power to the drives and the spray trigger through a safety relay.</li>
-        <li>Airless sprayers work at pressures up to about 5,000 psi. P1 sprays only inside a cleared and marked work area.</li>
+        <li>A trained operator will supervise every pilot job and can stop P1 at any time.</li>
+        <li>Two emergency stop buttons, on the mast and on the deck, are designed to cut power to the drives and the spray trigger through a safety relay.</li>
+        <li>Airless sprayers work at pressures up to about 5,000 psi. P1 will spray only inside a cleared and marked work area.</li>
         <li>P1 does not sand or scrape. In homes built before 1978, surface prep that disturbs old paint must follow the <a href="https://www.epa.gov/lead/renovation-repair-and-painting-program">EPA lead safe rules</a>.</li>
-        <li>P1 uses its cameras to navigate and to find the wall. Before a pilot, we agree with the site on what is recorded and when it is deleted.</li>
-        <li>P1 is a prototype and has no safety certification. During pilots, our team stays on site.</li>
+        <li>P1 is designed to use its cameras to navigate and to find the wall. Before a pilot, we agree with the site on what is recorded and when it is deleted.</li>
+        <li>P1 is in development and has no safety certification. During pilots, our team will stay on site.</li>
       </ul>
     </div>
   </div></div></section>
@@ -185,13 +185,13 @@
   <section class="section" id="company" aria-labelledby="company-h"><div class="wrap"><div class="split rule">
     <h2 id="company-h">Company</h2>
     <div class="body">
-      <p>Urban Robotics is a robotics company in Miami. It was founded by Onat Cakici, an aerospace engineer who graduated from Florida Tech in 2025. We design P1 in house and build it from standard parts.</p>
+      <p>Urban Robotics is a robotics company in Miami. It was founded by Onat Cakici, an aerospace engineer who graduated from Florida Tech in 2025. We design P1 in house and are building it from standard parts.</p>
     </div>
   </div></div></section>
 
   <div class="dark" id="pilot">
     <section class="wrap pilot" aria-labelledby="pilot-h">
-      <h2 id="pilot-h">Request a pilot</h2>
+      <h2 id="pilot-h">Talk to us</h2>
       <div class="body">
         <p>We are looking for property managers, owners and painting contractors in South Florida who repaint apartments or offices often. The first step is a 15 minute call about how you repaint today: what it costs, how long it takes and what slows it down. Nothing is for sale yet.</p>
         <div><a class="btn" href="mailto:info@urbanrobotics.com?subject=15%20minute%20call">Set up a call</a></div>
