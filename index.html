@@ -51,6 +51,7 @@
     <div>
       <h1 id="top-h">Interior painting, done by a robot.</h1>
       <p class="lead">P2 is a painting robot for homes. It is designed to roll the walls and ceiling of a furnished room and cut every line on its own, with no masking and no mist.</p>
+      <p class="lead2">Paint is its first tool. Spray, Sand and Drill tools are planned for the same Tool Port on its arm.</p>
       <p class="stage">P2 is in development. We are building the first prototype in Miami.</p>
       <div class="actions">
         <a class="btn" href="#pilot">Set up a call</a>
@@ -67,6 +68,7 @@
     <h2 id="why-h">Why P2</h2>
     <div class="body">
       <p>Painting a room is slow, physical work. The U.S. Bureau of Labor Statistics lists falls from ladders and muscle strains among the common hazards for painters, and projects about 24,900 openings for painters each year through 2035.</p>
+      <p>Spraying is fast in an empty building, but in a home it means masking the floors, the furniture and the windows. P2 rolls, the way a painter does: paint is fed through the roller core, so there is no mist to mask against, and an edger pad cuts the lines without tape.</p>
       <p>P2 is designed to paint the whole room: the ceiling, the walls and the lines where they meet. What is left for people is moving furniture away from the walls and putting it back.</p>
       <p class="source">Source: <a href="https://www.bls.gov/ooh/construction-and-extraction/painters-construction-and-maintenance.htm">U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Painters, Construction and Maintenance</a>.</p>
     </div>
@@ -78,8 +80,7 @@
       <ol class="steps">
         <li><h3>Prep</h3><p>Move the furniture about 1 m away from the walls, lay the paper runner along them, and pour the paint into P2's sealed tank.</p></li>
         <li><h3>Scan</h3><p>P2 maps the room with its LiDAR and cameras and finds the walls, trim, outlets, doors and windows. If something is still against a wall, it asks before it starts.</p></li>
-        <li><h3>Cut</h3><p>At each spot along the wall, P2 lowers two feet and cuts the ceiling line, the baseboard line, the corners and the trim with an edger pad that rides on guide wheels.</p></li>
-        <li><h3>Roll</h3><p>It rolls the wall in lanes from floor to ceiling, feeding paint through the roller core, and checks each panel with its camera before it moves on.</p></li>
+        <li><h3>Cut and roll</h3><p>At each spot along the wall, P2 lowers two feet, cuts the ceiling line, the baseboard line, the corners and the trim with an edger pad on guide wheels, then rolls the wall in lanes from floor to ceiling. Its camera checks each panel before it moves on.</p></li>
         <li><h3>Dry and finish</h3><p>Between coats P2 waits in its dock, charging, with the roller in a wet box. After the last coat it rinses its paint line and parks.</p></li>
       </ol>
       <p class="note">This is how P2 is designed to work. In our simulation of a 12 by 12 ft bedroom with an 8 ft ceiling, P2 needs 2.6 hours of work and 5.1 hours from start to finish, including two hours of drying between coats.</p>
@@ -147,7 +148,7 @@
     <div class="split rule tools-head">
       <h2 id="tools-h">One arm, four tools</h2>
       <div class="body">
-        <p>The arm can reach every point of a wall, so the tool on its wrist decides what P2 does. Paint comes first. Spray, Sand and Drill use the same Tool Port and are designed, not built yet. Pick a tool to see it change.</p>
+        <p>The arm can reach every point of a wall, so the tool on its wrist decides what P2 does. Paint comes first. Spray, Sand and Drill are planned for the same Tool Port: spray for empty rooms and new builds, sand for patches between coats, and drill for anchors where you mark them. They are designed, not built yet. Pick a tool to see it change.</p>
       </div>
     </div>
   <div class="swapper">
@@ -221,7 +222,7 @@
     <div class="body">
       <ul class="plain">
         <li>P2 is designed to pause when a person or pet comes close. Its cameras watch the work area, the arm slows and stops near people, and the arm itself is force limited.</li>
-        <li>Two stabilizer feet go down before the mast rises, and the arm's motion is limited when the tip margin gets small.</li>
+        <li>Two stabilizer feet go down before the mast rises. In the worst case we simulated, an empty tank with the arm stopped dead at full reach and the mast at the top, P2 still keeps 82 mm of tip margin.</li>
         <li>An emergency stop on the robot and in the app cuts motor power through a hardwired safety relay.</li>
         <li>P2 uses water based paints only. Open a window while it works.</li>
         <li>P2 does not sand or scrape in its first version. In homes built before 1978, work that disturbs old paint must follow the <a href="https://www.epa.gov/lead/renovation-repair-and-painting-program">EPA lead safe rules</a>.</li>
@@ -231,11 +232,25 @@
     </div>
   </div></div></section>
 
+  <section class="section" id="questions" aria-labelledby="q-h"><div class="wrap"><div class="split rule">
+    <h2 id="q-h">Questions</h2>
+    <div class="body">
+      <dl class="qa">
+        <div><dt>What does P2 cost?</dt><dd>We have not set a price, and P2 is not for sale. A home is repainted every few years, so for homes we expect to offer P2 as a service or a rental rather than a machine to buy.</dd></div>
+        <div><dt>When can I use it?</dt><dd>Not yet. Next we build a bench rig to test the paint tool on real walls, then the full robot, then pilot jobs in South Florida.</dd></div>
+        <div><dt>What do I do before it starts?</dt><dd>Move the furniture about 1 m away from the walls, take down pictures and outlet covers, and pour the paint into its tank.</dd></div>
+        <div><dt>What paint does it use?</dt><dd>Water based interior paint, the same cans a painter buys.</dd></div>
+        <div><dt>Does someone need to be there?</dt><dd>During pilots, yes: our team stays on site. P2 is designed to work on its own and to ask for help on your phone when it needs it.</dd></div>
+        <div><dt>How high can it reach?</dt><dd>The first version paints rooms up to 9 ft. Ten foot rooms are a later goal; the current design reaches them only in part.</dd></div>
+      </dl>
+    </div>
+  </div></div></section>
+
   <section class="section" id="status" aria-labelledby="status-h"><div class="wrap"><div class="split rule">
     <h2 id="status-h">Where we are</h2>
     <div class="body">
       <ol class="log">
-        <li><p class="when">October 2026</p><p>Finished the CAD design of P2, a painting robot for homes with a six axis arm and swappable tools. Simulated a full room, checked reach and stability, and listed 43 failure modes.</p></li>
+        <li><p class="when">October 2026</p><p>Finished the CAD design of P2, a painting robot for homes with a six axis arm and swappable tools. Simulated a full room, checked reach and stability, listed 43 failure modes.</p></li>
         <li><p class="when">Before that</p><p>Designed P1, a spray robot for commercial interiors. Its base and mast work carried into P2.</p></li>
         <li><p class="when">Next</p><p>Build a bench rig with the arm, the Tool Port and the paint tool, and paint test walls to measure drips, lap marks and cut lines.</p></li>
         <li><p class="when">After that</p><p>Build the full robot, then run pilot jobs in homes and apartments in South Florida.</p></li>
