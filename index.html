@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://urbanrobotics.com/#org","name":"Urban Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://urbanrobotics.com/","logo":"https://urbanrobotics.com/icon-512.png","email":"info@urbanrobotics.com","foundingDate":"2025","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@type":"Person","name":"Onat Cakici"},"description":"Urban Robotics builds robots for the finishing trades, starting with P2, an interior painting robot for homes, in development in Miami."},{"@type":"WebSite","@id":"https://urbanrobotics.com/#site","name":"Urban Robotics","url":"https://urbanrobotics.com/","publisher":{"@id":"https://urbanrobotics.com/#org"}},{"@type":"VideoObject","name":"P2 at work","description":"A 41 second CAD animation of how P2 is designed to paint a room: it rolls in, cuts the ceiling line, rolls the wall lane by lane and swaps its own tools at the dock.","thumbnailUrl":"https://urbanrobotics.com/assets/video/p2_film_poster.webp","contentUrl":"https://urbanrobotics.com/assets/video/p2_film_1080.mp4","uploadDate":"2026-10-30T14:17:08+00:00","duration":"PT41S","publisher":{"@id":"https://urbanrobotics.com/#org"}}]}</script>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=ae5cad2b1c">
+<link rel="stylesheet" href="assets/styles.css?v=c90d3dd9bf">
 <link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -216,7 +216,7 @@
     <div class="split tools-head">
       <h2 id="tools-h">One arm, four tools</h2>
       <div class="body">
-        <p>One machine for more of the job. The tool on the arm decides what P2 does, and P2 swaps tools on its own at the dock. Paint comes first. Spray, Sand and Drill are planned for the same Tool Port: spray for empty rooms and new builds, sand for patches between coats, and drill for anchors where you mark them, for shelves, TVs and curtain rods. They are designed, not built yet. Pick a tool to see it change.</p>
+        <p>One machine for more of the job. The tool on the arm decides what P2 does, and P2 swaps tools on its own at the dock. Paint comes first. Spray, Sand and Drill are planned for the same Tool Port: spray for empty rooms and new builds, sand for patches between coats, and drill for anchors where you mark them, for shelves, TVs and curtain rods. They are designed, not built yet. Pick a tool to see it work.</p>
       </div>
     </div>
   <div class="swapper">
@@ -227,21 +227,32 @@
     <div class="swap-grid">
       <figure class="swap">
         <div class="swap-stage">
-          <img class="base" src="assets/img/p2_swap_base_2000.webp" srcset="assets/img/p2_swap_base_1000.webp 1000w, assets/img/p2_swap_base_1600.webp 1600w, assets/img/p2_swap_base_2000.webp 2000w" sizes="(min-width: 1200px) 640px, (min-width: 980px) 56vw, 100vw" width="2000" height="1500" alt="CAD rendering of the P2 arm reaching out from its mast, with a tool locked on the Tool Port at the wrist." loading="lazy" decoding="async">
-          <img class="tl tl-paint" src="assets/img/p2_tool_paint.webp" width="423" height="533" alt="" decoding="async">
-          <img class="tl tl-spray" src="assets/img/p2_tool_spray.webp" width="401" height="226" alt="" decoding="async">
-          <img class="tl tl-sand" src="assets/img/p2_tool_sand.webp" width="491" height="317" alt="" decoding="async">
-          <img class="tl tl-drill" src="assets/img/p2_tool_drill.webp" width="554" height="226" alt="" decoding="async">
-          <span class="ring ring-paint" aria-hidden="true"></span>
-          <span class="ring ring-spray" aria-hidden="true"></span>
-          <span class="ring ring-sand" aria-hidden="true"></span>
-          <span class="ring ring-drill" aria-hidden="true"></span>
+          <picture class="clip clip-paint">
+            <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_paint_720.webp 720w, assets/img/tool_paint.webp 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
+            <source type="image/avif" srcset="assets/video/tool_paint_720.avif 720w, assets/video/tool_paint.avif 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
+            <img src="assets/img/tool_paint.webp" width="1200" height="900" alt="CAD animation of P2's roller rolling a lane of sage paint up a white wall, the mast carrying the arm up." loading="lazy" decoding="async">
+          </picture>
+          <picture class="clip clip-spray">
+            <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_spray_720.webp 720w, assets/img/tool_spray.webp 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
+            <source type="image/avif" srcset="assets/video/tool_spray_720.avif 720w, assets/video/tool_spray.avif 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
+            <img src="assets/img/tool_spray.webp" width="1200" height="900" alt="CAD animation of P2's spray gun making three passes 300 mm from a white wall, each pass leaving a band of paint." loading="lazy" decoding="async">
+          </picture>
+          <picture class="clip clip-sand">
+            <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_sand_720.webp 720w, assets/img/tool_sand.webp 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
+            <source type="image/avif" srcset="assets/video/tool_sand_720.avif 720w, assets/video/tool_sand.avif 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
+            <img src="assets/img/tool_sand.webp" width="1200" height="900" alt="CAD animation of P2's orbital sander circling over a filled patch on the wall until the patch is smooth." loading="lazy" decoding="async">
+          </picture>
+          <picture class="clip clip-drill">
+            <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_drill_720.webp 720w, assets/img/tool_drill.webp 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
+            <source type="image/avif" srcset="assets/video/tool_drill_720.avif 720w, assets/video/tool_drill.avif 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
+            <img src="assets/img/tool_drill.webp" width="1200" height="900" alt="CAD animation of P2's drill pressing its dust cup to a pencil mark on a painted wall, drilling, and backing off to leave a clean hole." loading="lazy" decoding="async">
+          </picture>
         </div>
-        <figcaption aria-live="polite">
-          <span class="cap cap-paint">Paint: roller and edger pad. P2 is built around this tool.</span>
-          <span class="cap cap-spray">Spray: airless gun for empty rooms. Designed, not built.</span>
-          <span class="cap cap-sand">Sand: orbital sander with a HEPA canister. Designed, not built.</span>
-          <span class="cap cap-drill">Drill: scans the wall first, then drills. Designed, not built.</span>
+        <figcaption>
+          <span class="cap cap-paint">CAD animation. Paint: the mast carries the roller up one lane while the pump feeds it paint. P2 is built around this tool.</span>
+          <span class="cap cap-spray">CAD animation. Spray: three passes, 300 mm from the wall. Designed, not built.</span>
+          <span class="cap cap-sand">CAD animation. Sand: small circles over a filled patch until it is flush. Designed, not built.</span>
+          <span class="cap cap-drill">CAD animation. Drill: the cup presses on your pencil mark, the bit drills, the cup keeps the dust. Designed, not built.</span>
         </figcaption>
       </figure>
       <div>
