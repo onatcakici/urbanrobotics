@@ -31,20 +31,37 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<nav class="menu" id="menu" aria-label="Main" tabindex="-1">
+  <div class="wrap">
+    <ul>
+      <li><a href="#film">Film</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#p2">P2</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#safety">Safety</a></li>
+      <li><a href="#progress">Progress</a></li>
+      <li><a href="#company">Company</a></li>
+      <li><a href="#questions">Questions</a></li>
+    </ul>
+    <p><a class="btn" href="#pilot">Set up a call</a></p>
+  </div>
+</nav>
 <header class="site-head">
   <div class="wrap row">
-    <a class="brand" href=""><img src="assets/brand/lockup_tight.svg" width="168" height="22" alt="Urban Robotics home"></a>
+    <a class="brand" href="#top"><img src="assets/brand/lockup_tight.svg" width="168" height="22" alt="Urban Robotics home"></a>
     <nav class="site-nav" aria-label="Main">
       <ul>
-        <li><a href="#film">Film</a></li>
         <li><a href="#how">How it works</a></li>
         <li><a href="#p2">P2</a></li>
         <li><a href="#tools">Tools</a></li>
         <li><a href="#safety">Safety</a></li>
+        <li><a href="#progress">Progress</a></li>
         <li><a href="#company">Company</a></li>
       </ul>
     </nav>
     <a class="btn small" href="#pilot">Set up a call</a>
+    <a class="menu-open" href="#menu">Menu</a>
+    <a class="menu-x" href="#close">Close</a>
   </div>
 </header>
 <main id="main">
@@ -86,7 +103,7 @@
   <section class="section" id="why" aria-labelledby="why-h"><div class="wrap"><div class="split rule">
     <h2 id="why-h">Why P2</h2>
     <div class="body">
-      <p>Painting a room is slow, physical work. The U.S. Bureau of Labor Statistics lists falls from ladders and muscle strains among the common hazards for painters, and projects about 24,900 openings for painters each year through 2035.</p>
+      <p>Painting a room is slow, physical work. The U.S. Bureau of Labor Statistics counts 326,900 painter jobs in the U.S. in 2025, at a median pay of $49,400 a year, and projects about 24,900 openings each year through 2035. Falls from ladders and muscle strains are among the common hazards it lists.</p>
       <p>Spraying is fast in an empty building, but in a home it means masking the floors, the furniture and the windows. P2 rolls, the way a painter does: paint is fed through the roller core, so there is no mist to mask against, and an edger pad cuts the lines without tape.</p>
       <p>P2 is designed to paint the whole room: the ceiling, the walls and the lines where they meet. What is left for people is moving furniture away from the walls and putting it back.</p>
       <p class="source">Source: <a href="https://www.bls.gov/ooh/construction-and-extraction/painters-construction-and-maintenance.htm">U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Painters, Construction and Maintenance</a>.</p>
@@ -109,8 +126,15 @@
   <div class="band" id="p2">
     <section class="wrap machine" aria-labelledby="p2-h">
       <div class="machine-head">
-        <h2 id="p2-h">The machine</h2>
-        <p>P2 is a round base with a two stage mast and a six axis arm. The base carries the paint, the pump and the battery; the mast lifts the arm; the arm holds the tool.</p>
+        <h2 id="p2-h" class="p2h"><img src="assets/brand/p2_name.svg" width="101" height="70" alt="P2"></h2>
+        <div class="body">
+          <p>A round base, a two stage mast and a six axis arm. The base carries the paint, the pump and the battery; the mast lifts the arm; the arm holds the tool.</p>
+          <dl class="keys">
+          <div><dt>Wall reach <span>From the baseboard to a 9 ft ceiling</span></dt><dd>9 ft</dd></div>
+          <div><dt>Height, stowed <span>Fits under a standard 80 inch door</span></dt><dd>1.48 m</dd></div>
+          <div><dt>A bedroom, two coats <span>A 12 by 12 ft room in our simulation, start to finish</span></dt><dd>5.1 h</dd></div>
+          </dl>
+        </div>
       </div>
       <div class="callout">
         <figure class="marked">
@@ -159,6 +183,17 @@
           </dl>
           <p class="specs-note">Numbers come from the current CAD model. The prototype has not been built yet, and these numbers will change as we test it.</p>
         </div>
+      </div>
+
+      <div class="specs-row built">
+        <h3>Built to work for years</h3>
+        <ul class="plain">
+          <li><strong>Standard wear parts.</strong> The roller cover, the edger pad and the pump hose are stock parts that anyone can replace.</li>
+          <li><strong>Locks that hold without power.</strong> The Tool Port keeps its tool and the lift brakes hold the mast when the power is off.</li>
+          <li><strong>Made for paint.</strong> The mast runs on V wheels with felt wipers instead of ball rails. Paint only touches the sealed tank, the hose and the tool.</li>
+          <li><strong>Modules, not one block.</strong> The mast comes off the base with one lever, and every tool shares one port.</li>
+          <li><strong>Failure modes first.</strong> We listed 43 ways P2 could fail, from a drip to a drill hitting a wire, and gave each one a design answer and a test.</li>
+        </ul>
       </div>
     </section>
   </div>
@@ -209,32 +244,18 @@
       </div>
     </div>
   </div>
+    <div class="inside dock">
+      <div>
+        <h3 id="dock-h">P2 Dock</h3>
+        <p>P2 backs in over two contact rails and charges through two pads under its base. The arm reaches the four tool bays behind it, sets one tool into its saddle, lets go, and picks up the next.</p>
+        <p>The paint bay has a wet box. Between coats the roller hangs inside it, so the cover stays wet for the next coat.</p>
+      </div>
+      <figure>
+        <img src="assets/img/p2_dock_1600.webp" srcset="assets/img/p2_dock_800.webp 800w, assets/img/p2_dock_1200.webp 1200w, assets/img/p2_dock_1600.webp 1600w" sizes="(min-width: 1200px) 640px, (min-width: 980px) 56vw, 100vw" width="1600" height="1067" alt="CAD rendering of P2 backed up to its dock, a white cabinet against the wall with four tool bays and the Urban Robotics name above them. The arm reaches into one of the bays." loading="lazy" decoding="async">
+        <figcaption>CAD rendering of P2 at its dock.</figcaption>
+      </figure>
+    </div>
   </div></section>
-
-  <section class="section" aria-labelledby="dock-h"><div class="wrap"><div class="inside dock rule">
-    <div>
-      <h2 id="dock-h">P2 Dock</h2>
-      <p>P2 backs in over two contact rails and charges through two pads under its base. The arm reaches the four tool bays behind it, sets one tool into its saddle, lets go, and picks up the next.</p>
-      <p>The paint bay has a wet box. Between coats the roller hangs inside it, so the cover stays wet for the next coat.</p>
-    </div>
-    <figure>
-      <img src="assets/img/p2_dock_1600.webp" srcset="assets/img/p2_dock_800.webp 800w, assets/img/p2_dock_1200.webp 1200w, assets/img/p2_dock_1600.webp 1600w" sizes="(min-width: 1200px) 640px, (min-width: 980px) 56vw, 100vw" width="1600" height="1067" alt="CAD rendering of P2 backed up to its dock, a white cabinet against the wall with four tool bays. The arm reaches into one of the bays." loading="lazy" decoding="async">
-      <figcaption>CAD rendering of P2 at its dock.</figcaption>
-    </figure>
-  </div></div></section>
-
-  <section class="section" id="built" aria-labelledby="built-h"><div class="wrap"><div class="split rule">
-    <h2 id="built-h">Built to work for years</h2>
-    <div class="body">
-      <ul class="plain">
-        <li><strong>Standard wear parts.</strong> The roller cover, the edger pad and the pump hose are stock parts that anyone can replace.</li>
-        <li><strong>Locks that hold without power.</strong> The Tool Port keeps its tool and the lift brakes hold the mast when the power is off.</li>
-        <li><strong>Made for paint.</strong> The mast runs on V wheels with felt wipers instead of ball rails. Paint only touches the sealed tank, the hose and the tool.</li>
-        <li><strong>Modules, not one block.</strong> The mast comes off the base with one lever, and every tool shares one port.</li>
-        <li><strong>Failure modes first.</strong> We listed 43 ways P2 could fail, from a drip to a drill hitting a wire, and gave each one a design answer and a test.</li>
-      </ul>
-    </div>
-  </div></div></section>
 
   <section class="section" id="safety" aria-labelledby="safety-h"><div class="wrap"><div class="split rule">
     <h2 id="safety-h">Safety</h2>
@@ -248,6 +269,26 @@
         <li>P2 uses its cameras to navigate and to check the paint. Before a pilot, we agree with you on what is recorded and when it is deleted.</li>
         <li>P2 is in development and has no safety certification. During pilots, our team will stay on site.</li>
       </ul>
+    </div>
+  </div></div></section>
+
+  <section class="section" id="progress" aria-labelledby="progress-h"><div class="wrap"><div class="split rule">
+    <h2 id="progress-h">Progress</h2>
+    <div class="body">
+      <ol class="log">
+        <li><p class="when">October 2026</p><p>Finished the CAD design of P2 and its four tools. Simulated a full room: a 12 by 12 ft bedroom takes 2.6 hours of work and 5.1 hours from start to finish. Checked reach and stability: in the worst case P2 keeps 82 mm of tip margin. Listed 43 failure modes, each with a design answer and a test. Animated a job from the CAD and the arm's kinematics.</p></li>
+        <li><p class="when">Before that</p><p>Designed P1, a spray robot for commercial interiors. Its base and mast work carried into P2.</p></li>
+        <li><p class="when">Next</p><p>Build a bench rig with the arm, the Tool Port and the paint tool, and paint test walls to measure drips, lap marks and cut lines.</p></li>
+        <li><p class="when">After that</p><p>Build the full robot, then run pilot jobs in homes and apartments in South Florida.</p></li>
+      </ol>
+    </div>
+  </div></div></section>
+
+  <section class="section" id="company" aria-labelledby="company-h"><div class="wrap"><div class="split rule">
+    <h2 id="company-h">Company</h2>
+    <div class="body">
+      <p>Urban Robotics is building robots for the finishing trades, starting with paint. We are based in Miami. The company was founded by Onat Cakici, an aerospace engineer who graduated from Florida Tech in 2025. We design P2 in house and are building it from standard parts.</p>
+      <p>Investors and press: write to <a href="mailto:info@urbanrobotics.com?subject=Urban%20Robotics">info@urbanrobotics.com</a>.</p>
     </div>
   </div></div></section>
 
@@ -265,26 +306,7 @@
     </div>
   </div></div></section>
 
-  <section class="section" id="status" aria-labelledby="status-h"><div class="wrap"><div class="split rule">
-    <h2 id="status-h">Where we are</h2>
-    <div class="body">
-      <ol class="log">
-        <li><p class="when">October 2026</p><p>Finished the CAD design of P2, a painting robot for homes with a six axis arm and swappable tools. Simulated a full room, checked reach and stability, listed 43 failure modes, and animated a job from the CAD and the arm's kinematics.</p></li>
-        <li><p class="when">Before that</p><p>Designed P1, a spray robot for commercial interiors. Its base and mast work carried into P2.</p></li>
-        <li><p class="when">Next</p><p>Build a bench rig with the arm, the Tool Port and the paint tool, and paint test walls to measure drips, lap marks and cut lines.</p></li>
-        <li><p class="when">After that</p><p>Build the full robot, then run pilot jobs in homes and apartments in South Florida.</p></li>
-      </ol>
-    </div>
-  </div></div></section>
-
-  <section class="section" id="company" aria-labelledby="company-h"><div class="wrap"><div class="split rule">
-    <h2 id="company-h">Company</h2>
-    <div class="body">
-      <p>Urban Robotics is a robotics company in Miami. It was founded by Onat Cakici, an aerospace engineer who graduated from Florida Tech in 2025. We design P2 in house and are building it from standard parts.</p>
-    </div>
-  </div></div></section>
-
-  <div class="dark" id="pilot">
+  <div class="panel" id="pilot">
     <section class="wrap pilot" aria-labelledby="pilot-h">
       <h2 id="pilot-h">Talk to us</h2>
       <div class="body">
