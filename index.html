@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>P2, an interior painting robot for homes | Urban Robotics</title>
-<meta name="description" content="P2 is an interior painting robot for homes, in development in Miami. It is designed to roll walls and ceilings and cut every line on its own, with no tape.">
+<meta name="description" content="P2 is an interior painting robot for homes, in development in Miami. Designed to paint a furnished room on its own: no tape, no mess, about five hours.">
 <link rel="canonical" href="https://urbanrobotics.com/">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#1E1F21">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Urban Robotics">
 <meta property="og:title" content="P2, an interior painting robot for homes | Urban Robotics">
-<meta property="og:description" content="P2 is an interior painting robot for homes, in development in Miami. It is designed to roll walls and ceilings and cut every line on its own, with no tape.">
+<meta property="og:description" content="P2 is an interior painting robot for homes, in development in Miami. Designed to paint a furnished room on its own: no tape, no mess, about five hours.">
 <meta property="og:url" content="https://urbanrobotics.com/">
 <meta property="og:image" content="https://urbanrobotics.com/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://urbanrobotics.com/#org","name":"Urban Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://urbanrobotics.com/","logo":"https://urbanrobotics.com/icon-512.png","email":"info@urbanrobotics.com","foundingDate":"2025","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@type":"Person","name":"Onat Cakici"},"description":"Urban Robotics builds robots for the finishing trades, starting with P2, an interior painting robot for homes, in development in Miami."},{"@type":"WebSite","@id":"https://urbanrobotics.com/#site","name":"Urban Robotics","url":"https://urbanrobotics.com/","publisher":{"@id":"https://urbanrobotics.com/#org"}},{"@type":"VideoObject","name":"P2 at work","description":"A 41 second CAD animation of how P2 is designed to paint a room: it rolls in, cuts the ceiling line, rolls the wall lane by lane and swaps its own tools at the dock.","thumbnailUrl":"https://urbanrobotics.com/assets/video/p2_film_poster.webp","contentUrl":"https://urbanrobotics.com/assets/video/p2_film_1080.mp4","uploadDate":"2026-10-30T14:17:08+00:00","duration":"PT41S","publisher":{"@id":"https://urbanrobotics.com/#org"}}]}</script>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=44b196683f">
+<link rel="stylesheet" href="assets/styles.css?v=ae5cad2b1c">
 <link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -69,7 +69,7 @@
   <section class="hero wrap" aria-labelledby="top-h">
     <div>
       <h1 id="top-h">Interior<br>painting<br>robot</h1>
-      <p class="lead">P2 is designed for homes: to roll the walls and ceiling of a furnished room and cut every line on its own, with no tape and no mist.</p>
+      <p class="lead">A painted room without the crew, the tape or the mess. P2 is designed to paint the walls and ceiling of a furnished room on its own, in about five hours from start to finish.</p>
       <p class="stage">P2 is in development in Miami. Paint is its first tool; Spray, Sand and Drill are planned for the same Tool Port.</p>
       <div class="actions">
         <a class="btn" href="#film">Watch the film</a>
@@ -105,11 +105,17 @@
   <section class="section" id="why" aria-labelledby="why-h"><div class="wrap"><div class="split">
     <h2 id="why-h">Why P2</h2>
     <div class="body">
-      <p>Painting a room is slow, physical work: ladders, masking and long days. The U.S. has 326,900 painter jobs at a median pay of $49,400 a year, and the Bureau of Labor Statistics lists falls from ladders and muscle strains among their common hazards.</p>
-      <div class="fig1"><b>24,900</b><p>openings for painters a year in the U.S., on average, projected through 2035</p></div>
-      <p>Spraying is fast in an empty building, but in a home it means masking the floors, the furniture and the windows. P2 rolls, the way a painter does: paint is fed through the roller core, so there is no mist to mask against, and an edger pad cuts the lines without tape.</p>
-      <p>P2 is designed to paint the whole room: the ceiling, the walls and the lines where they meet. What is left for people is moving furniture away from the walls and putting it back.</p>
-      <p class="source">Source: <a href="https://www.bls.gov/ooh/construction-and-extraction/painters-construction-and-maintenance.htm">U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Painters, Construction and Maintenance</a>.</p>
+      <p>Most of what you pay for a paint job is labor: 75 to 95 percent of a professional interior job, according to Angi. P2 is built to take that labor off the bill.</p>
+      <div class="fig1"><b>30 min</b><p>of a person's time to paint a 12 by 12 ft bedroom with P2, against about 6.5 hours for a painter by hand, in our simulation</p></div>
+      <dl class="specs notes gains">
+        <div><dt>Lower cost</dt><dd>P2 does the slow part of the job, the rolling and the cutting in. Our goal is a price per room below what a painting crew charges.</dd></div>
+        <div><dt>Done the same day</dt><dd>The walls in two coats and the ceiling in one, in about five hours from start to finish, drying included.</dd></div>
+        <div><dt>No tape, no mess</dt><dd>The edger pad cuts the lines and the roller puts no mist in the air, so nothing is taped or wrapped in plastic. Move the furniture 1 m from the walls and P2 paints around it.</dd></div>
+        <div><dt>On your schedule</dt><dd>No crew to book or wait for. P2 is designed to work on its own, nights and weekends included, and to message you if it needs help.</dd></div>
+        <div><dt>Nobody on a ladder</dt><dd>The mast lifts the roller to a 9 ft ceiling. Falls from ladders are among the common hazards of the trade.</dd></div>
+      </dl>
+      <p>For painting contractors and property managers: painters are hard to hire, with about 24,900 openings a year in the U.S. through 2035. P2 is designed to roll and cut while your painters prep the next room, so the same crew can finish more rooms.</p>
+      <p class="source">Sources: <a href="https://www.nerdwallet.com/home-ownership/home-improvement/learn/save-on-cost-to-paint-a-house">NerdWallet, Cost to Paint a House in 2026, citing Angi</a>; <a href="https://www.bls.gov/ooh/construction-and-extraction/painters-construction-and-maintenance.htm">U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Painters</a>. Times for P2 come from our simulation; P2 is in development.</p>
     </div>
   </div></div></section>
 
@@ -117,7 +123,7 @@
     <h2 id="how-h">How it works</h2>
     <div class="body">
       <ol class="steps">
-        <li><h3>Prep</h3><p>Move the furniture about 1 m away from the walls, lay the paper runner along them, and pour the paint into P2's sealed tank.</p></li>
+        <li><h3>Prep</h3><p>About 30 minutes: move the furniture about 1 m away from the walls, lay the paper runner along them, and pour the paint into P2's sealed tank.</p></li>
         <li><h3>Scan</h3><p>P2 maps the room with its LiDAR and cameras and finds the walls, trim, outlets, doors and windows. If something is still against a wall, it asks before it starts.</p></li>
         <li><h3>Cut and roll</h3><p>At each spot along the wall, P2 lowers two feet, cuts the ceiling line, the baseboard line, the corners and the trim with an edger pad on guide wheels, then rolls the wall in lanes from floor to ceiling. Its camera checks each panel before it moves on.</p></li>
         <li><h3>Dry and finish</h3><p>Between coats P2 waits in its dock, charging, with the roller in a wet box. After the last coat it rinses its paint line and parks.</p></li>
@@ -209,7 +215,7 @@
     <div class="split tools-head">
       <h2 id="tools-h">One arm, four tools</h2>
       <div class="body">
-        <p>The arm can reach every point of a wall, so the tool on its wrist decides what P2 does. Paint comes first. Spray, Sand and Drill are planned for the same Tool Port: spray for empty rooms and new builds, sand for patches between coats, and drill for anchors where you mark them. They are designed, not built yet. Pick a tool to see it change.</p>
+        <p>One machine for more of the job. The tool on the arm decides what P2 does, and P2 swaps tools on its own at the dock. Paint comes first. Spray, Sand and Drill are planned for the same Tool Port: spray for empty rooms and new builds, sand for patches between coats, and drill for anchors where you mark them, for shelves, TVs and curtain rods. They are designed, not built yet. Pick a tool to see it change.</p>
       </div>
     </div>
   <div class="swapper">
@@ -305,7 +311,8 @@
     <h2 id="q-h">Questions</h2>
     <div class="body">
       <dl class="qa">
-        <div><dt>What does P2 cost?</dt><dd>We have not set a price, and P2 is not for sale. A home is repainted every few years, so for homes we expect to offer P2 as a service or a rental rather than a machine to buy.</dd></div>
+        <div><dt>Who is it for?</dt><dd>Homeowners who want a room painted without a crew in the house all day, property managers who repaint units between tenants, and painting contractors who need more hands.</dd></div>
+        <div><dt>What will it cost?</dt><dd>We have not set a price, and P2 is not for sale yet. Our goal is a price per room below what a painting crew charges. A home is repainted every few years, so for homes we expect to offer P2 as a service or a rental rather than a machine to buy.</dd></div>
         <div><dt>When can I use it?</dt><dd>Not yet. Next we build a bench rig to test the paint tool on real walls, then the full robot, then pilot jobs in South Florida.</dd></div>
         <div><dt>What do I do before it starts?</dt><dd>Move the furniture about 1 m away from the walls, take down pictures and outlet covers, and pour the paint into its tank.</dd></div>
         <div><dt>What paint does it use?</dt><dd>Water based interior paint, the same cans a painter buys.</dd></div>
@@ -319,7 +326,7 @@
     <section class="wrap pilot" aria-labelledby="pilot-h">
       <h2 id="pilot-h">Talk to us</h2>
       <div class="body">
-        <p>We are looking for homeowners, property managers and painting contractors in South Florida who repaint rooms often. The first step is a 15 minute call about how you repaint today: what it costs, how long it takes and what slows it down. Nothing is for sale yet.</p>
+        <p>Repaint rooms often? Help us shape the first pilots. We are looking for homeowners, property managers and painting contractors in South Florida. It starts with a 15 minute call about how you repaint today: what it costs, how long it takes and what slows it down. Nothing is for sale yet.</p>
         <div><a class="btn" href="mailto:info@urbanrobotics.com?subject=15%20minute%20call">Set up a call</a></div>
         <p class="addr">Write to <a href="mailto:info@urbanrobotics.com?subject=15%20minute%20call">info@urbanrobotics.com</a>. This site has no forms, cookies or tracking.</p>
       </div>
