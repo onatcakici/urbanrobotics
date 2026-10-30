@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>P2, an interior painting robot for homes | Urban Robotics</title>
-<meta name="description" content="P2 is an interior painting robot for homes, in development in Miami. Designed to paint a furnished room on its own: no tape, no mess, about five hours.">
+<meta name="description" content="P2 is an interior painting robot for homes, in development in Miami. Designed to paint a furnished room on its own, walls and ceiling, in about five hours.">
 <link rel="canonical" href="https://urbanrobotics.com/">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#1E1F21">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Urban Robotics">
 <meta property="og:title" content="P2, an interior painting robot for homes | Urban Robotics">
-<meta property="og:description" content="P2 is an interior painting robot for homes, in development in Miami. Designed to paint a furnished room on its own: no tape, no mess, about five hours.">
+<meta property="og:description" content="P2 is an interior painting robot for homes, in development in Miami. Designed to paint a furnished room on its own, walls and ceiling, in about five hours.">
 <meta property="og:url" content="https://urbanrobotics.com/">
 <meta property="og:image" content="https://urbanrobotics.com/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -69,7 +69,7 @@
   <section class="hero wrap" aria-labelledby="top-h">
     <div>
       <h1 id="top-h">Interior<br>painting<br>robot</h1>
-      <p class="lead">A painted room without the crew, the tape or the mess. P2 is designed to paint the walls and ceiling of a furnished room on its own, in about five hours from start to finish.</p>
+      <p class="lead">A painted room without a crew in your house all day. You move the furniture and tape the trim; P2 is designed to paint the walls and ceiling on its own, in about five hours, drying included.</p>
       <p class="stage">P2 is in development in Miami. Paint is its first tool; Spray, Sand and Drill are planned for the same Tool Port.</p>
       <div class="actions">
         <a class="btn" href="#film">Watch the film</a>
@@ -106,16 +106,17 @@
     <h2 id="why-h">Why P2</h2>
     <div class="body">
       <p>Most of what you pay for a paint job is labor: 75 to 95 percent of a professional interior job, according to Angi. P2 is built to take that labor off the bill.</p>
-      <div class="fig1"><b>30 min</b><p>of a person's time to paint a 12 by 12 ft bedroom with P2, against about 6.5 hours for a painter by hand, in our simulation</p></div>
+      <div class="fig1"><b>1.4 h</b><p>of a person's time to paint a 12 by 12 ft bedroom with P2, taping included, against about 6.5 hours for a painter by hand. Both are our estimates.</p></div>
       <dl class="specs notes gains">
         <div><dt>Lower cost</dt><dd>P2 does the slow part of the job, the rolling and the cutting in. Our goal is a price per room below what a painting crew charges.</dd></div>
         <div><dt>Done the same day</dt><dd>The walls in two coats and the ceiling in one, in about five hours from start to finish, drying included.</dd></div>
-        <div><dt>No tape, no mess</dt><dd>The edger pad cuts the lines and the roller puts no mist in the air, so nothing is taped or wrapped in plastic. Move the furniture 1 m from the walls and P2 paints around it.</dd></div>
+        <div><dt>Less mess</dt><dd>A roller puts no mist in the air, so nothing is wrapped in plastic. Move the furniture 1 m from the walls, tape the trim as a painter would, and P2 paints around the room.</dd></div>
+        <div><dt>No trips to the tray</dt><dd>A pump feeds paint through the roller core from a sealed 6 gal tank, the same idea as the power rollers painters already use. One tank holds enough for about two bedrooms.</dd></div>
         <div><dt>On your schedule</dt><dd>No crew to book or wait for. P2 is designed to work on its own, nights and weekends included, and to message you if it needs help.</dd></div>
         <div><dt>Nobody on a ladder</dt><dd>The mast lifts the roller to a 9 ft ceiling. Falls from ladders are among the common hazards of the trade.</dd></div>
       </dl>
       <p>For painting contractors and property managers: painters are hard to hire, with about 24,900 openings a year in the U.S. through 2035. P2 is designed to roll and cut while your painters prep the next room, so the same crew can finish more rooms.</p>
-      <p class="source">Sources: <a href="https://www.nerdwallet.com/home-ownership/home-improvement/learn/save-on-cost-to-paint-a-house">NerdWallet, Cost to Paint a House in 2026, citing Angi</a>; <a href="https://www.bls.gov/ooh/construction-and-extraction/painters-construction-and-maintenance.htm">U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Painters</a>. Times for P2 come from our simulation; P2 is in development.</p>
+      <p class="source">Sources: <a href="https://www.nerdwallet.com/home-ownership/home-improvement/learn/save-on-cost-to-paint-a-house">NerdWallet, Cost to Paint a House in 2026, citing Angi</a>; <a href="https://www.bls.gov/ooh/construction-and-extraction/painters-construction-and-maintenance.htm">U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Painters</a>; <a href="https://www.bobvila.com/reviews/wagner-sidekick-electric-paint-roller-review/">Bob Vila, review of a Wagner power roller</a>. Times and paint use for P2 come from our simulation; P2 is in development.</p>
     </div>
   </div></div></section>
 
@@ -123,10 +124,10 @@
     <h2 id="how-h">How it works</h2>
     <div class="body">
       <ol class="steps">
-        <li><h3>Prep</h3><p>About 30 minutes: move the furniture about 1 m away from the walls, lay the paper runner along them, and pour the paint into P2's sealed tank.</p></li>
+        <li><h3>Prep</h3><p>Move the furniture about 1 m away from the walls, tape the trim and the ceiling line the way a painter would, lay the paper runner along the walls, and pour the paint into P2's sealed tank.</p></li>
         <li><h3>Scan</h3><p>P2 maps the room with its LiDAR and cameras and finds the walls, trim, outlets, doors and windows. If something is still against a wall, it asks before it starts.</p></li>
         <li><h3>Cut and roll</h3><p>At each spot along the wall, P2 lowers two feet, cuts the ceiling line, the baseboard line, the corners and the trim with an edger pad on guide wheels, then rolls the wall in lanes from floor to ceiling. Its camera checks each panel before it moves on.</p></li>
-        <li><h3>Dry and finish</h3><p>Between coats P2 waits in its dock, charging, with the roller in a wet box. After the last coat it rinses its paint line and parks.</p></li>
+        <li><h3>Dry and finish</h3><p>Between coats P2 waits in its dock, charging, with the roller in a wet box. After the last coat it rinses its paint line and parks. You pull the tape and put the furniture back.</p></li>
       </ol>
       <figure class="steps-fig">
         <ol>
@@ -314,7 +315,7 @@
         <div><dt>Who is it for?</dt><dd>Homeowners who want a room painted without a crew in the house all day, property managers who repaint units between tenants, and painting contractors who need more hands.</dd></div>
         <div><dt>What will it cost?</dt><dd>We have not set a price, and P2 is not for sale yet. Our goal is a price per room below what a painting crew charges. A home is repainted every few years, so for homes we expect to offer P2 as a service or a rental rather than a machine to buy.</dd></div>
         <div><dt>When can I use it?</dt><dd>Not yet. Next we build a bench rig to test the paint tool on real walls, then the full robot, then pilot jobs in South Florida.</dd></div>
-        <div><dt>What do I do before it starts?</dt><dd>Move the furniture about 1 m away from the walls, take down pictures and outlet covers, and pour the paint into its tank.</dd></div>
+        <div><dt>What do I do before it starts?</dt><dd>Move the furniture about 1 m away from the walls, take down pictures and outlet covers, tape the trim and the ceiling line, and pour the paint into its tank.</dd></div>
         <div><dt>What paint does it use?</dt><dd>Water based interior paint, the same cans a painter buys.</dd></div>
         <div><dt>Does someone need to be there?</dt><dd>During pilots, yes: our team stays on site. P2 is designed to work on its own and to ask for help on your phone when it needs it.</dd></div>
         <div><dt>How high can it reach?</dt><dd>The first version paints rooms up to 9 ft. Ten foot rooms are a later goal; the current design reaches them only in part.</dd></div>
