@@ -36,6 +36,7 @@
     <a class="brand" href=""><img src="assets/brand/lockup_tight.svg" width="168" height="22" alt="Urban Robotics home"></a>
     <nav class="site-nav" aria-label="Main">
       <ul>
+        <li><a href="#film">Film</a></li>
         <li><a href="#how">How it works</a></li>
         <li><a href="#p2">P2</a></li>
         <li><a href="#tools">Tools</a></li>
@@ -54,8 +55,8 @@
       <p class="lead2">Paint is its first tool. Spray, Sand and Drill tools are planned for the same Tool Port on its arm.</p>
       <p class="stage">P2 is in development. We are building the first prototype in Miami.</p>
       <div class="actions">
-        <a class="btn" href="#pilot">Set up a call</a>
-        <a class="more" href="#how">How it works</a>
+        <a class="btn" href="#film">Watch the film</a>
+        <a class="more" href="#pilot">Set up a call</a>
       </div>
     </div>
     <figure>
@@ -63,6 +64,24 @@
       <figcaption>CAD rendering. P2 rolls a wall; the edger pad has already cut the ceiling and baseboard lines ahead of it.</figcaption>
     </figure>
   </section>
+
+  <section class="section" id="film" aria-labelledby="film-h"><div class="wrap"><div class="rule">
+    <div class="split film-head">
+      <h2 id="film-h">P2 at work</h2>
+      <div class="body">
+        <p>A 41 second film of a job, animated from the CAD model and the arm's real joint limits: P2 rolls in, cuts the ceiling line, rolls the wall lane by lane, and swaps its own tools at the dock. Sound on.</p>
+      </div>
+    </div>
+    <figure class="film">
+      <video controls preload="none" playsinline width="1920" height="1080" poster="assets/video/p2_film_poster.webp" aria-describedby="film-cap">
+        <source src="assets/video/p2_film_720.mp4" type="video/mp4" media="(max-width: 760px)">
+        <source src="assets/video/p2_film_1080.mp4" type="video/mp4">
+        <track kind="captions" srclang="en" label="English" src="assets/video/p2_film.vtt">
+        <a href="assets/video/p2_film_1080.mp4">Download the P2 film (MP4, 41 seconds)</a>
+      </video>
+      <figcaption id="film-cap">CAD animation of how P2 is designed to work, with original music. P2 is in development, so nothing here is footage of a real robot.</figcaption>
+    </figure>
+  </div></div></section>
 
   <section class="section" id="why" aria-labelledby="why-h"><div class="wrap"><div class="split rule">
     <h2 id="why-h">Why P2</h2>
@@ -250,7 +269,7 @@
     <h2 id="status-h">Where we are</h2>
     <div class="body">
       <ol class="log">
-        <li><p class="when">October 2026</p><p>Finished the CAD design of P2, a painting robot for homes with a six axis arm and swappable tools. Simulated a full room, checked reach and stability, listed 43 failure modes.</p></li>
+        <li><p class="when">October 2026</p><p>Finished the CAD design of P2, a painting robot for homes with a six axis arm and swappable tools. Simulated a full room, checked reach and stability, listed 43 failure modes, and animated a job from the CAD and the arm's kinematics.</p></li>
         <li><p class="when">Before that</p><p>Designed P1, a spray robot for commercial interiors. Its base and mast work carried into P2.</p></li>
         <li><p class="when">Next</p><p>Build a bench rig with the arm, the Tool Port and the paint tool, and paint test walls to measure drips, lap marks and cut lines.</p></li>
         <li><p class="when">After that</p><p>Build the full robot, then run pilot jobs in homes and apartments in South Florida.</p></li>
