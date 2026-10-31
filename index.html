@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://urbanrobotics.com/#org","name":"Urban Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://urbanrobotics.com/","logo":"https://urbanrobotics.com/icon-512.png","email":"info@urbanrobotics.com","foundingDate":"2025","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@id":"https://urbanrobotics.com/company.html#founder"},"description":"Urban Robotics builds robots for the finishing trades, starting with P2, an interior painting robot for jobsites and homes, in development in Miami."},{"@type":"WebSite","@id":"https://urbanrobotics.com/#site","name":"Urban Robotics","url":"https://urbanrobotics.com/","publisher":{"@id":"https://urbanrobotics.com/#org"}},{"@type":"Person","@id":"https://urbanrobotics.com/company.html#founder","name":"Onat Cakici","jobTitle":"Founder","worksFor":{"@id":"https://urbanrobotics.com/#org"},"image":"https://urbanrobotics.com/assets/img/co_founder_440.webp","alumniOf":{"@type":"CollegeOrUniversity","name":"Florida Institute of Technology"},"sameAs":["https://www.linkedin.com/in/cakici/"]},{"@type":"VideoObject","name":"P2 at work","description":"A 34 second CAD animation of how P2 is designed to paint a room: it rolls in, cuts the ceiling line, rolls the wall lane by lane and shows the tools planned for the same arm.","thumbnailUrl":"https://urbanrobotics.com/assets/video/p2_film_poster.webp","contentUrl":"https://urbanrobotics.com/assets/video/p2_film_1080.mp4","uploadDate":"2026-10-30T23:30:00+00:00","duration":"PT34S","publisher":{"@id":"https://urbanrobotics.com/#org"}}]}</script>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=51af2e7c3e">
+<link rel="stylesheet" href="assets/styles.css?v=5ecad705f4">
 <link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -80,17 +80,17 @@
     </div>
     <figure>
       <img class="shot" src="assets/img/night_hero_1600.webp" srcset="assets/img/night_hero_800.webp 800w, assets/img/night_hero_1200.webp 1200w, assets/img/night_hero_1600.webp 1600w" sizes="(min-width: 1200px) 520px, (min-width: 960px) 40vw, 100vw" width="1600" height="2000" alt="CAD rendering of P2 at night in a dark room. A work light on its mast lights the wall where its arm holds the roller at the edge of a fresh coat of dark green paint, and the ring around its base glows amber." fetchpriority="high">
-      <figcaption>CAD rendering. P2 after hours, lit by its own work light, a proposed addition to the design. Paint shown for illustration.</figcaption>
+      <figcaption>CAD rendering. The work light is a proposed addition.</figcaption>
     </figure>
   </section>
 
-  <section class="section" id="film" aria-labelledby="film-h"><div class="wrap"><div class="rule">
-    <div class="split film-head">
+  <section class="section film-sec" id="film" aria-labelledby="film-h">
+    <div class="wrap"><div class="split film-head">
       <h2 id="film-h">P2 at work</h2>
       <div class="body">
         <p>A 34 second film of a job, animated from the CAD model and the arm’s real joint limits: P2 rolls in, cuts the ceiling line, rolls the wall lane by lane, and shows the tools planned for the same arm. Sound on.</p>
       </div>
-    </div>
+    </div></div>
     <figure class="film">
       <video controls preload="none" playsinline width="1920" height="1080" poster="assets/video/p2_film_poster.webp" aria-describedby="film-cap">
         <source src="assets/video/p2_film_720.mp4" type="video/mp4" media="(max-width: 760px)">
@@ -98,9 +98,9 @@
         <track kind="captions" srclang="en" label="English" src="assets/video/p2_film.vtt">
         <a href="assets/video/p2_film_1080.mp4">Download the P2 film (MP4, 34 seconds)</a>
       </video>
-      <figcaption id="film-cap">CAD animation of how P2 is designed to work. P2 is in development, so nothing here is footage of a real robot. Music: Cascade Breathe by NverAvetyanMusic, from Pixabay.</figcaption>
+      <figcaption id="film-cap" class="wrap">CAD animation. Music: Cascade Breathe by NverAvetyanMusic, from Pixabay.</figcaption>
     </figure>
-  </div></div></section>
+  </section>
 
 </div>
 
@@ -116,56 +116,32 @@
         </ol>
         <figure class="door">
           <img src="assets/img/night_door_1200.webp" srcset="assets/img/night_door_800.webp 800w, assets/img/night_door_1200.webp 1200w" sizes="(min-width: 1200px) 300px, (min-width: 760px) 32vw, 100vw" width="1200" height="1500" alt="CAD rendering of P2 seen from a dark hallway through an open door. It stands just inside a bedroom with the light on, its arm folded up beside the mast, a white light ring around its base." loading="lazy" decoding="async">
-          <figcaption>CAD rendering. Rolled in and ready to start.</figcaption>
+          <figcaption>CAD rendering.</figcaption>
         </figure>
       </div>
-      <h3>At the wall</h3>
-      <p>At each spot along the wall, P2 lowers two feet, cuts the ceiling line, the baseboard line, the corners and the trim with an edger pad on guide wheels, then rolls the wall in lanes from floor to ceiling. Its camera checks each panel before it moves on. After the last coat it pumps the paint in its line back to the tank and parks by the door.</p>
-      <figure class="steps-fig">
-        <ol>
-          <li><svg viewBox="0 0 300 507.6" role="img" aria-labelledby="sf0-t sf0-d"><title id="sf0-t">Cut the edges</title><desc id="sf0-d">The edger pad has painted the ceiling line, the baseboard line, the corner and around the outlet.</desc><rect class="sf-wall" x="0" y="10" width="300" height="487.6"/><rect class="sf-base" x="0" y="479.8" width="300" height="17.8"/><rect class="sf-paint" x="0" y="10" width="240" height="12"/><rect class="sf-paint" x="0" y="467.8" width="240" height="12"/><rect class="sf-paint" x="0" y="10" width="12" height="469.8"/><rect class="sf-paint" x="166" y="417.6" width="28" height="40"/><rect class="sf-cover" x="173" y="426.2" width="14" height="22.8"/><line class="sf-next" x1="240" y1="10" x2="240" y2="497.6"/><line class="sf-thin" x1="0" y1="479.8" x2="300" y2="479.8"/><line class="sf-edge" x1="0" y1="10" x2="300" y2="10"/><line class="sf-edge" x1="0" y1="497.6" x2="300" y2="497.6"/><line class="sf-edge" x1="0" y1="10" x2="0" y2="497.6"/><rect class="sf-tool" x="82" y="7.5" width="44" height="17" rx="3"/><line class="sf-arrow" x1="82" y1="38" x2="216" y2="38"/><polygon class="sf-head" points="232,38 216,28 216,48"/></svg><b>Cut the edges</b></li>
-          <li><svg viewBox="0 0 300 507.6" role="img" aria-labelledby="sf1-t sf1-d"><title id="sf1-t">Roll the lanes</title><desc id="sf1-d">The roller paints the wall in lanes from the baseboard to the ceiling; three lanes are done and the fourth is on its way up.</desc><rect class="sf-wall" x="0" y="10" width="300" height="487.6"/><rect class="sf-base" x="0" y="479.8" width="300" height="17.8"/><rect class="sf-paint" x="0" y="10" width="240" height="12"/><rect class="sf-paint" x="0" y="467.8" width="240" height="12"/><rect class="sf-paint" x="0" y="10" width="12" height="469.8"/><rect class="sf-paint" x="166" y="417.6" width="28" height="40"/><rect class="sf-paint" x="0" y="22" width="45.8" height="445.8"/><rect class="sf-paint" x="40" y="22" width="45.8" height="445.8"/><rect class="sf-paint" x="80" y="22" width="45.8" height="445.8"/><rect class="sf-paint" x="120" y="207.6" width="45.8" height="260.2"/><line class="sf-lane" x1="40" y1="22" x2="40" y2="467.8"/><line class="sf-lane" x1="80" y1="22" x2="80" y2="467.8"/><line class="sf-lane" x1="120" y1="207.6" x2="120" y2="467.8"/><rect class="sf-cover" x="173" y="426.2" width="14" height="22.8"/><line class="sf-next" x1="240" y1="10" x2="240" y2="497.6"/><line class="sf-thin" x1="0" y1="479.8" x2="300" y2="479.8"/><line class="sf-edge" x1="0" y1="10" x2="300" y2="10"/><line class="sf-edge" x1="0" y1="497.6" x2="300" y2="497.6"/><line class="sf-edge" x1="0" y1="10" x2="0" y2="497.6"/><rect class="sf-tool" x="119" y="201.6" width="47.8" height="12" rx="6"/><line class="sf-arrow" x1="142.9" y1="193.6" x2="142.9" y2="148"/><polygon class="sf-head" points="142.9,133.6 133.9,148 151.9,148"/></svg><b>Roll the lanes</b></li>
-          <li><svg viewBox="0 0 300 507.6" role="img" aria-labelledby="sf2-t sf2-d"><title id="sf2-t">Move on</title><desc id="sf2-d">The panel is painted, and an arrow points to the next spot along the wall.</desc><rect class="sf-wall" x="0" y="10" width="300" height="487.6"/><rect class="sf-base" x="0" y="479.8" width="300" height="17.8"/><rect class="sf-paint" x="0" y="10" width="240" height="12"/><rect class="sf-paint" x="0" y="467.8" width="240" height="12"/><rect class="sf-paint" x="0" y="10" width="12" height="469.8"/><rect class="sf-paint" x="166" y="417.6" width="28" height="40"/><rect class="sf-paint" x="0" y="22" width="45.8" height="445.8"/><rect class="sf-paint" x="40" y="22" width="45.8" height="445.8"/><rect class="sf-paint" x="80" y="22" width="45.8" height="445.8"/><rect class="sf-paint" x="120" y="22" width="45.8" height="445.8"/><rect class="sf-paint" x="160" y="22" width="45.8" height="445.8"/><rect class="sf-paint" x="200" y="22" width="40" height="445.8"/><line class="sf-lane" x1="40" y1="22" x2="40" y2="467.8"/><line class="sf-lane" x1="80" y1="22" x2="80" y2="467.8"/><line class="sf-lane" x1="120" y1="22" x2="120" y2="467.8"/><line class="sf-lane" x1="160" y1="22" x2="160" y2="467.8"/><line class="sf-lane" x1="200" y1="22" x2="200" y2="467.8"/><rect class="sf-cover" x="173" y="426.2" width="14" height="22.8"/><line class="sf-next" x1="240" y1="10" x2="240" y2="497.6"/><line class="sf-thin" x1="0" y1="479.8" x2="300" y2="479.8"/><line class="sf-edge" x1="0" y1="10" x2="300" y2="10"/><line class="sf-edge" x1="0" y1="497.6" x2="300" y2="497.6"/><line class="sf-edge" x1="0" y1="10" x2="0" y2="497.6"/><line class="sf-arrow" x1="170" y1="253.8" x2="277.6" y2="253.8"/><polygon class="sf-head" points="292,253.8 277.6,244.8 277.6,262.8"/></svg><b>Move on</b></li>
-        </ol>
-        <figcaption>One spot along a wall, as P2 is designed to paint it. Paint is shown in sage green, the color in our renders.</figcaption>
-      </figure>
-      <p class="note">This is how P2 is designed to work. In our simulation of a 12 by 12 ft bedroom with an 8 ft ceiling, P2 needs 2.6 hours of work and 5.1 hours from start to finish, including two hours of drying between coats.</p>
     </div>
   </div></div></section>
 
   <div class="dark">
-  <section class="section" id="jobsites" aria-labelledby="jobsites-h"><div class="wrap"><div class="split">
-    <h2 id="jobsites-h">On a jobsite</h2>
-    <div class="body">
-      <p class="say">Your crew clocks out. P2 clocks in.</p>
-      <ul class="plain">
-        <li>Apartment units, hotel rooms and offices: walls and ceilings up to 9 ft.</li>
-        <li>A night report per room for the super, done before the crew is back.</li>
-        <li>A fleet number on every P2, so the report says which robot did which unit.</li>
-      </ul>
-      <figure class="loop">
-        <picture>
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/stock_night_768.webp 768w, assets/img/stock_night.webp 1280w" sizes="(min-width: 1440px) 752px, (min-width: 960px) 56vw, 100vw">
-          <source type="image/avif" srcset="assets/video/stock_night_768.avif 768w, assets/video/stock_night.avif 1280w" sizes="(min-width: 1440px) 752px, (min-width: 960px) 56vw, 100vw">
-          <img src="assets/img/stock_night.webp" width="1280" height="720" alt="Stock footage of a building under construction at dusk: two tower cranes over the top floors against a dark blue sky, and a street light glowing at the right." loading="lazy" decoding="async">
-        </picture>
-        <figcaption>Stock footage from Pexels: a jobsite at dusk, after the crew has gone home.</figcaption>
-      </figure>
-    </div>
-  </div></div></section>
-
-  <section class="section" id="homes" aria-labelledby="homes-h"><div class="wrap"><div class="split">
-    <h2 id="homes-h">At home</h2>
-    <div class="body">
-      <p class="say">Leave for the night, or for the day.</p>
-      <ul class="plain">
-        <li>No crew in your house all day. The furniture stays in the room, moved 1 m from the walls.</li>
-        <li>P2 is designed to pause when a person or a pet comes close.</li>
-        <li>The same report lands on your phone, with a photo of every wall.</li>
-        <li>When the room is done, P2 parks by the door, ready to roll to the next one.</li>
-      </ul>
-    </div>
-  </div></div></section>
+  <section class="section wall" id="wall" aria-labelledby="wall-h">
+    <div class="wrap"><div class="split">
+      <h2 id="wall-h">At the wall</h2>
+      <div class="body">
+        <p class="intro">At each spot along the wall, P2 lowers two feet, cuts the ceiling line, the baseboard line, the corners and the trim with an edger pad on guide wheels, then rolls the wall in lanes from floor to ceiling. Its camera checks each panel before it moves on. After the last coat it pumps the paint in its line back to the tank and parks by the door.</p>
+        <p class="note">This is how P2 is designed to work. In our simulation of a 12 by 12 ft bedroom with an 8 ft ceiling, P2 needs 2.6 hours of work and 5.1 hours from start to finish, including two hours of drying between coats.</p>
+      </div>
+    </div></div>
+  <figure class="band">
+    <input class="vh band-pause" type="checkbox" id="pause-demo_wall" aria-label="Pause the animation">
+    <picture class="band-move">
+      <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/demo_wall_960.webp 960w, assets/img/demo_wall_1920.webp 1920w" sizes="100vw">
+      <source type="image/avif" srcset="assets/video/demo_wall_960.avif 960w, assets/video/demo_wall_1280.avif 1280w, assets/video/demo_wall_1920.avif 1920w" sizes="100vw">
+      <img src="assets/img/demo_wall_1920.webp" width="1920" height="1080" alt="CAD animation of P2 at night. Lit by its work light, the edger pad cuts the ceiling line, then the arm rolls the wall in lanes while the mast carries it up and down." loading="lazy" decoding="async">
+    </picture>
+    <img class="band-still" src="assets/img/demo_wall_1920.webp" srcset="assets/img/demo_wall_960.webp 960w, assets/img/demo_wall_1920.webp 1920w" sizes="100vw" width="1920" height="1080" alt="CAD animation of P2 at night. Lit by its work light, the edger pad cuts the ceiling line, then the arm rolls the wall in lanes while the mast carries it up and down." loading="lazy" decoding="async">
+    <figcaption class="wrap band-foot"><span>CAD animation. The work light is a proposed addition.</span><label for="pause-demo_wall" class="band-btn"><span class="p">Pause</span><span class="r">Play</span></label></figcaption>
+  </figure>
+  </section>
   </div>
 
   <section class="section" id="report" aria-labelledby="report-h"><div class="wrap"><div class="split">
@@ -188,6 +164,34 @@
     </div>
   </div></div></section>
 
+  <div class="dark">
+  <section class="section" id="jobsites" aria-labelledby="jobsites-h"><div class="wrap"><div class="split">
+    <h2 id="jobsites-h">On a jobsite</h2>
+    <div class="body">
+      <p class="say">Your crew clocks out. P2 clocks in.</p>
+      <ul class="plain">
+        <li>Apartment units, hotel rooms and offices: walls and ceilings up to 9 ft.</li>
+        <li>A night report per room for the super, done before the crew is back.</li>
+        <li>A fleet number on every P2, so the report says which robot did which unit.</li>
+      </ul>
+    </div>
+  </div></div></section>
+  
+
+  <section class="section" id="homes" aria-labelledby="homes-h"><div class="wrap"><div class="split">
+    <h2 id="homes-h">At home</h2>
+    <div class="body">
+      <p class="say">Leave for the night, or for the day.</p>
+      <ul class="plain">
+        <li>No crew in your house all day. The furniture stays in the room, moved 1 m from the walls.</li>
+        <li>P2 is designed to pause when a person or a pet comes close.</li>
+        <li>The same report lands on your phone, with a photo of every wall.</li>
+        <li>When the room is done, P2 parks by the door, ready to roll to the next one.</li>
+      </ul>
+    </div>
+  </div></div></section>
+  </div>
+
   <section class="section" id="why" aria-labelledby="why-h"><div class="wrap"><div class="split">
     <h2 id="why-h">Why P2</h2>
     <div class="body">
@@ -196,9 +200,8 @@
         <picture>
           <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/stock_hand_768.webp 768w, assets/img/stock_hand.webp 1280w" sizes="(min-width: 1440px) 752px, (min-width: 960px) 56vw, 100vw">
           <source type="image/avif" srcset="assets/video/stock_hand_768.avif 768w, assets/video/stock_hand.avif 1280w" sizes="(min-width: 1440px) 752px, (min-width: 960px) 56vw, 100vw">
-          <img src="assets/img/stock_hand.webp" width="1280" height="720" alt="Stock footage of a painter in a cap and a plaid shirt rolling gray paint onto a bare wall with a roller on an extension pole, a stepladder and a work light behind him, then a close view of the roller going up the wall." loading="lazy" decoding="async">
+          <img src="assets/img/stock_hand.webp" width="1280" height="720" alt="A painter in a cap and a plaid shirt rolling gray paint onto a bare wall with a roller on an extension pole, a stepladder and a work light behind him, then a close view of the roller going up the wall." loading="lazy" decoding="async">
         </picture>
-        <figcaption>Stock footage from Pexels: rolling a wall by hand today, one lane at a time on a pole. This is the part of the job P2 is designed to take on.</figcaption>
       </figure>
       <div class="fig1"><b>1.4 h</b><p>of a person’s time to paint a 12 by 12 ft bedroom with P2, taping included, against about 6.5 hours for a painter by hand. Both are our estimates.</p></div>
       <dl class="specs notes gains">
@@ -322,10 +325,10 @@
           </picture>
         </div>
         <figcaption aria-live="polite">
-          <span class="cap cap-paint">CAD animation. Paint: the mast carries the roller up one lane while the pump feeds it paint. P2 is built around this tool.</span>
-          <span class="cap cap-spray">CAD animation. Spray: three passes, 300 mm from the wall. Designed, not built.</span>
-          <span class="cap cap-sand">CAD animation. Sand: small circles over a filled patch until it is flush. Designed, not built.</span>
-          <span class="cap cap-drill">CAD animation. Drill: the cup presses on your pencil mark, the bit drills, the cup keeps the dust. Designed, not built.</span>
+          <span class="cap cap-paint">CAD animation. Paint, the first tool.</span>
+          <span class="cap cap-spray">CAD animation. Spray, planned.</span>
+          <span class="cap cap-sand">CAD animation. Sand, planned.</span>
+          <span class="cap cap-drill">CAD animation. Drill, planned.</span>
         </figcaption>
       </figure>
       <div>
