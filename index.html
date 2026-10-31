@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://urbanrobotics.com/#org","name":"Urban Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://urbanrobotics.com/","logo":"https://urbanrobotics.com/icon-512.png","email":"info@urbanrobotics.com","foundingDate":"2025","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@id":"https://urbanrobotics.com/company.html#founder"},"description":"Urban Robotics builds robots for the finishing trades, starting with P2, an interior painting robot for jobsites and homes, in development in Miami."},{"@type":"WebSite","@id":"https://urbanrobotics.com/#site","name":"Urban Robotics","url":"https://urbanrobotics.com/","publisher":{"@id":"https://urbanrobotics.com/#org"}},{"@type":"Person","@id":"https://urbanrobotics.com/company.html#founder","name":"Onat Cakici","jobTitle":"Founder","worksFor":{"@id":"https://urbanrobotics.com/#org"},"image":"https://urbanrobotics.com/assets/img/co_founder_440.webp","alumniOf":{"@type":"CollegeOrUniversity","name":"Florida Institute of Technology"},"sameAs":["https://www.linkedin.com/in/cakici/"]},{"@type":"VideoObject","name":"P2 at work","description":"A 34 second CAD animation of how P2 is designed to paint a room: it rolls in, cuts the ceiling line, rolls the wall lane by lane and shows the tools planned for the same arm.","thumbnailUrl":"https://urbanrobotics.com/assets/video/p2_film_poster.webp","contentUrl":"https://urbanrobotics.com/assets/video/p2_film_1080.mp4","uploadDate":"2026-10-30T23:30:00+00:00","duration":"PT34S","publisher":{"@id":"https://urbanrobotics.com/#org"}}]}</script>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=5ecad705f4">
+<link rel="stylesheet" href="assets/styles.css?v=6dd224788c">
 <link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -68,20 +68,31 @@
 </header>
 <main id="main">
 <div class="dark">
-  <section class="hero wrap" aria-labelledby="top-h">
-    <div>
-      <h1 id="top-h">Interior<br><span class="cycle"><span>painting</span><span aria-hidden="true">spraying</span><span aria-hidden="true">sanding</span><span aria-hidden="true">drilling</span></span><br>robot</h1>
-      <p class="lead"><strong>Drop it and leave.</strong> P2 is a painting robot for jobsites and homes. Roll it in, pour the paint and lock up: it is designed to paint the walls and ceiling on its own, overnight, and to send a report when it clocks out.</p>
-      <p class="stage">P2 is in development in Miami, and during pilots our team stays on site. Painting is its first tool; spraying, sanding and drilling are planned for the same arm.</p>
-      <div class="actions">
-        <a class="btn" href="#how">See how a night works</a>
-        <a class="more" href="#film">Watch the film</a>
+  <section class="hero-film" aria-labelledby="top-h">
+    <input class="vh band-pause" type="checkbox" id="pause-hero" aria-label="Pause the animation">
+    <div class="hero-media">
+      <picture class="band-move">
+      <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/demo_hero_960.webp 960w, assets/img/demo_hero_1920.webp 1920w" sizes="(max-width: 759px) 220vw, 100vw">
+      <source type="image/avif" srcset="assets/video/demo_hero_960.avif 960w, assets/video/demo_hero_1280.avif 1280w, assets/video/demo_hero_1920.avif 1920w" sizes="(max-width: 759px) 220vw, 100vw">
+      <img src="assets/img/demo_hero_1920.webp" width="1920" height="1080" alt="CAD animation of P2 at night in a dark room. Lit by the work light on its mast, its arm rolls the wall in lanes while the mast carries it up and down, and the P2 name shows on its white base." fetchpriority="high" decoding="async">
+      </picture>
+      <img class="band-still" src="assets/img/demo_hero_1920.webp" srcset="assets/img/demo_hero_960.webp 960w, assets/img/demo_hero_1920.webp 1920w" sizes="(max-width: 759px) 220vw, 100vw" width="1920" height="1080" alt="CAD animation of P2 at night in a dark room. Lit by the work light on its mast, its arm rolls the wall in lanes while the mast carries it up and down, and the P2 name shows on its white base." loading="lazy" decoding="async">
+      <div class="hero-copy wrap">
+        <h1 id="top-h">Interior<br><span class="cycle"><span>painting</span><span aria-hidden="true">spraying</span><span aria-hidden="true">sanding</span><span aria-hidden="true">drilling</span></span><br>robot</h1>
+        <p class="hero-say">Drop it and leave.</p>
       </div>
     </div>
-    <figure>
-      <img class="shot" src="assets/img/night_hero_1600.webp" srcset="assets/img/night_hero_800.webp 800w, assets/img/night_hero_1200.webp 1200w, assets/img/night_hero_1600.webp 1600w" sizes="(min-width: 1200px) 520px, (min-width: 960px) 40vw, 100vw" width="1600" height="2000" alt="CAD rendering of P2 at night in a dark room. A work light on its mast lights the wall where its arm holds the roller at the edge of a fresh coat of dark green paint, and the ring around its base glows amber." fetchpriority="high">
-      <figcaption>CAD rendering. The work light is a proposed addition.</figcaption>
-    </figure>
+    <p class="hero-cap wrap"><span>CAD animation. The work light is a proposed addition.</span><label for="pause-hero" class="band-btn"><span class="p">Pause</span><span class="r">Play</span></label></p>
+    <div class="hero-more wrap">
+      <p class="lead">P2 is a painting robot for jobsites and homes. Roll it in, pour the paint and lock up: it is designed to paint the walls and ceiling on its own, overnight, and to send a report when it clocks out.</p>
+      <div>
+        <p class="stage">P2 is in development in Miami, and during pilots our team stays on site. Painting is its first tool; spraying, sanding and drilling are planned for the same arm.</p>
+        <div class="actions">
+        <a class="btn" href="#how">See how a night works</a>
+        <a class="more" href="#film">Watch the film</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="section film-sec" id="film" aria-labelledby="film-h">
@@ -131,16 +142,7 @@
         <p class="note">This is how P2 is designed to work. In our simulation of a 12 by 12 ft bedroom with an 8 ft ceiling, P2 needs 2.6 hours of work and 5.1 hours from start to finish, including two hours of drying between coats.</p>
       </div>
     </div></div>
-  <figure class="band">
-    <input class="vh band-pause" type="checkbox" id="pause-demo_wall" aria-label="Pause the animation">
-    <picture class="band-move">
-      <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/demo_wall_960.webp 960w, assets/img/demo_wall_1920.webp 1920w" sizes="100vw">
-      <source type="image/avif" srcset="assets/video/demo_wall_960.avif 960w, assets/video/demo_wall_1280.avif 1280w, assets/video/demo_wall_1920.avif 1920w" sizes="100vw">
-      <img src="assets/img/demo_wall_1920.webp" width="1920" height="1080" alt="CAD animation of P2 at night. Lit by its work light, the edger pad cuts the ceiling line, then the arm rolls the wall in lanes while the mast carries it up and down." loading="lazy" decoding="async">
-    </picture>
-    <img class="band-still" src="assets/img/demo_wall_1920.webp" srcset="assets/img/demo_wall_960.webp 960w, assets/img/demo_wall_1920.webp 1920w" sizes="100vw" width="1920" height="1080" alt="CAD animation of P2 at night. Lit by its work light, the edger pad cuts the ceiling line, then the arm rolls the wall in lanes while the mast carries it up and down." loading="lazy" decoding="async">
-    <figcaption class="wrap band-foot"><span>CAD animation. The work light is a proposed addition.</span><label for="pause-demo_wall" class="band-btn"><span class="p">Pause</span><span class="r">Play</span></label></figcaption>
-  </figure>
+  
   </section>
   </div>
 
