@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://urbanrobotics.com/#org","name":"Urban Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://urbanrobotics.com/","logo":"https://urbanrobotics.com/icon-512.png","email":"info@urbanrobotics.com","foundingDate":"2025","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@id":"https://urbanrobotics.com/company.html#founder"},"description":"Urban Robotics builds robots for the finishing trades, starting with P2, an interior painting robot for jobsites and homes, in development in Miami."},{"@type":"WebSite","@id":"https://urbanrobotics.com/#site","name":"Urban Robotics","url":"https://urbanrobotics.com/","publisher":{"@id":"https://urbanrobotics.com/#org"}},{"@type":"Person","@id":"https://urbanrobotics.com/company.html#founder","name":"Onat Cakici","jobTitle":"Founder","worksFor":{"@id":"https://urbanrobotics.com/#org"},"image":"https://urbanrobotics.com/assets/img/co_founder_440.webp","alumniOf":{"@type":"CollegeOrUniversity","name":"Florida Institute of Technology"},"sameAs":["https://www.linkedin.com/in/cakici/"]},{"@type":"VideoObject","name":"P2 at work","description":"A 30 second CAD animation of how P2 is designed to paint a room: it rolls in, rolls the wall lane by lane and shows the tools planned for the same arm.","thumbnailUrl":"https://urbanrobotics.com/assets/video/p2_film_poster.webp","contentUrl":"https://urbanrobotics.com/assets/video/p2_film_1080.mp4","uploadDate":"2026-10-30T23:30:00+00:00","duration":"PT30S","publisher":{"@id":"https://urbanrobotics.com/#org"}}]}</script>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=612e1b2e32">
+<link rel="stylesheet" href="assets/styles.css?v=4fc48b921e">
 <link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -299,7 +299,7 @@
 
   <section class="section" id="tools" aria-labelledby="tools-h"><div class="wrap">
     <div class="split tools-head">
-      <h2 id="tools-h">One arm, four tools</h2>
+      <h2 id="tools-h">One arm, eight tools</h2>
       <div class="body">
         <p>One machine for more of the job. The tool on the arm decides what P2 does, and every tool fits the same Tool Port. Paint comes first; the others are planned, designed but not built yet. Pick a tool to see it work.</p>
       </div>
@@ -309,6 +309,10 @@
     <input class="vh" type="radio" name="tool" id="tool-spray">
     <input class="vh" type="radio" name="tool" id="tool-sand">
     <input class="vh" type="radio" name="tool" id="tool-drill">
+    <input class="vh" type="radio" name="tool" id="tool-tape">
+    <input class="vh" type="radio" name="tool" id="tool-drywall">
+    <input class="vh" type="radio" name="tool" id="tool-tile">
+    <input class="vh" type="radio" name="tool" id="tool-print">
     <fieldset class="tooltabs">
       <legend class="vh">Tool on the Tool Port</legend>
       <div class="tabrow">
@@ -316,29 +320,53 @@
         <label for="tool-spray">Spray</label>
         <label for="tool-sand">Sand</label>
         <label for="tool-drill">Drill</label>
+        <label for="tool-tape">Tape</label>
+        <label for="tool-drywall">Drywall</label>
+        <label for="tool-tile">Tile</label>
+        <label for="tool-print">Print</label>
       </div>
     </fieldset>
     <div class="toolview">
       <div class="swap-stage">
         <picture class="clip clip-paint">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_paint_720.webp 720w, assets/img/tool_paint.webp 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_paint_720.avif 720w, assets/video/tool_paint.avif 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_paint.webp" width="1200" height="900" alt="CAD animation of P2's roller rolling a lane of sage paint up a white wall, the mast carrying the arm up." loading="lazy" decoding="async">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_paint_960.webp 960w, assets/img/tool_paint.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_paint_960.avif 960w, assets/video/tool_paint.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_paint.webp" width="1600" height="900" alt="CAD animation of P2's roller rolling a lane of sage paint up a white wall, the mast carrying the arm up." loading="lazy" decoding="async">
         </picture>
         <picture class="clip clip-spray">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_spray_720.webp 720w, assets/img/tool_spray.webp 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_spray_720.avif 720w, assets/video/tool_spray.avif 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_spray.webp" width="1200" height="900" alt="CAD animation of P2's spray gun making three passes 300 mm from a white wall, each pass leaving a band of paint." loading="lazy" decoding="async">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_spray_960.webp 960w, assets/img/tool_spray.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_spray_960.avif 960w, assets/video/tool_spray.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_spray.webp" width="1600" height="900" alt="CAD animation of P2's spray gun making three passes 300 mm from a white wall, each pass leaving a band of paint." loading="lazy" decoding="async">
         </picture>
         <picture class="clip clip-sand">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_sand_720.webp 720w, assets/img/tool_sand.webp 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_sand_720.avif 720w, assets/video/tool_sand.avif 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_sand.webp" width="1200" height="900" alt="CAD animation of P2's orbital sander circling over a filled patch on the wall until the patch is smooth." loading="lazy" decoding="async">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_sand_960.webp 960w, assets/img/tool_sand.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_sand_960.avif 960w, assets/video/tool_sand.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_sand.webp" width="1600" height="900" alt="CAD animation of P2's orbital sander circling over a filled patch on the wall, lit from the side, until the bump is gone." loading="lazy" decoding="async">
         </picture>
         <picture class="clip clip-drill">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_drill_720.webp 720w, assets/img/tool_drill.webp 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_drill_720.avif 720w, assets/video/tool_drill.avif 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_drill.webp" width="1200" height="900" alt="CAD animation of P2's drill pressing its dust cup to a pencil mark on a painted wall, drilling, and backing off to leave a clean hole." loading="lazy" decoding="async">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_drill_960.webp 960w, assets/img/tool_drill.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_drill_960.avif 960w, assets/video/tool_drill.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_drill.webp" width="1600" height="900" alt="CAD animation of P2's drill at a pencil mark on a painted wall. A round window shows what is behind the drywall, a wooden stud under the mark and a yellow cable beside it. P2 drills into the stud, the dust cup catches the dust, and the window closes on a clean hole." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-tape">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_tape_960.webp 960w, assets/img/tool_tape.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_tape_960.avif 960w, assets/video/tool_tape.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_tape.webp" width="1600" height="900" alt="CAD animation of P2's tape tool running down an inside corner of a white wall, laying a straight line of blue painter's tape." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-drywall">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_drywall_960.webp 960w, assets/img/tool_drywall.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_drywall_960.avif 960w, assets/video/tool_drywall.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_drywall.webp" width="1600" height="900" alt="CAD animation of P2 laying mesh tape along a drywall seam, then spreading a smooth band of joint compound over it." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-tile">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_tile_960.webp 960w, assets/img/tool_tile.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_tile_960.avif 960w, assets/video/tool_tile.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_tile.webp" width="1600" height="900" alt="CAD animation of P2 pressing light gray tiles onto a backer board on a green wall, the backsplash filling in tile by tile." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-print">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_print_960.webp 960w, assets/img/tool_print.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_print_960.avif 960w, assets/video/tool_print.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_print.webp" width="1600" height="900" alt="CAD animation of P2's print head sweeping across a white wall in bands while a mural appears." loading="lazy" decoding="async">
         </picture>
       </div>
       <div class="toolnotes" aria-live="polite">
@@ -377,6 +405,46 @@
             <li>A stud and live wire scanner that checks behind the wall first.</li>
             <li>A clear dust cup on guide rods.</li>
             <li>Depth control for every hole.</li>
+          </ul>
+        </div>
+        <div class="note-tape">
+          <p class="tstat">Planned</p>
+          <p class="tjob">Tapes the trim and the ceiling line before painting, and pulls the tape after the last coat.</p>
+          <ul class="tkit">
+            <li>A 48 mm roll of painter’s tape.</li>
+            <li>A guide wheel that rides the edge of the trim.</li>
+            <li>A pressure roller and a cutter.</li>
+            <li>A folded pull tab at each end, so peeling takes one grab.</li>
+          </ul>
+        </div>
+        <div class="note-drywall">
+          <p class="tstat">Planned</p>
+          <p class="tjob">Tapes the drywall seams and spreads the joint compound, one coat a night.</p>
+          <ul class="tkit">
+            <li>Self adhesive mesh tape laid along each seam.</li>
+            <li>A 250 mm flat box that leaves a smooth, feathered coat.</li>
+            <li>Compound pumped from a hopper in the base.</li>
+            <li>A camera that finds the seams and the screw heads.</li>
+          </ul>
+        </div>
+        <div class="note-tile">
+          <p class="tstat">Planned</p>
+          <p class="tjob">Sets wall tile for backsplashes and bathroom walls.</p>
+          <ul class="tkit">
+            <li>A suction pad for tiles up to 300 by 300 mm.</li>
+            <li>Adhesive from a cartridge, combed on by a notched nozzle.</li>
+            <li>A cross line laser and a camera that keep the joints straight.</li>
+            <li>A rack on the deck that carries the tiles.</li>
+          </ul>
+        </div>
+        <div class="note-print">
+          <p class="tstat">Planned</p>
+          <p class="tjob">Prints murals, logos and patterns straight onto the wall.</p>
+          <ul class="tkit">
+            <li>Four color inkjet heads.</li>
+            <li>An LED bar that cures the ink as it prints.</li>
+            <li>Guide wheels that hold the heads a few millimeters off the wall.</li>
+            <li>Ink cartridges on the tool.</li>
           </ul>
         </div>
       </div>
