@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://urbanrobotics.com/#org","name":"Urban Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://urbanrobotics.com/","logo":"https://urbanrobotics.com/icon-512.png","email":"info@urbanrobotics.com","foundingDate":"2025","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@id":"https://urbanrobotics.com/company.html#founder"},"description":"Urban Robotics builds robots for the finishing trades, starting with P2, an interior painting robot for jobsites and homes, in development in Miami."},{"@type":"WebSite","@id":"https://urbanrobotics.com/#site","name":"Urban Robotics","url":"https://urbanrobotics.com/","publisher":{"@id":"https://urbanrobotics.com/#org"}},{"@type":"Person","@id":"https://urbanrobotics.com/company.html#founder","name":"Onat Cakici","jobTitle":"Founder","worksFor":{"@id":"https://urbanrobotics.com/#org"},"image":"https://urbanrobotics.com/assets/img/co_founder_440.webp","alumniOf":{"@type":"CollegeOrUniversity","name":"Florida Institute of Technology"},"sameAs":["https://www.linkedin.com/in/cakici/"]},{"@type":"VideoObject","name":"P2 at work","description":"A 30 second CAD animation of how P2 is designed to paint a room: it rolls in, rolls the wall lane by lane and shows the tools planned for the same arm.","thumbnailUrl":"https://urbanrobotics.com/assets/video/p2_film_poster.webp","contentUrl":"https://urbanrobotics.com/assets/video/p2_film_1080.mp4","uploadDate":"2026-10-30T23:30:00+00:00","duration":"PT30S","publisher":{"@id":"https://urbanrobotics.com/#org"}}]}</script>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=e5cc0e4fd1">
+<link rel="stylesheet" href="assets/styles.css?v=cbdec85f08">
 <link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -82,7 +82,7 @@
         <p class="hero-say">Drop it and leave.</p>
       </div>
     </div>
-    <p class="hero-cap wrap"><span>CAD animation. The work light is a proposed addition.</span><label for="pause-hero" class="band-btn"><span class="p">Pause</span><span class="r">Play</span></label></p>
+    <p class="hero-cap wrap"><label for="pause-hero" class="band-btn"><span class="p">Pause</span><span class="r">Play</span></label></p>
     <div class="hero-more wrap">
       <p class="lead">P2 is a painting robot for jobsites and homes. Roll it in, pour the paint and lock up: it is designed to paint the walls and ceiling on its own, overnight, and to send a report when it clocks out.</p>
       <div>
@@ -103,13 +103,12 @@
       </div>
     </div></div>
     <figure class="film">
-      <video controls preload="none" playsinline width="1920" height="1080" poster="assets/video/p2_film_poster.webp" aria-describedby="film-cap">
+      <video controls preload="none" playsinline width="1920" height="1080" poster="assets/video/p2_film_poster.webp">
         <source src="assets/video/p2_film_720.mp4" type="video/mp4" media="(max-width: 760px)">
         <source src="assets/video/p2_film_1080.mp4" type="video/mp4">
         <track kind="captions" srclang="en" label="English" src="assets/video/p2_film.vtt">
         <a href="assets/video/p2_film_1080.mp4">Download the P2 film (MP4, 30 seconds)</a>
       </video>
-      <figcaption id="film-cap" class="wrap">CAD animation. Music: Cascade Breathe by NverAvetyanMusic, from Pixabay.</figcaption>
     </figure>
   </section>
 
@@ -127,7 +126,6 @@
         </ol>
         <figure class="door">
           <img src="assets/img/night_door_1200.webp" srcset="assets/img/night_door_800.webp 800w, assets/img/night_door_1200.webp 1200w" sizes="(min-width: 1200px) 300px, (min-width: 760px) 32vw, 100vw" width="1200" height="1500" alt="CAD rendering of P2 seen from a dark hallway through an open door. It stands just inside a bedroom with the light on, its arm folded up beside the mast, a white light ring around its base." loading="lazy" decoding="async">
-          <figcaption>CAD rendering.</figcaption>
         </figure>
       </div>
     </div>
@@ -138,7 +136,7 @@
     <div class="wrap"><div class="split">
       <h2 id="wall-h">At the wall</h2>
       <div class="body">
-        <p class="intro">At each spot along the wall, P2 lowers two feet, cuts the ceiling line, the baseboard line, the corners and the trim with an edger pad on guide wheels, then rolls the wall in lanes from floor to ceiling. Its camera checks each panel before it moves on. After the last coat it pumps the paint in its line back to the tank and parks by the door.</p>
+        <p class="intro">At each spot along the wall, P2 lowers two feet, cuts the ceiling line, the baseboard line, the corners and the trim with an edger pad on guide wheels, then rolls the wall in lanes from floor to ceiling. Its camera checks each panel before it moves on. After the last coat it pumps the paint in its line back to the tank, and parks by the door or rolls on to the next room.</p>
         <p class="note">This is how P2 is designed to work. In our simulation of a 12 by 12 ft bedroom with an 8 ft ceiling, P2 needs 2.6 hours of work and 5.1 hours from start to finish, including two hours of drying between coats.</p>
       </div>
     </div></div>
@@ -326,11 +324,11 @@
             <img src="assets/img/tool_drill.webp" width="1200" height="900" alt="CAD animation of P2's drill pressing its dust cup to a pencil mark on a painted wall, drilling, and backing off to leave a clean hole." loading="lazy" decoding="async">
           </picture>
         </div>
-        <figcaption aria-live="polite">
-          <span class="cap cap-paint">CAD animation. Paint, the first tool.</span>
-          <span class="cap cap-spray">CAD animation. Spray, planned.</span>
-          <span class="cap cap-sand">CAD animation. Sand, planned.</span>
-          <span class="cap cap-drill">CAD animation. Drill, planned.</span>
+        <figcaption class="vh" aria-live="polite">
+          <span class="cap cap-paint">Paint, the first tool.</span>
+          <span class="cap cap-spray">Spray, planned.</span>
+          <span class="cap cap-sand">Sand, planned.</span>
+          <span class="cap cap-drill">Drill, planned.</span>
         </figcaption>
       </figure>
       <div>
