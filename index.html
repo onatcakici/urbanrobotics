@@ -140,7 +140,16 @@
         <p class="note">This is how P2 is designed to work. In our simulation of a 12 by 12 ft bedroom with an 8 ft ceiling, P2 needs 2.6 hours of work and 5.1 hours from start to finish, including two hours of drying between coats.</p>
       </div>
     </div></div>
-  
+  <figure class="plan wrap">
+    <input class="vh band-pause" type="checkbox" id="pause-plan" aria-label="Pause the animation">
+    <picture class="band-move">
+      <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/demo_plan_960.webp 960w, assets/img/demo_plan_1920.webp 1920w" sizes="(min-width: 1312px) 1184px, (min-width: 1200px) calc(100vw - 128px), (min-width: 700px) calc(100vw - 80px), 110vw">
+      <source type="image/avif" srcset="assets/video/demo_plan_960.avif 960w, assets/video/demo_plan_1280.avif 1280w, assets/video/demo_plan_1920.avif 1920w" sizes="(min-width: 1312px) 1184px, (min-width: 1200px) calc(100vw - 128px), (min-width: 700px) calc(100vw - 80px), 110vw">
+      <img src="assets/img/demo_plan_1920.webp" width="1920" height="1080" alt="CAD animation of an apartment seen from above, sped up. P2 rolls in through the front door, works its way along the walls of each room in turn, coloring them as it paints, rolls through the doors from room to room, and parks by the front door when both bedrooms, the living room, the study and the hall are done." loading="lazy" decoding="async">
+    </picture>
+    <img class="band-still" src="assets/img/demo_plan_1920.webp" srcset="assets/img/demo_plan_960.webp 960w, assets/img/demo_plan_1920.webp 1920w" sizes="(min-width: 1312px) 1184px, (min-width: 1200px) calc(100vw - 128px), (min-width: 700px) calc(100vw - 80px), 110vw" width="1920" height="1080" alt="CAD animation of an apartment seen from above, sped up. P2 rolls in through the front door, works its way along the walls of each room in turn, coloring them as it paints, rolls through the doors from room to room, and parks by the front door when both bedrooms, the living room, the study and the hall are done." loading="lazy" decoding="async">
+    <figcaption class="band-foot"><label for="pause-plan" class="band-btn"><span class="p">Pause</span><span class="r">Play</span></label></figcaption>
+  </figure>
   </section>
   </div>
 
