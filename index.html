@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://urbanrobotics.com/#org","name":"Urban Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://urbanrobotics.com/","logo":"https://urbanrobotics.com/icon-512.png","email":"info@urbanrobotics.com","foundingDate":"2025","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@id":"https://urbanrobotics.com/company.html#founder"},"description":"Urban Robotics builds robots for the finishing trades, starting with P2, an interior painting robot for jobsites and homes, in development in Miami."},{"@type":"WebSite","@id":"https://urbanrobotics.com/#site","name":"Urban Robotics","url":"https://urbanrobotics.com/","publisher":{"@id":"https://urbanrobotics.com/#org"}},{"@type":"Person","@id":"https://urbanrobotics.com/company.html#founder","name":"Onat Cakici","jobTitle":"Founder","worksFor":{"@id":"https://urbanrobotics.com/#org"},"image":"https://urbanrobotics.com/assets/img/co_founder_440.webp","alumniOf":{"@type":"CollegeOrUniversity","name":"Florida Institute of Technology"},"sameAs":["https://www.linkedin.com/in/cakici/"]},{"@type":"VideoObject","name":"P2 at work","description":"A 30 second CAD animation of how P2 is designed to paint a room: it rolls in, rolls the wall lane by lane and shows the tools planned for the same arm.","thumbnailUrl":"https://urbanrobotics.com/assets/video/p2_film_poster.webp","contentUrl":"https://urbanrobotics.com/assets/video/p2_film_1080.mp4","uploadDate":"2026-10-30T23:30:00+00:00","duration":"PT30S","publisher":{"@id":"https://urbanrobotics.com/#org"}}]}</script>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=cbdec85f08">
+<link rel="stylesheet" href="assets/styles.css?v=612e1b2e32">
 <link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -301,7 +301,7 @@
     <div class="split tools-head">
       <h2 id="tools-h">One arm, four tools</h2>
       <div class="body">
-        <p>One machine for more of the job. The tool on the arm decides what P2 does, and every tool fits the same Tool Port. Paint comes first. Spray, Sand and Drill are planned: spray for empty rooms and new builds, sand for patches between coats, and drill for anchors where you mark them, for shelves, TVs and curtain rods. They are designed, not built yet. Pick a tool to see it work.</p>
+        <p>One machine for more of the job. The tool on the arm decides what P2 does, and every tool fits the same Tool Port. Paint comes first; the others are planned, designed but not built yet. Pick a tool to see it work.</p>
       </div>
     </div>
   <div class="swapper">
@@ -309,50 +309,79 @@
     <input class="vh" type="radio" name="tool" id="tool-spray">
     <input class="vh" type="radio" name="tool" id="tool-sand">
     <input class="vh" type="radio" name="tool" id="tool-drill">
-    <div class="swap-grid">
-      <figure class="swap">
-        <div class="swap-stage">
-          <picture class="clip clip-paint">
-            <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_paint_720.webp 720w, assets/img/tool_paint.webp 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
-            <source type="image/avif" srcset="assets/video/tool_paint_720.avif 720w, assets/video/tool_paint.avif 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
-            <img src="assets/img/tool_paint.webp" width="1200" height="900" alt="CAD animation of P2's roller rolling a lane of sage paint up a white wall, the mast carrying the arm up." loading="lazy" decoding="async">
-          </picture>
-          <picture class="clip clip-spray">
-            <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_spray_720.webp 720w, assets/img/tool_spray.webp 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
-            <source type="image/avif" srcset="assets/video/tool_spray_720.avif 720w, assets/video/tool_spray.avif 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
-            <img src="assets/img/tool_spray.webp" width="1200" height="900" alt="CAD animation of P2's spray gun making three passes 300 mm from a white wall, each pass leaving a band of paint." loading="lazy" decoding="async">
-          </picture>
-          <picture class="clip clip-sand">
-            <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_sand_720.webp 720w, assets/img/tool_sand.webp 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
-            <source type="image/avif" srcset="assets/video/tool_sand_720.avif 720w, assets/video/tool_sand.avif 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
-            <img src="assets/img/tool_sand.webp" width="1200" height="900" alt="CAD animation of P2's orbital sander circling over a filled patch on the wall until the patch is smooth." loading="lazy" decoding="async">
-          </picture>
-          <picture class="clip clip-drill">
-            <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_drill_720.webp 720w, assets/img/tool_drill.webp 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
-            <source type="image/avif" srcset="assets/video/tool_drill_720.avif 720w, assets/video/tool_drill.avif 1200w" sizes="(min-width: 1440px) 658px, (min-width: 980px) 50vw, 100vw">
-            <img src="assets/img/tool_drill.webp" width="1200" height="900" alt="CAD animation of P2's drill pressing its dust cup to a pencil mark on a painted wall, drilling, and backing off to leave a clean hole." loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <figcaption class="vh" aria-live="polite">
-          <span class="cap cap-paint">Paint, the first tool.</span>
-          <span class="cap cap-spray">Spray, planned.</span>
-          <span class="cap cap-sand">Sand, planned.</span>
-          <span class="cap cap-drill">Drill, planned.</span>
-        </figcaption>
-      </figure>
-      <div>
-        <fieldset class="toollist">
-          <legend class="vh">Tool on the Tool Port</legend>
-          <ul>
-          <li><label for="tool-paint"><span class="nm">Paint</span><span class="st">First tool</span><span class="ds">A 9 in roller fed through its core, and an edger pad on guide wheels for the cut lines.</span></label></li>
-          <li><label for="tool-spray"><span class="nm">Spray</span><span class="st">Planned</span><span class="ds">An airless spray gun with a reversible tip, for empty rooms and new builds.</span></label></li>
-          <li><label for="tool-sand"><span class="nm">Sand</span><span class="st">Planned</span><span class="ds">A 125 mm orbital sander with a brush skirt and its own HEPA dust canister.</span></label></li>
-          <li><label for="tool-drill"><span class="nm">Drill</span><span class="st">Planned</span><span class="ds">A drill with a stud and wire scanner and a dust cup, for anchors where you mark them.</span></label></li>
+    <fieldset class="tooltabs">
+      <legend class="vh">Tool on the Tool Port</legend>
+      <div class="tabrow">
+        <label for="tool-paint">Paint</label>
+        <label for="tool-spray">Spray</label>
+        <label for="tool-sand">Sand</label>
+        <label for="tool-drill">Drill</label>
+      </div>
+    </fieldset>
+    <div class="toolview">
+      <div class="swap-stage">
+        <picture class="clip clip-paint">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_paint_720.webp 720w, assets/img/tool_paint.webp 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_paint_720.avif 720w, assets/video/tool_paint.avif 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_paint.webp" width="1200" height="900" alt="CAD animation of P2's roller rolling a lane of sage paint up a white wall, the mast carrying the arm up." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-spray">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_spray_720.webp 720w, assets/img/tool_spray.webp 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_spray_720.avif 720w, assets/video/tool_spray.avif 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_spray.webp" width="1200" height="900" alt="CAD animation of P2's spray gun making three passes 300 mm from a white wall, each pass leaving a band of paint." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-sand">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_sand_720.webp 720w, assets/img/tool_sand.webp 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_sand_720.avif 720w, assets/video/tool_sand.avif 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_sand.webp" width="1200" height="900" alt="CAD animation of P2's orbital sander circling over a filled patch on the wall until the patch is smooth." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-drill">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_drill_720.webp 720w, assets/img/tool_drill.webp 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_drill_720.avif 720w, assets/video/tool_drill.avif 1200w" sizes="(min-width: 1312px) 780px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_drill.webp" width="1200" height="900" alt="CAD animation of P2's drill pressing its dust cup to a pencil mark on a painted wall, drilling, and backing off to leave a clean hole." loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="toolnotes" aria-live="polite">
+        <div class="note-paint">
+          <p class="tstat">First tool</p>
+          <p class="tjob">Rolls walls and ceilings in lanes, and cuts the lines at the ceiling, the corners and the trim.</p>
+          <ul class="tkit">
+            <li>A 9 in roller fed with paint through its core.</li>
+            <li>An edger pad on guide wheels for the cut lines.</li>
+            <li>A cover that closes over the roller while each coat dries.</li>
+            <li>A camera and a color sensor that check every panel.</li>
           </ul>
-        </fieldset>
-        <p class="portnote">Every tool starts with the same tool plate. Six spring loaded balls lock it to the Tool Port and stay locked when power is off; a solenoid opens them only when you release the tool from the app. Two dowels locate the tool, eight pins carry power and data, and a flat face coupling passes paint without a drip.</p>
+        </div>
+        <div class="note-spray">
+          <p class="tstat">Planned</p>
+          <p class="tjob">Sprays empty rooms and new builds, where there is nothing to cover.</p>
+          <ul class="tkit">
+            <li>An airless spray gun with a reversible tip.</li>
+            <li>A distance sensor that holds the gun steady off the wall.</li>
+            <li>A tank and a high pressure pump that ride in the base.</li>
+          </ul>
+        </div>
+        <div class="note-sand">
+          <p class="tstat">Planned</p>
+          <p class="tjob">Sands filled patches smooth between coats.</p>
+          <ul class="tkit">
+            <li>A 125 mm random orbit sander.</li>
+            <li>A brush skirt around the pad.</li>
+            <li>Its own fan and HEPA dust canister.</li>
+          </ul>
+        </div>
+        <div class="note-drill">
+          <p class="tstat">Planned</p>
+          <p class="tjob">Drills anchor holes where you mark them, for shelves, TVs and curtain rods.</p>
+          <ul class="tkit">
+            <li>A stud and live wire scanner that checks behind the wall first.</li>
+            <li>A clear dust cup on guide rods.</li>
+            <li>Depth control for every hole.</li>
+          </ul>
+        </div>
       </div>
     </div>
+    <p class="portnote"><b>One Tool Port.</b> Every tool starts with the same tool plate. Six spring loaded balls lock it to the Tool Port and stay locked when power is off; a solenoid opens them only when you release the tool from the app. Two dowels locate the tool, eight pins carry power and data, and a flat face coupling passes paint without a drip.</p>
   </div>
   </div></section>
 
