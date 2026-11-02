@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>P2, the painting robot: specs, tools and safety | Urban Robotics</title>
+<meta name="description" content="How P2 is built: a round base, a two stage mast and a six axis arm with one Tool Port. Specs, drawings, safety and the tools planned for later.">
+<link rel="canonical" href="https://urbanrobotics.com/p2.html">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#1E1F21">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Urban Robotics">
+<meta property="og:title" content="P2, the painting robot: specs, tools and safety | Urban Robotics">
+<meta property="og:description" content="How P2 is built: a round base, a two stage mast and a six axis arm with one Tool Port. Specs, drawings, safety and the tools planned for later.">
+<meta property="og:url" content="https://urbanrobotics.com/p2.html">
+<meta property="og:image" content="https://urbanrobotics.com/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The headline Interior painting robot on graphite, beside a CAD rendering of P2 rolling sage paint onto taped drywall.">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<link rel="stylesheet" href="assets/styles.css?v=7cbe9535a8">
+<link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="menu dark" id="menu" aria-label="Menu" tabindex="-1">
+  <div class="wrap">
+    <ul>
+      <li><a href="./#how">How it works</a></li>
+      <li><a href="./#where">Where it works</a></li>
+      <li><a href="./#report">Job report</a></li>
+      <li><a href="./#progress">Progress</a></li>
+      <li><a href="p2.html" aria-current="page">P2</a></li>
+      <li><a href="p2.html#tools">Tools</a></li>
+      <li><a href="p2.html#safety">Safety</a></li>
+      <li><a href="p2.html#questions">Questions</a></li>
+      <li><a href="company.html">Company</a></li>
+    </ul>
+    <p><a class="btn" href="./#pilot">Set up a call</a></p>
+  </div>
+</nav>
+<header class="site-head dark">
+  <div class="wrap row">
+    <a class="brand" href="./"><img src="assets/brand/lockup_on_dark.svg" width="155" height="34" alt="Urban Robotics home"></a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="./#how">How it works</a></li>
+        <li><a href="./#where">Where it works</a></li>
+        <li><a href="./#report">Job report</a></li>
+        <li><a href="p2.html" aria-current="page">P2</a></li>
+        <li><a href="company.html">Company</a></li>
+      </ul>
+    </nav>
+    <a class="btn small" href="./#pilot">Set up a call</a>
+    <a class="menu-open" href="#menu">Menu</a>
+    <a class="menu-x" href="#close">Close</a>
+  </div>
+</header>
+<main id="main">
+<div class="dark">
+  <section class="co-hero wrap" aria-labelledby="top-h">
+    <h1 id="top-h">P2, up close</h1>
+    <p class="lead">The machine, the numbers behind it and the tools planned for later. Everything here comes from the CAD model and our simulations; the first bench rig is next.</p>
+  </section>
+  <section class="section film-sec" id="film" aria-labelledby="film-h">
+    <div class="wrap"><div class="split film-head">
+      <h2 id="film-h">P2 at work</h2>
+      <div class="body">
+        <p>A 30 second film of a job, animated from the CAD model and the arm’s real joint limits: P2 rolls in, rolls the wall lane by lane, and shows the tools planned for the same arm. Sound on.</p>
+      </div>
+    </div></div>
+    <figure class="film">
+      <video controls preload="none" playsinline width="1920" height="1080" poster="assets/video/p2_film_poster.webp">
+        <source src="assets/video/p2_film_720.mp4" type="video/mp4" media="(max-width: 760px)">
+        <source src="assets/video/p2_film_1080.mp4" type="video/mp4">
+        <track kind="captions" srclang="en" label="English" src="assets/video/p2_film.vtt">
+        <a href="assets/video/p2_film_1080.mp4">Download the P2 film (MP4, 30 seconds)</a>
+      </video>
+    </figure>
+  </section>
+
+</div>
+  <div class="dark" id="p2">
+    <section class="wrap machine" aria-label="P2">
+      <div class="machine-head">
+        <h2 id="p2-h" class="p2h"><img src="assets/brand/p2_white.svg" width="110" height="100" alt="P2"></h2>
+        <div class="body">
+          <p>A round base, a two stage mast and a six axis arm. The base carries the paint, the pump and the battery; the mast lifts the arm; the arm holds the tool.</p>
+          <dl class="keys">
+            <div><dt>Wall reach <span>From the baseboard to a 9 ft ceiling</span></dt><dd>9 ft</dd></div>
+            <div><dt>Height, stowed <span>Needs a doorway 30 by 80 in</span></dt><dd>1.48 m</dd></div>
+            <div><dt>A bedroom, two coats <span>A 12 by 12 ft room in our simulation, start to finish</span></dt><dd>5.1 h</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="callout">
+        <figure class="marked">
+          <img src="assets/img/p2_product_1600.webp" srcset="assets/img/p2_product_800.webp 800w, assets/img/p2_product_1200.webp 1200w, assets/img/p2_product_1600.webp 1600w" sizes="(min-width: 1200px) 640px, (min-width: 960px) 56vw, 100vw" width="1600" height="2000" alt="CAD rendering of P2: a round white base with a black deck, an aluminum two stage mast, a white six axis arm reaching out to the side, and a paint roller tool on its wrist." loading="lazy" decoding="async">
+          <span class="mk mk1" aria-hidden="true">1</span>
+          <span class="mk mk2" aria-hidden="true">2</span>
+          <span class="mk mk3" aria-hidden="true">3</span>
+          <span class="mk mk4" aria-hidden="true">4</span>
+          <span class="mk mk5" aria-hidden="true">5</span>
+          <span class="mk mk6" aria-hidden="true">6</span>
+        </figure>
+        <ol class="legend">
+          <li><span class="n" aria-hidden="true">1</span><div><strong>LiDAR.</strong> Maps the room and finds walls, doors, trim and furniture.</div></li>
+          <li><span class="n" aria-hidden="true">2</span><div><strong>Two stage mast.</strong> Lifts the arm so the roller reaches from the baseboard to a 9 ft ceiling.</div></li>
+          <li><span class="n" aria-hidden="true">3</span><div><strong>Six axis arm.</strong> A collaborative arm with 0.7 m of reach and a force sensor at the wrist.</div></li>
+          <li><span class="n" aria-hidden="true">4</span><div><strong>Tool Port.</strong> Locks the tool with spring loaded balls that stay locked without power.</div></li>
+          <li><span class="n" aria-hidden="true">5</span><div><strong>Paint tool.</strong> A standard 9 in roller fed through its core, and an edger pad for the lines.</div></li>
+          <li><span class="n" aria-hidden="true">6</span><div><strong>Base.</strong> Carries a sealed 6 gal paint tank, the pump, the battery and two stabilizer feet.</div></li>
+        </ol>
+      </div>
+    </section>
+  </div>
+
+  <section class="section" id="specs" aria-labelledby="specs-h"><div class="wrap"><div class="split">
+    <h2 id="specs-h">Specs</h2>
+    <div class="body">
+      <h3>Needs a 30 inch doorway</h3>
+      <p>To travel, P2 lowers its mast and folds its arm against it. Stowed, it is 1.48 m tall, 0.68 m wide and 0.78 m long, so it needs a doorway at least 30 in wide and 80 in tall, the common size for bedroom doors.</p>
+      <figure class="drawing">
+        <div class="views">
+          <svg viewBox="0 0 926 1684" role="img" aria-labelledby="dw-front-t"><title id="dw-front-t">Front view of P2 stowed: 1480 mm tall and 684 mm wide with the arm folded, on a 600 mm round base.</title><image href="assets/img/p2_draw_front.png" x="190" y="10" width="706" height="1424"/><line class="dw-ext" x1="506" y1="55" x2="74" y2="55"/><line class="dw-ext" x1="265" y1="1388" x2="74" y2="1388"/><line class="dw-line" x1="100" y1="37" x2="100" y2="1406"/><line class="dw-tick" x1="86" y1="69" x2="114" y2="41"/><line class="dw-tick" x1="86" y1="1402" x2="114" y2="1374"/><text class="dw-num" x="82" y="721" text-anchor="middle" transform="rotate(-90 82 721)">1480</text><line class="dw-ext" x1="204" y1="612" x2="204" y2="1530"/><line class="dw-ext" x1="818" y1="1406" x2="818" y2="1610"/><line class="dw-ext" x1="279" y1="1406" x2="279" y2="1610"/><line class="dw-line" x1="186" y1="1504" x2="836" y2="1504"/><line class="dw-tick" x1="190" y1="1518" x2="218" y2="1490"/><line class="dw-tick" x1="804" y1="1518" x2="832" y2="1490"/><text class="dw-num" x="511" y="1488" text-anchor="middle">684</text><line class="dw-line" x1="261" y1="1584" x2="836" y2="1584"/><line class="dw-tick" x1="265" y1="1598" x2="293" y2="1570"/><line class="dw-tick" x1="804" y1="1598" x2="832" y2="1570"/><text class="dw-num" x="548" y="1568" text-anchor="middle">600</text><text class="dw-view" x="548" y="1668" text-anchor="middle">Front</text></svg>
+          <svg viewBox="0 0 851 1684" role="img" aria-labelledby="dw-side-t"><title id="dw-side-t">Right side view of P2 stowed: 778 mm long with the arm folded at the back.</title><image href="assets/img/p2_draw_side.png" x="30" y="10" width="791" height="1424"/><line class="dw-ext" x1="75" y1="1328" x2="75" y2="1530"/><line class="dw-ext" x1="775" y1="1406" x2="775" y2="1530"/><line class="dw-line" x1="57" y1="1504" x2="793" y2="1504"/><line class="dw-tick" x1="61" y1="1518" x2="89" y2="1490"/><line class="dw-tick" x1="761" y1="1518" x2="789" y2="1490"/><text class="dw-num" x="425" y="1488" text-anchor="middle">778</text><text class="dw-view" x="425" y="1668" text-anchor="middle">Right side</text></svg>
+        </div>
+        <figcaption class="tblock"><span><b>Drawing</b>P2, stowed</span><span><b>Views</b>Front and right side</span><span><b>Units</b>Millimeters</span><span><b>Source</b>CAD model, October 2026</span></figcaption>
+      </figure>
+      <h3>Design targets</h3>
+      <dl class="specs">
+        <div><dt>Footprint</dt><dd>600 mm round base</dd></div>
+        <div><dt>Height, stowed</dt><dd>1.48 m; needs a doorway 30 in wide and 80 in tall</dd></div>
+        <div><dt>Wall reach</dt><dd>Baseboard to a 9 ft (2.74 m) ceiling</dd></div>
+        <div><dt>Weight</dt><dd>About 110 kg empty, 132 kg with a full tank</dd></div>
+        <div><dt>Arm</dt><dd>Six axis collaborative arm, 0.7 m reach</dd></div>
+        <div><dt>Paint</dt><dd>Sealed 6 gal tank, peristaltic pump, paint fed roller</dd></div>
+        <div><dt>Tools</dt><dd>Paint, in development; more tools for the same port are concepts</dd></div>
+        <div><dt>Power</dt><dd>51 V lithium ion (NMC) battery, 1.74 kWh, charges from a wall outlet</dd></div>
+        <div><dt>Sensing</dt><dd>LiDAR, depth cameras, wrist force sensor, color sensor</dd></div>
+      </dl>
+      <p class="specs-note">Numbers come from the current CAD model. The prototype has not been built yet, and these numbers will change as we test it.</p>
+      <h3>Built for paint and repair</h3>
+      <dl class="specs notes">
+        <div><dt>Standard wear parts</dt><dd>The roller cover, the edger pad and the pump hose are stock parts that anyone can replace.</dd></div>
+        <div><dt>Locks that hold without power</dt><dd>The Tool Port keeps its tool and the lift brakes hold the mast when the power is off.</dd></div>
+        <div><dt>Made for paint</dt><dd>The mast runs on V wheels with felt wipers instead of ball rails. Paint only touches the sealed tank, the hose and the tool.</dd></div>
+        <div><dt>Modules, not one block</dt><dd>The mast comes off the base with one lever, and every tool shares one port.</dd></div>
+        <div><dt>Failure modes first</dt><dd>We listed 43 ways P2 could fail, from a drip to a drill hitting a wire, and gave each one a design answer and a test.</dd></div>
+      </dl>
+    </div>
+  </div></div></section>
+
+  <section class="section" id="tools" aria-labelledby="tools-h"><div class="wrap">
+    <div class="split tools-head">
+      <h2 id="tools-h">Paint first</h2>
+      <div class="body">
+        <p>Painting is the only tool we are building. The arm and the Tool Port are made so that later tools can fit the same robot, and we have drawn a few of them in CAD to test the idea. They are concepts, not products: none is built, and which ones come next will depend on what pilot customers need.</p>
+      </div>
+    </div>
+  <div class="swapper">
+    <input class="vh" type="radio" name="tool" id="tool-paint" checked>
+    <input class="vh" type="radio" name="tool" id="tool-spray">
+    <input class="vh" type="radio" name="tool" id="tool-sand">
+    <input class="vh" type="radio" name="tool" id="tool-drill">
+    <input class="vh" type="radio" name="tool" id="tool-tape">
+    <input class="vh" type="radio" name="tool" id="tool-drywall">
+    <input class="vh" type="radio" name="tool" id="tool-tile">
+    <input class="vh" type="radio" name="tool" id="tool-print">
+    <fieldset class="tooltabs">
+      <legend class="vh">Tool on the Tool Port</legend>
+      <div class="tabrow">
+        <label for="tool-paint">Paint</label>
+        <span class="tablater" aria-hidden="true">Later</span>
+        <label class="later" for="tool-spray">Spray</label>
+        <label class="later" for="tool-sand">Sand</label>
+        <label class="later" for="tool-drill">Drill</label>
+        <label class="later" for="tool-tape">Tape</label>
+        <label class="later" for="tool-drywall">Drywall</label>
+        <label class="later" for="tool-tile">Tile</label>
+        <label class="later" for="tool-print">Print</label>
+      </div>
+    </fieldset>
+    <div class="toolview">
+      <div class="swap-stage">
+        <picture class="clip clip-paint">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_paint_960.webp 960w, assets/img/tool_paint.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_paint_960.avif 960w, assets/video/tool_paint.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_paint.webp" width="1600" height="900" alt="CAD animation of P2's roller rolling a lane of sage paint up a white wall, the mast carrying the arm up." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-spray">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_spray_960.webp 960w, assets/img/tool_spray.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_spray_960.avif 960w, assets/video/tool_spray.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_spray.webp" width="1600" height="900" alt="CAD animation of P2's spray gun making three passes 300 mm from a white wall, each pass leaving a band of paint." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-sand">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_sand_960.webp 960w, assets/img/tool_sand.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_sand_960.avif 960w, assets/video/tool_sand.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_sand.webp" width="1600" height="900" alt="CAD animation of P2's orbital sander circling over a filled patch on the wall, lit from the side, until the bump is gone." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-drill">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_drill_960.webp 960w, assets/img/tool_drill.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_drill_960.avif 960w, assets/video/tool_drill.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_drill.webp" width="1600" height="900" alt="CAD animation of P2's drill at a pencil mark on a painted wall. A round window shows what is behind the drywall, a wooden stud under the mark and a yellow cable beside it. P2 drills into the stud, the dust cup catches the dust, and the window closes on a clean hole." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-tape">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_tape_960.webp 960w, assets/img/tool_tape.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_tape_960.avif 960w, assets/video/tool_tape.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_tape.webp" width="1600" height="900" alt="CAD animation of P2's tape tool running down an inside corner of a white wall, laying a straight line of blue painter's tape." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-drywall">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_drywall_960.webp 960w, assets/img/tool_drywall.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_drywall_960.avif 960w, assets/video/tool_drywall.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_drywall.webp" width="1600" height="900" alt="CAD animation of P2 laying mesh tape along a drywall seam, then spreading a smooth band of joint compound over it." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-tile">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_tile_960.webp 960w, assets/img/tool_tile.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_tile_960.avif 960w, assets/video/tool_tile.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_tile.webp" width="1600" height="900" alt="CAD animation of P2 pressing light gray tiles onto a backer board on a green wall, the backsplash filling in tile by tile." loading="lazy" decoding="async">
+        </picture>
+        <picture class="clip clip-print">
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_print_960.webp 960w, assets/img/tool_print.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <source type="image/avif" srcset="assets/video/tool_print_960.avif 960w, assets/video/tool_print.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
+          <img src="assets/img/tool_print.webp" width="1600" height="900" alt="CAD animation of P2's print head sweeping across a white wall in bands while a mural appears." loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="toolnotes" aria-live="polite">
+        <div class="note-paint">
+          <p class="tstat">In development</p>
+          <p class="tjob">Rolls walls and ceilings in lanes, and cuts the lines at the ceiling, the corners and the trim.</p>
+          <ul class="tkit">
+            <li>A 9 in roller fed with paint through its core.</li>
+            <li>An edger pad on guide wheels for the cut lines.</li>
+            <li>A cover that closes over the roller while each coat dries.</li>
+            <li>A camera and a color sensor that check every panel.</li>
+          </ul>
+        </div>
+        <div class="note-spray">
+          <p class="tstat">Concept, not built</p>
+          <p class="tjob">Sprays empty rooms and new builds, where there is nothing to cover.</p>
+          <ul class="tkit">
+            <li>An airless spray gun with a reversible tip.</li>
+            <li>A distance sensor that holds the gun steady off the wall.</li>
+            <li>A tank and a high pressure pump that ride in the base.</li>
+          </ul>
+        </div>
+        <div class="note-sand">
+          <p class="tstat">Concept, not built</p>
+          <p class="tjob">Sands filled patches smooth between coats.</p>
+          <ul class="tkit">
+            <li>A 125 mm random orbit sander.</li>
+            <li>A brush skirt around the pad.</li>
+            <li>Its own fan and HEPA dust canister.</li>
+          </ul>
+        </div>
+        <div class="note-drill">
+          <p class="tstat">Concept, not built</p>
+          <p class="tjob">Drills anchor holes where you mark them, for shelves, TVs and curtain rods.</p>
+          <ul class="tkit">
+            <li>A stud and live wire scanner that checks behind the wall first.</li>
+            <li>A clear dust cup on guide rods.</li>
+            <li>Depth control for every hole.</li>
+          </ul>
+        </div>
+        <div class="note-tape">
+          <p class="tstat">Concept, not built</p>
+          <p class="tjob">Tapes the trim and the ceiling line before painting, and pulls the tape after the last coat.</p>
+          <ul class="tkit">
+            <li>A 48 mm roll of painter’s tape.</li>
+            <li>A guide wheel that rides the edge of the trim.</li>
+            <li>A pressure roller and a cutter.</li>
+            <li>A folded pull tab at each end, so peeling takes one grab.</li>
+          </ul>
+        </div>
+        <div class="note-drywall">
+          <p class="tstat">Concept, not built</p>
+          <p class="tjob">Tapes the drywall seams and spreads the joint compound, one coat a night.</p>
+          <ul class="tkit">
+            <li>Self adhesive mesh tape laid along each seam.</li>
+            <li>A 250 mm flat box that leaves a smooth, feathered coat.</li>
+            <li>Compound pumped from a hopper in the base.</li>
+            <li>A camera that finds the seams and the screw heads.</li>
+          </ul>
+        </div>
+        <div class="note-tile">
+          <p class="tstat">Concept, not built</p>
+          <p class="tjob">Sets wall tile for backsplashes and bathroom walls.</p>
+          <ul class="tkit">
+            <li>A suction pad for tiles up to 300 by 300 mm.</li>
+            <li>Adhesive from a cartridge, combed on by a notched nozzle.</li>
+            <li>A cross line laser and a camera that keep the joints straight.</li>
+            <li>A rack on the deck that carries the tiles.</li>
+          </ul>
+        </div>
+        <div class="note-print">
+          <p class="tstat">Concept, not built</p>
+          <p class="tjob">Prints murals, logos and patterns straight onto the wall.</p>
+          <ul class="tkit">
+            <li>Four color inkjet heads.</li>
+            <li>An LED bar that cures the ink as it prints.</li>
+            <li>Guide wheels that hold the heads a few millimeters off the wall.</li>
+            <li>Ink cartridges on the tool.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="portnote"><b>One Tool Port.</b> Every tool starts with the same tool plate. Six spring loaded balls lock it to the Tool Port and stay locked when power is off; a solenoid opens them only when you release the tool from the app. Two dowels locate the tool, eight pins carry power and data, and a flat face coupling passes paint without a drip.</p>
+  </div>
+  </div></section>
+
+  <div class="dark">
+  <section class="section" id="safety" aria-labelledby="safety-h"><div class="wrap"><div class="split">
+    <h2 id="safety-h">Safety</h2>
+    <div class="body">
+      <ul class="plain">
+        <li>P2 is designed to pause when a person or pet comes close. Its cameras watch the work area, the arm slows and stops near people, and the arm itself is force limited.</li>
+        <li>Two stabilizer feet go down before the mast rises. In the worst case we simulated, an empty tank with the arm stopped dead at full reach and the mast at the top, P2 still keeps 82 mm of tip margin.</li>
+        <li>An emergency stop on the robot and in the app cuts motor power through a hardwired safety relay.</li>
+        <li>P2 uses water based paints only. Open a window while it works.</li>
+        <li>P2 does not sand or scrape in its first version. In homes built before 1978, work that disturbs old paint must follow the <a href="https://www.epa.gov/lead/lead-renovation-repair-and-painting-program">EPA lead safe rules</a>.</li>
+        <li>P2 uses its cameras to navigate and to check the paint. Before a pilot, we agree with you on what is recorded and when it is deleted.</li>
+        <li>P2 is in development and has no safety certification. During pilots, our team will stay on site.</li>
+      </ul>
+    </div>
+  </div></div></section>
+  </div>
+
+  <section class="section" id="questions" aria-labelledby="q-h"><div class="wrap"><div class="split">
+    <h2 id="q-h">Questions</h2>
+    <div class="body">
+      <dl class="qa">
+        <div><dt>Who is it for?</dt><dd>Builders and painting contractors who want rooms painted while their crew works elsewhere, property managers who repaint units between tenants, and homeowners who want a room painted without a crew in the house all day.</dd></div>
+        <div><dt>What will it cost?</dt><dd>We have not set a price, and P2 is not for sale yet. Our goal is a price per room below what a painting crew charges. A home is repainted every few years, so for homes we expect to offer P2 as a service or a rental rather than a machine to buy.</dd></div>
+        <div><dt>When can I use it?</dt><dd>Not yet. Next we build a bench rig to test the paint tool on real walls, then the full robot, then pilot jobs in South Florida.</dd></div>
+        <div><dt>What paint does it use?</dt><dd>Water based interior paint, the same cans a painter buys.</dd></div>
+        <div><dt>Does someone need to be there?</dt><dd>During pilots, yes: our team stays on site. P2 itself is designed to work on its own and to ask for help on your phone when it needs it.</dd></div>
+        <div><dt>How high can it reach?</dt><dd>The first version paints rooms up to 9 ft. Ten foot rooms are a later goal; the current design reaches them only in part.</dd></div>
+      </dl>
+    </div>
+  </div></div></section>
+
+  <div class="orange" id="pilot">
+    <section class="wrap pilot" aria-labelledby="pilot-h">
+      <h2 id="pilot-h">Talk to us</h2>
+      <div class="body">
+        <p>Build, paint or manage apartments in South Florida? Help us plan the first pilot jobs. Homeowners are welcome too. It starts with a 15 minute call about how you repaint today: what it costs, how long it takes and what slows it down. Nothing is for sale yet.</p>
+        <div><a class="btn" href="https://calendly.com/han2000cc/15-minute-meeting-clone">Book a 15 minute call</a></div>
+        <p class="addr">Or write to <a href="mailto:info@urbanrobotics.com?subject=15%20minute%20call">info@urbanrobotics.com</a>. This site has no forms, cookies or tracking.</p>
+      </div>
+    </section>
+  </div>
+</main>
+<div class="dark">
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="top">
+        <img src="assets/brand/lockup_on_dark.svg" width="136" height="30" alt="Urban Robotics">
+        <ul>
+          <li><a href="mailto:info@urbanrobotics.com">info@urbanrobotics.com</a></li>
+          <li><a href="company.html">Company</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="terms.html#accessibility">Accessibility</a></li>
+          <li><a href="#top">Back to top</a></li>
+        </ul>
+      </div>
+      <div class="legal">
+        <p>P2 is in development. Images of P2 are CAD renderings, and its specifications are design targets that may change.</p>
+        <p>© 2026 Urban Robotics Technologies, Inc. Miami, Florida.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
