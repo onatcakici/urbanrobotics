@@ -18,14 +18,14 @@
 <meta property="og:title" content="P2, the painting robot: specs, tools and safety | Urban Robotics">
 <meta property="og:description" content="How P2 is built: a round base, a two stage mast and a six axis arm with one Tool Port. Specs, drawings, safety and the tools planned for later.">
 <meta property="og:url" content="https://urbanrobotics.com/p2.html">
-<meta property="og:image" content="https://urbanrobotics.com/assets/img/og.jpg">
+<meta property="og:image" content="https://urbanrobotics.com/assets/img/og_p2.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The headline Interior painting robot on graphite, beside a CAD rendering of P2 rolling sage paint onto taped drywall.">
+<meta property="og:image:alt" content="The large letters P2 on graphite, beside a CAD rendering of the P2 painting robot on a warm grey studio backdrop.">
 <meta name="twitter:card" content="summary_large_image">
 
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=4c09ef1905">
+<link rel="stylesheet" href="assets/styles.css?v=a185d90b53">
 <link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -70,9 +70,10 @@
     <h1 id="top-h">P2, up close</h1>
     <p class="lead">The machine, the numbers behind it and the tools planned for later. Everything here comes from the CAD model and our simulations; the first bench rig is next.</p>
   </section>
-  <figure class="studio">
-    <img src="assets/img/studio_p2_1600.webp" srcset="assets/img/studio_p2_960.webp 960w, assets/img/studio_p2_1600.webp 1600w" sizes="100vw" width="1600" height="1000" alt="CAD rendering of P2 standing on a grey studio floor: a round white base marked P2, an aluminum two stage mast with the six axis arm folded against it, and the paint tool tucked in." loading="lazy" decoding="async">
-  </figure>
+  <div class="studio">
+    <figure><img src="assets/img/studio_hero_1600.webp" srcset="assets/img/studio_hero_800.webp 800w, assets/img/studio_hero_1200.webp 1200w, assets/img/studio_hero_1600.webp 1600w" sizes="(min-width: 760px) 50vw, 100vw" width="1600" height="2000" alt="CAD rendering of P2 on a warm grey studio backdrop: a round white base marked P2, an aluminum mast with the six axis arm folded against it and the paint tool tucked in." loading="lazy" decoding="async"></figure>
+    <figure><img src="assets/img/studio_back_1600.webp" srcset="assets/img/studio_back_800.webp 800w, assets/img/studio_back_1200.webp 1200w, assets/img/studio_back_1600.webp 1600w" sizes="(min-width: 760px) 50vw, 100vw" width="1600" height="2000" alt="CAD rendering of P2 from behind on the same backdrop: the mast, its belts and the folded arm." loading="lazy" decoding="async"></figure>
+  </div>
   <section class="section film-sec" id="film" aria-labelledby="film-h">
     <div class="wrap"><div class="split film-head">
       <h2 id="film-h">P2 at work</h2>
@@ -129,16 +130,24 @@
   <section class="section" id="details" aria-labelledby="details-h"><div class="wrap">
     <div class="split">
       <h2 id="details-h">The details</h2>
-      <div class="body"><p class="intro">Two parts that do most of the work.</p></div>
+      <div class="body"><p class="intro">The parts that do the work, up close.</p></div>
     </div>
     <div class="details">
-      <figure>
-        <img src="assets/img/macro_port_1000.webp" srcset="assets/img/macro_port_600.webp 600w, assets/img/macro_port_1000.webp 1000w" sizes="(min-width: 900px) 45vw, 100vw" width="1000" height="1000" alt="Close up CAD rendering of the Tool Port: a round aluminum face with locking balls, two dowels, a block of eight contact pins and an orange ring." loading="lazy" decoding="async">
-        <figcaption><b>Tool Port.</b> Six spring loaded balls lock every tool in place and stay locked when the power is off. Eight pins carry power and data.</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/img/macro_roller_1000.webp" srcset="assets/img/macro_roller_600.webp 600w, assets/img/macro_roller_1000.webp 1000w" sizes="(min-width: 900px) 45vw, 100vw" width="1000" height="1000" alt="Close up CAD rendering of the paint tool: a white 9 inch roller cover on an aluminum fork, fed with paint through its core." loading="lazy" decoding="async">
+      <figure class="d-main">
+        <img src="assets/img/macro_roller2_1400.webp" srcset="assets/img/macro_roller2_800.webp 800w, assets/img/macro_roller2_1400.webp 1400w" sizes="(min-width: 900px) 62vw, 100vw" width="1400" height="1400" alt="Close up CAD rendering of the paint tool: a white 9 inch roller cover on an aluminum fork, fed with paint through its core." loading="lazy" decoding="async">
         <figcaption><b>Paint tool.</b> Paint comes up through the roller core from the tank in the base, so there is no tray to refill.</figcaption>
+      </figure>
+      <figure class="d-side">
+        <img src="assets/img/macro_sensor_1000.webp" srcset="assets/img/macro_sensor_600.webp 600w, assets/img/macro_sensor_1000.webp 1000w" sizes="(min-width: 900px) 30vw, 100vw" width="1000" height="1000" alt="Close up CAD rendering of the mast head: a round lidar on top, an orange UR badge and the sheave that guides the hose." loading="lazy" decoding="async">
+        <figcaption><b>Mast head.</b> A lidar on top maps the room. The sheave below it carries the paint hose and the arm cable up the mast.</figcaption>
+      </figure>
+      <figure class="d-side">
+        <img src="assets/img/macro_deck_1000.webp" srcset="assets/img/macro_deck_600.webp 600w, assets/img/macro_deck_1000.webp 1000w" sizes="(min-width: 900px) 30vw, 100vw" width="1000" height="1000" alt="Close up CAD rendering of the deck: a round grey hatch with an orange grip and a red stop button." loading="lazy" decoding="async">
+        <figcaption><b>Paint bay.</b> The hatch on the deck opens to the paint bucket. The red button stops P2 at any time.</figcaption>
+      </figure>
+      <figure class="d-wide">
+        <img src="assets/img/macro_base_1400.webp" srcset="assets/img/macro_base_800.webp 800w, assets/img/macro_base_1400.webp 1400w" sizes="100vw" width="1400" height="980" alt="Close up CAD rendering of the base: the P2 mark on the white shell above a black bumper and its soft shadow on the floor." loading="lazy" decoding="async">
+        <figcaption><b>Base.</b> It carries the paint, the pump and the battery, and fits through a 30 inch door.</figcaption>
       </figure>
     </div>
   </div></section>
