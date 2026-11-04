@@ -1,4 +1,4 @@
-// Porter site: the night shift scroll story and the paint request form. The page works without it.
+// Porter site: the scroll story scroll story and the paint request form. The page works without it.
 (function () {
   'use strict';
   var doc = document.documentElement;
@@ -113,7 +113,7 @@
       if (m) { err.textContent = m; return; }
       if (at < qs.length - 1) { show(at + 1); var f = qs[at].querySelector('input'); if (f) f.focus(); return; }
       var to = form.getAttribute('data-to');
-      var subj = 'Night shift request: ' + val('rooms') + ', ' + val('what').toLowerCase() + ', ' + val('zip');
+      var subj = 'Paint request: ' + val('rooms') + ', ' + val('what').toLowerCase() + ', ' + val('zip');
       var body = [
         'What: ' + val('what') + ', ' + val('rooms') + ' (' + val('kind') + ')',
         'Where: ' + val('zip') + (val('addr') ? ', ' + val('addr') : ''),
