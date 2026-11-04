@@ -24,10 +24,11 @@
 <meta property="og:image:alt" content="The headline Interior painting robot on graphite, beside a CAD rendering of P2 rolling sage paint onto taped drywall.">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://urbanrobotics.com/#org","name":"Porter Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://urbanrobotics.com/","logo":"https://urbanrobotics.com/icon-512.png","email":"info@urbanrobotics.com","foundingDate":"2025","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@id":"https://urbanrobotics.com/company.html#founder"},"description":"Porter Robotics builds robots for construction work, starting with P2, an interior painting robot for jobsites and homes, in development in Miami."},{"@type":"WebSite","@id":"https://urbanrobotics.com/#site","name":"Porter Robotics","url":"https://urbanrobotics.com/","publisher":{"@id":"https://urbanrobotics.com/#org"}},{"@type":"Person","@id":"https://urbanrobotics.com/company.html#founder","name":"Onat Cakici","jobTitle":"Founder","worksFor":{"@id":"https://urbanrobotics.com/#org"},"image":"https://urbanrobotics.com/assets/img/co_founder_440.webp","alumniOf":{"@type":"CollegeOrUniversity","name":"Florida Institute of Technology"},"sameAs":["https://www.linkedin.com/in/cakici/"]},{"@type":"VideoObject","name":"P2 at work","description":"A 30 second CAD animation of how P2 is designed to paint a room: it rolls in, rolls the wall lane by lane and shows the tools planned for the same arm.","thumbnailUrl":"https://urbanrobotics.com/assets/video/p2_film_poster.webp","contentUrl":"https://urbanrobotics.com/assets/video/p2_film_1080.mp4","uploadDate":"2026-10-30T23:30:00+00:00","duration":"PT30S","publisher":{"@id":"https://urbanrobotics.com/#org"}}]}</script>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=a185d90b53">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<link rel="stylesheet" href="assets/styles.css?v=6499c888e3">
 <link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
+<script src="assets/site.js?v=e8cde643da" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -112,6 +113,23 @@
       </div>
     </div>
   </div></div></section>
+
+  <section class="shift" id="shift" aria-labelledby="shift-h">
+    <div class="wrap shift-head">
+      <h2 id="shift-h">The night shift</h2>
+      <p class="intro">Your crew clocks out at six. P2 clocks in. Scroll through one simulated bedroom, start to finish.</p>
+    </div>
+    <div class="shift-track">
+      <div class="shift-stage wrap">
+        <div class="shift-pic">
+          <img src="assets/img/shift_00.webp" width="720" height="900" alt="CAD rendering of P2 rolling sage paint onto drywall, lane by lane, then rolling the ceiling." loading="lazy" decoding="async">
+          <canvas width="720" height="900" aria-hidden="true"></canvas>
+          <p class="shift-meter" aria-hidden="true"><span class="w">Walls <b>0</b>%</span><span class="c">Ceiling <b>0</b>%</span></p>
+        </div>
+        <ol class="shift-steps"><li data-f="0"><p class="clock"><b>6:00</b> PM</p><h3>Crew clocks out.</h3><p>Tape is on the trim, the furniture is off the walls and the paint is in the tank.</p></li><li data-f="2"><p class="clock"><b>6:05</b> PM</p><h3>P2 clocks in.</h3><p>It maps the room, finds every wall, outlet and window, and sends you a finish time.</p></li><li data-f="14"><p class="clock"><b>7:30</b> PM</p><h3>Walls, lane by lane.</h3><p>Floor to ceiling, one roller width at a time, with a camera checking every lane.</p></li><li data-f="30"><p class="clock"><b>9:40</b> PM</p><h3>Then the ceiling.</h3><p>The roller turns face up and P2 drives slowly under it, one strip at a time.</p></li><li data-f="41"><p class="clock"><b>11:05</b> PM</p><h3>Room done. Report sent.</h3><p>Photos of every wall land on your phone. P2 rolls on to the next room.</p></li></ol>
+      </div>
+    </div>
+  </section>
 
   <div class="dark">
   <section class="section wall" id="wall" aria-labelledby="wall-h">
@@ -238,11 +256,57 @@
 
   <div class="orange" id="pilot">
     <section class="wrap pilot" aria-labelledby="pilot-h">
-      <h2 id="pilot-h">Talk to us</h2>
+      <h2 id="pilot-h">Put a room on the night shift</h2>
       <div class="body">
-        <p>Build, paint or manage apartments in South Florida? Help us plan the first pilot jobs. Homeowners are welcome too. It starts with a 15 minute call about how you repaint today: what it costs, how long it takes and what slows it down. Nothing is for sale yet.</p>
-        <div><a class="btn" href="https://calendly.com/han2000cc/15-minute-meeting-clone">Book a 15 minute call</a></div>
-        <p class="addr">Or write to <a href="mailto:info@urbanrobotics.com?subject=15%20minute%20call">info@urbanrobotics.com</a>. This site has no forms, cookies or tracking.</p>
+        <p>P2 is not painting real jobs yet. Tell us about a room and we will call you when pilots start in South Florida. It takes 30 seconds.</p>
+        <form class="ask" id="ask" data-to="info@urbanrobotics.com" novalidate>
+          <fieldset class="q" data-step="1">
+            <legend><span>1</span> What needs paint?</legend>
+            <div class="opts">
+              <label><input type="radio" name="what" value="Walls" required><span>Walls</span></label>
+              <label><input type="radio" name="what" value="Ceilings"><span>Ceilings</span></label>
+              <label><input type="radio" name="what" value="Walls and ceilings"><span>Both</span></label>
+            </div>
+            <div class="opts">
+              <label><input type="radio" name="rooms" value="1 room" required><span>1 room</span></label>
+              <label><input type="radio" name="rooms" value="2 rooms"><span>2</span></label>
+              <label><input type="radio" name="rooms" value="3 rooms"><span>3</span></label>
+              <label><input type="radio" name="rooms" value="4 or more rooms"><span>4+</span></label>
+            </div>
+            <div class="opts">
+              <label><input type="radio" name="kind" value="Home" required><span>Home</span></label>
+              <label><input type="radio" name="kind" value="Jobsite"><span>Jobsite</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q" data-step="2">
+            <legend><span>2</span> Where?</legend>
+            <label class="field">ZIP code<input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" maxlength="5" required></label>
+            <label class="field">Address or neighborhood <i>optional</i><input name="addr" autocomplete="street-address"></label>
+          </fieldset>
+          <fieldset class="q" data-step="3">
+            <legend><span>3</span> When?</legend>
+            <div class="opts">
+              <label><input type="radio" name="when" value="This month" required><span>This month</span></label>
+              <label><input type="radio" name="when" value="In 1 to 3 months"><span>1 to 3 months</span></label>
+              <label><input type="radio" name="when" value="Just curious"><span>Just curious</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q" data-step="4">
+            <legend><span>4</span> Who should we call?</legend>
+            <label class="field">Name<input name="name" autocomplete="name" required></label>
+            <label class="field">Phone or email<input name="contact" autocomplete="email" required></label>
+          </fieldset>
+          <div class="ask-nav">
+            <button type="button" class="link back">Back</button>
+            <button type="submit" class="btn next">Next</button>
+          </div>
+          <p class="ask-err" role="alert"></p>
+        </form>
+        <div class="ask-done" id="ask-done" hidden tabindex="-1">
+          <h3>Done.</h3>
+          <p>Your email app opened with the request filled in. Hit send and we will get back to you within a day. If nothing opened, write to <a href="mailto:info@urbanrobotics.com">info@urbanrobotics.com</a>.</p>
+        </div>
+        <p class="addr">Rather talk? <a href="https://calendly.com/han2000cc/15-minute-meeting-clone">Book a 15 minute call</a> or write to <a href="mailto:info@urbanrobotics.com?subject=15%20minute%20call">info@urbanrobotics.com</a>. Nothing is for sale yet. The form only opens your email app; this site stores nothing and has no cookies or tracking.</p>
       </div>
     </section>
   </div>
