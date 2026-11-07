@@ -25,7 +25,8 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=2da48117b9">
+<link rel="stylesheet" href="assets/styles.css?v=0265ceccd3">
+<script src="assets/site.js?v=2089b5303c" defer></script>
 <link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -219,46 +220,14 @@
     </fieldset>
     <div class="toolview">
       <div class="swap-stage">
-        <picture class="clip clip-paint">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_paint_960.webp 960w, assets/img/tool_paint.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_paint_960.avif 960w, assets/video/tool_paint.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_paint.webp" width="1600" height="900" alt="CAD animation of P2's roller rolling a lane of sage paint up a white wall, the mast carrying the arm up." loading="lazy" decoding="async">
-        </picture>
-        <picture class="clip clip-spray">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_spray_960.webp 960w, assets/img/tool_spray.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_spray_960.avif 960w, assets/video/tool_spray.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_spray.webp" width="1600" height="900" alt="CAD animation of P2's spray gun making three passes 300 mm from a white wall, each pass leaving a band of paint." loading="lazy" decoding="async">
-        </picture>
-        <picture class="clip clip-sand">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_sand_960.webp 960w, assets/img/tool_sand.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_sand_960.avif 960w, assets/video/tool_sand.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_sand.webp" width="1600" height="900" alt="CAD animation of P2's orbital sander circling over a filled patch on the wall, lit from the side, until the bump is gone." loading="lazy" decoding="async">
-        </picture>
-        <picture class="clip clip-drill">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_drill_960.webp 960w, assets/img/tool_drill.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_drill_960.avif 960w, assets/video/tool_drill.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_drill.webp" width="1600" height="900" alt="CAD animation of P2's drill at a pencil mark on a painted wall. A round window shows what is behind the drywall, a wooden stud under the mark and a yellow cable beside it. P2 drills into the stud, the dust cup catches the dust, and the window closes on a clean hole." loading="lazy" decoding="async">
-        </picture>
-        <picture class="clip clip-tape">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_tape_960.webp 960w, assets/img/tool_tape.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_tape_960.avif 960w, assets/video/tool_tape.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_tape.webp" width="1600" height="900" alt="CAD animation of P2's tape tool running down an inside corner of a white wall, laying a straight line of blue painter's tape." loading="lazy" decoding="async">
-        </picture>
-        <picture class="clip clip-drywall">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_drywall_960.webp 960w, assets/img/tool_drywall.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_drywall_960.avif 960w, assets/video/tool_drywall.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_drywall.webp" width="1600" height="900" alt="CAD animation of P2 laying mesh tape along a drywall seam, then spreading a smooth band of joint compound over it." loading="lazy" decoding="async">
-        </picture>
-        <picture class="clip clip-tile">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_tile_960.webp 960w, assets/img/tool_tile.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_tile_960.avif 960w, assets/video/tool_tile.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_tile.webp" width="1600" height="900" alt="CAD animation of P2 pressing light gray tiles onto a backer board on a green wall, the backsplash filling in tile by tile." loading="lazy" decoding="async">
-        </picture>
-        <picture class="clip clip-print">
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/tool_print_960.webp 960w, assets/img/tool_print.webp 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <source type="image/avif" srcset="assets/video/tool_print_960.avif 960w, assets/video/tool_print.avif 1600w" sizes="(min-width: 1312px) 784px, (min-width: 980px) 62vw, 100vw">
-          <img src="assets/img/tool_print.webp" width="1600" height="900" alt="CAD animation of P2's print head sweeping across a white wall in bands while a mural appears." loading="lazy" decoding="async">
-        </picture>
+        <video class="clip clip-paint" muted loop playsinline preload="none" poster="assets/img/tool_paint_960.webp" width="1600" height="900" aria-label="CAD animation of P2's roller rolling a lane of sage paint up a white wall, the mast carrying the arm up."><source media="(min-width: 760px)" src="assets/video/tool_paint.mp4" type="video/mp4"><source src="assets/video/tool_paint_m.mp4" type="video/mp4"></video>
+        <video class="clip clip-spray" muted loop playsinline preload="none" poster="assets/img/tool_spray_960.webp" width="1600" height="900" aria-label="CAD animation of P2's spray gun making three passes 300 mm from a white wall, each pass leaving a band of paint."><source media="(min-width: 760px)" src="assets/video/tool_spray.mp4" type="video/mp4"><source src="assets/video/tool_spray_m.mp4" type="video/mp4"></video>
+        <video class="clip clip-sand" muted loop playsinline preload="none" poster="assets/img/tool_sand_960.webp" width="1600" height="900" aria-label="CAD animation of P2's orbital sander circling over a filled patch on the wall, lit from the side, until the bump is gone."><source media="(min-width: 760px)" src="assets/video/tool_sand.mp4" type="video/mp4"><source src="assets/video/tool_sand_m.mp4" type="video/mp4"></video>
+        <video class="clip clip-drill" muted loop playsinline preload="none" poster="assets/img/tool_drill_960.webp" width="1600" height="900" aria-label="CAD animation of P2's drill at a pencil mark on a painted wall. A round window shows what is behind the drywall, a wooden stud under the mark and a yellow cable beside it. P2 drills into the stud, the dust cup catches the dust, and the window closes on a clean hole."><source media="(min-width: 760px)" src="assets/video/tool_drill.mp4" type="video/mp4"><source src="assets/video/tool_drill_m.mp4" type="video/mp4"></video>
+        <video class="clip clip-tape" muted loop playsinline preload="none" poster="assets/img/tool_tape_960.webp" width="1600" height="900" aria-label="CAD animation of P2's tape tool running down an inside corner of a white wall, laying a straight line of blue painter's tape."><source media="(min-width: 760px)" src="assets/video/tool_tape.mp4" type="video/mp4"><source src="assets/video/tool_tape_m.mp4" type="video/mp4"></video>
+        <video class="clip clip-drywall" muted loop playsinline preload="none" poster="assets/img/tool_drywall_960.webp" width="1600" height="900" aria-label="CAD animation of P2 laying mesh tape along a drywall seam, then spreading a smooth band of joint compound over it."><source media="(min-width: 760px)" src="assets/video/tool_drywall.mp4" type="video/mp4"><source src="assets/video/tool_drywall_m.mp4" type="video/mp4"></video>
+        <video class="clip clip-tile" muted loop playsinline preload="none" poster="assets/img/tool_tile_960.webp" width="1600" height="900" aria-label="CAD animation of P2 pressing light gray tiles onto a backer board on a green wall, the backsplash filling in tile by tile."><source media="(min-width: 760px)" src="assets/video/tool_tile.mp4" type="video/mp4"><source src="assets/video/tool_tile_m.mp4" type="video/mp4"></video>
+        <video class="clip clip-print" muted loop playsinline preload="none" poster="assets/img/tool_print_960.webp" width="1600" height="900" aria-label="CAD animation of P2's print head sweeping across a white wall in bands while a mural appears."><source media="(min-width: 760px)" src="assets/video/tool_print.mp4" type="video/mp4"><source src="assets/video/tool_print_m.mp4" type="video/mp4"></video>
       </div>
       <div class="toolnotes" aria-live="polite">
         <div class="note-paint">

@@ -65,6 +65,35 @@
     }
   }
 
+
+  // ---------- looping clips: play only while on screen (and not paused, and not reduced motion) ----------
+  var loops = [].slice.call(document.querySelectorAll('video[loop]'));
+  var boxOf = function (v) { return v.closest('figure, section, .swap-stage') || v.parentNode; };
+  var pauseBox = function (v) { var b = boxOf(v); return b ? b.querySelector('.band-pause') : null; };
+  var want = function (v) { var p = pauseBox(v); return !still && v.__seen && !(p && p.checked) && v.offsetParent !== null; };
+  var sync = function (v) {
+    if (want(v)) { var r = v.play(); if (r && r.catch) r.catch(function () {}); }
+    else if (!v.paused) v.pause();
+  };
+  if (loops.length) {
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { e.target.__seen = e.isIntersecting; sync(e.target); });
+      }, { rootMargin: '200px 0px' });
+      loops.forEach(function (v) { io.observe(v); });
+    } else {
+      loops.forEach(function (v) { v.__seen = true; sync(v); });
+    }
+    document.addEventListener('change', function (e) {
+      if (e.target.matches && e.target.matches('.band-pause, input[name="tool"]')) {
+        setTimeout(function () { loops.forEach(sync); }, 0);
+      }
+    });
+    document.addEventListener('visibilitychange', function () {
+      loops.forEach(function (v) { if (document.hidden) v.pause(); else sync(v); });
+    });
+  }
+
   // ---------- paint request: four short steps, then the email app ----------
   var form = document.getElementById('ask');
   if (form) {

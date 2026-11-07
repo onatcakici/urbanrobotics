@@ -25,10 +25,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://urbanrobotics.com/#org","name":"Porter Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://urbanrobotics.com/","logo":"https://urbanrobotics.com/icon-512.png","email":"info@urbanrobotics.com","foundingDate":"2025","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@id":"https://urbanrobotics.com/company.html#founder"},"description":"Porter Robotics builds robots for construction work, starting with P2, an interior painting robot for jobsites and homes, in development in Miami."},{"@type":"WebSite","@id":"https://urbanrobotics.com/#site","name":"Porter Robotics","url":"https://urbanrobotics.com/","publisher":{"@id":"https://urbanrobotics.com/#org"}},{"@type":"Person","@id":"https://urbanrobotics.com/company.html#founder","name":"Onat Cakici","jobTitle":"Founder","worksFor":{"@id":"https://urbanrobotics.com/#org"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Florida Institute of Technology"},"sameAs":["https://www.linkedin.com/in/cakici/"]},{"@type":"VideoObject","name":"P2 at work","description":"A 30 second CAD animation of how P2 is designed to paint a room: it rolls in, rolls the wall lane by lane and shows the tools planned for the same arm.","thumbnailUrl":"https://urbanrobotics.com/assets/video/p2_film_poster.webp","contentUrl":"https://urbanrobotics.com/assets/video/p2_film_1080.mp4","uploadDate":"2026-10-30T23:30:00+00:00","duration":"PT30S","publisher":{"@id":"https://urbanrobotics.com/#org"}}]}</script>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=2da48117b9">
+<link rel="stylesheet" href="assets/styles.css?v=0265ceccd3">
 <link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
-<script src="assets/site.js?v=9e5b835f51" defer></script>
+<script src="assets/site.js?v=2089b5303c" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -69,11 +69,7 @@
   <section class="hero-film" aria-labelledby="top-h">
     <input class="vh band-pause" type="checkbox" id="pause-hero" aria-label="Pause the animation">
     <div class="hero-media">
-      <picture class="band-move">
-      <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/entrance_960.webp 960w, assets/img/entrance_1920.webp 1920w" sizes="(max-width: 759px) 150vw, 100vw">
-      <source type="image/avif" srcset="assets/video/entrance_960.avif 960w, assets/video/entrance_1280.avif 1280w, assets/video/entrance_1920.avif 1920w" sizes="(max-width: 759px) 150vw, 100vw">
-      <img src="assets/img/entrance_1920.webp" width="1920" height="1080" alt="CAD animation that starts outside a finished tower with scaffolding and a crane, moves in through a window, follows P2 from room to room, and ends with P2 rolling sage paint up a wall." fetchpriority="high" decoding="async">
-      </picture>
+      <video class="band-move" muted loop playsinline preload="auto" poster="assets/img/entrance_960.webp" width="1920" height="1080" aria-label="CAD animation that starts outside a finished tower with scaffolding and a crane, moves in through a window, follows P2 from room to room, and ends with P2 rolling sage paint up a wall."><source media="(min-width: 760px)" src="assets/video/entrance.mp4" type="video/mp4"><source src="assets/video/entrance_m.mp4" type="video/mp4"></video>
       <img class="band-still" src="assets/img/entrance_1920.webp" srcset="assets/img/entrance_960.webp 960w, assets/img/entrance_1920.webp 1920w" sizes="(max-width: 759px) 150vw, 100vw" width="1920" height="1080" alt="CAD animation that starts outside a finished tower with scaffolding and a crane, moves in through a window, follows P2 from room to room, and ends with P2 rolling sage paint up a wall." loading="lazy" decoding="async">
       <div class="hero-copy wrap">
         <p class="hero-tag">In development</p>
@@ -124,21 +120,13 @@
     </div></div>
   <figure class="band">
     <input class="vh band-pause" type="checkbox" id="pause-demo_scan" aria-label="Pause the animation">
-    <picture class="band-move">
-      <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/demo_scan_960.webp 960w, assets/img/demo_scan_1920.webp 1920w" sizes="100vw">
-      <source type="image/avif" srcset="assets/video/demo_scan_960.avif 960w, assets/video/demo_scan_1280.avif 1280w, assets/video/demo_scan_1920.avif 1920w" sizes="100vw">
-      <img src="assets/img/demo_scan_1920.webp" width="1920" height="1080" alt="CAD animation from P2's camera looking at a freshly painted wall. Boxes mark a thin coat, a missed strip and a patch of the wrong shade, and each one clears as P2 repaints it." loading="lazy" decoding="async">
-    </picture>
+    <video class="band-move" muted loop playsinline preload="none" poster="assets/img/demo_scan_960.webp" width="1920" height="1080" aria-label="CAD animation from P2's camera looking at a freshly painted wall. Boxes mark a thin coat, a missed strip and a patch of the wrong shade, and each one clears as P2 repaints it."><source media="(min-width: 760px)" src="assets/video/demo_scan.mp4" type="video/mp4"><source src="assets/video/demo_scan_m.mp4" type="video/mp4"></video>
     <img class="band-still" src="assets/img/demo_scan_1920.webp" srcset="assets/img/demo_scan_960.webp 960w, assets/img/demo_scan_1920.webp 1920w" sizes="100vw" width="1920" height="1080" alt="CAD animation from P2's camera looking at a freshly painted wall. Boxes mark a thin coat, a missed strip and a patch of the wrong shade, and each one clears as P2 repaints it." loading="lazy" decoding="async">
     <figcaption class="wrap band-foot"><label for="pause-demo_scan" class="band-btn"><span class="p">Pause</span><span class="r">Play</span></label></figcaption>
   </figure>
   <figure class="plan wrap">
     <input class="vh band-pause" type="checkbox" id="pause-plan" aria-label="Pause the animation">
-    <picture class="band-move">
-      <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/demo_plan_960.webp 960w, assets/img/demo_plan_1920.webp 1920w" sizes="(min-width: 1312px) 1184px, (min-width: 1200px) calc(100vw - 128px), (min-width: 700px) calc(100vw - 80px), 110vw">
-      <source type="image/avif" srcset="assets/video/demo_plan_960.avif 960w, assets/video/demo_plan_1280.avif 1280w, assets/video/demo_plan_1920.avif 1920w" sizes="(min-width: 1312px) 1184px, (min-width: 1200px) calc(100vw - 128px), (min-width: 700px) calc(100vw - 80px), 110vw">
-      <img src="assets/img/demo_plan_1920.webp" width="1920" height="1080" alt="CAD animation of an apartment seen from above, sped up. P2 rolls in through the front door, works its way along the walls of each room in turn, coloring them as it paints, rolls through the doors from room to room, and parks by the front door when both bedrooms, the living room, the study and the hall are done." loading="lazy" decoding="async">
-    </picture>
+    <video class="band-move" muted loop playsinline preload="none" poster="assets/img/demo_plan_960.webp" width="1920" height="1080" aria-label="CAD animation of an apartment seen from above, sped up. P2 rolls in through the front door, works its way along the walls of each room in turn, coloring them as it paints, rolls through the doors from room to room, and parks by the front door when both bedrooms, the living room, the study and the hall are done."><source media="(min-width: 760px)" src="assets/video/demo_plan.mp4" type="video/mp4"><source src="assets/video/demo_plan_m.mp4" type="video/mp4"></video>
     <img class="band-still" src="assets/img/demo_plan_1920.webp" srcset="assets/img/demo_plan_960.webp 960w, assets/img/demo_plan_1920.webp 1920w" sizes="(min-width: 1312px) 1184px, (min-width: 1200px) calc(100vw - 128px), (min-width: 700px) calc(100vw - 80px), 110vw" width="1920" height="1080" alt="CAD animation of an apartment seen from above, sped up. P2 rolls in through the front door, works its way along the walls of each room in turn, coloring them as it paints, rolls through the doors from room to room, and parks by the front door when both bedrooms, the living room, the study and the hall are done." loading="lazy" decoding="async">
     <figcaption class="band-foot"><label for="pause-plan" class="band-btn"><span class="p">Pause</span><span class="r">Play</span></label></figcaption>
   </figure>
@@ -154,11 +142,7 @@
   </div>
   <figure class="band">
     <input class="vh band-pause" type="checkbox" id="pause-hero_js" aria-label="Pause the animation">
-    <picture class="band-move">
-      <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/hero_js_960.webp 960w, assets/img/hero_js_1920.webp 1920w" sizes="100vw">
-      <source type="image/avif" srcset="assets/video/hero_js_960.avif 960w, assets/video/hero_js_1280.avif 1280w, assets/video/hero_js_1920.avif 1920w" sizes="100vw">
-      <img src="assets/img/hero_js_1920.webp" width="1920" height="1080" alt="CAD animation of P2 on an open floor under construction: mudded drywall, a concrete floor and painter's tape on the trim. Its arm rolls a lane of sage paint up the wall." loading="lazy" decoding="async">
-    </picture>
+    <video class="band-move" muted loop playsinline preload="none" poster="assets/img/hero_js_960.webp" width="1920" height="1080" aria-label="CAD animation of P2 on an open floor under construction: mudded drywall, a concrete floor and painter's tape on the trim. Its arm rolls a lane of sage paint up the wall."><source media="(min-width: 760px)" src="assets/video/hero_js.mp4" type="video/mp4"><source src="assets/video/hero_js_m.mp4" type="video/mp4"></video>
     <img class="band-still" src="assets/img/hero_js_1920.webp" srcset="assets/img/hero_js_960.webp 960w, assets/img/hero_js_1920.webp 1920w" sizes="100vw" width="1920" height="1080" alt="CAD animation of P2 on an open floor under construction: mudded drywall, a concrete floor and painter's tape on the trim. Its arm rolls a lane of sage paint up the wall." loading="lazy" decoding="async">
     <figcaption class="wrap band-foot"><label for="pause-hero_js" class="band-btn"><span class="p">Pause</span><span class="r">Play</span></label></figcaption>
   </figure>
@@ -196,11 +180,7 @@
     <div class="body">
       <p>Most of what you pay for a paint job is labor: 75 to 95 percent of a professional interior job, according to Angi. P2 is built to take that labor off the bill.</p>
       <figure class="loop">
-        <picture>
-          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/stock_hand_768.webp 768w, assets/img/stock_hand.webp 1280w" sizes="(min-width: 1440px) 752px, (min-width: 960px) 56vw, 100vw">
-          <source type="image/avif" srcset="assets/video/stock_hand_768.avif 768w, assets/video/stock_hand.avif 1280w" sizes="(min-width: 1440px) 752px, (min-width: 960px) 56vw, 100vw">
-          <img src="assets/img/stock_hand.webp" width="1280" height="720" alt="A painter in a cap and a plaid shirt rolling gray paint onto a bare wall with a roller on an extension pole, a stepladder and a work light behind him, then a close view of the roller going up the wall." loading="lazy" decoding="async">
-        </picture>
+        <video muted loop playsinline preload="none" poster="assets/img/stock_hand_768.webp" width="1280" height="720" aria-label="A painter in a cap and a plaid shirt rolling gray paint onto a bare wall with a roller on an extension pole, a stepladder and a work light behind him, then a close view of the roller going up the wall."><source media="(min-width: 760px)" src="assets/video/stock_hand.mp4" type="video/mp4"><source src="assets/video/stock_hand_m.mp4" type="video/mp4"></video>
       </figure>
       <div class="fig1"><b>1.4 h</b><p>of a person’s time per bedroom with P2, taping included, against about 6.5 hours for a painter by hand. Both are our estimates.</p></div>
       <dl class="specs notes gains">
