@@ -1,0 +1,26 @@
+{
+ "name": "Porter Robotics",
+ "short_name": "Porter",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "theme_color": "#1E1F21",
+ "background_color": "#1E1F21",
+ "display": "browser",
+ "start_url": "/"
+}
