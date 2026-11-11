@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 0 88 100" width="88" height="100" role="img" aria-label="Ragnar"><g fill="#F4F3EF" stroke="#F4F3EF" stroke-linejoin="miter">
+<path stroke="none" d="M10 60H66L78 68V80H10Z"/>
+<circle cx="68" cy="71" r="3.2" fill="#0E0E0D" stroke="none"/>
+<path fill="none" stroke-width="5.5" d="M19 80V93H27M33 80V93H41M53 80V93H61M67 80V93H75"/>
+<path fill="none" stroke-width="4.5" d="M17 60V49M26 60V45H31M36 60V51"/>
+<rect stroke="none" x="42" y="12" width="9" height="48"/>
+<rect stroke="none" x="39" y="4" width="15" height="5.5"/>
+<path fill="none" stroke-width="5.5" d="M51 40L66 22L84 31"/>
+<circle cx="66" cy="22" r="4.6" stroke="none"/>
+<rect stroke="none" x="84" y="21" width="6" height="20"/>
+</g></svg>
