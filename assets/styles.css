@@ -138,3 +138,12 @@ h3{font-size:1.0625rem!important;font-weight:600;letter-spacing:-0.01em}
 @media (max-width:759px){.h-hero{background:#F4F3EF}.h-hero img{height:auto;min-height:0;aspect-ratio:4/5;object-position:50% 50%}.h-hero-copy{position:static;padding-block:28px 8px}.h-views{gap:3%}.h-views .v3{display:none}}
 .log .when{font-family:var(--font);font-weight:500;text-transform:none;font-size:1.0625rem;letter-spacing:-0.01em;line-height:1.5}
 .log{border-top:1px solid var(--rule)}
+/* header 3 */
+.brand img{height:20px}
+.site-foot img{height:18px}
+.site-head{background:rgba(244,243,239,0.72);border-bottom:0}
+.site-nav ul{gap:34px}
+@media (min-width:760px){.h-hero{margin-top:calc(-1 * var(--head))}.h-hero img{height:min(92vh,880px);object-position:58% 50%}}
+@media (min-width:960px){.site-head .row{display:grid;grid-template-columns:1fr auto 1fr;gap:24px}.site-nav{margin:0}.site-head .row>.btn{justify-self:end;margin:0}}
+@media (max-width:759px){.brand img{height:17px}}
+@media (max-width:520px){.site-head .row>.btn{display:none}}
