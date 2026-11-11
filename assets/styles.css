@@ -141,9 +141,28 @@ h3{font-size:1.0625rem!important;font-weight:600;letter-spacing:-0.01em}
 /* header 3 */
 .brand img{height:20px}
 .site-foot img{height:18px}
-.site-head{background:rgba(244,243,239,0.72);border-bottom:0}
+.site-head{background:rgba(244,243,239,0.8);border-bottom:0}
 .site-nav ul{gap:34px}
-@media (min-width:760px){.h-hero{margin-top:calc(-1 * var(--head))}.h-hero img{height:min(92vh,880px);object-position:58% 50%}}
+
 @media (min-width:960px){.site-head .row{display:grid;grid-template-columns:1fr auto 1fr;gap:24px}.site-nav{margin:0}.site-head .row>.btn{justify-self:end;margin:0}}
 @media (max-width:759px){.brand img{height:17px}}
 @media (max-width:520px){.site-head .row>.btn{display:none}}
+
+/* engineering hero */
+.h-hero2{padding-block:clamp(16px,3vw,40px) clamp(40px,6vw,72px);border-bottom:1px solid var(--line)}
+.h-hero2 .wrap{display:grid;gap:8px 40px;align-items:center}
+.h-hero2-copy h1{max-width:8.5em}
+.h-hero2-copy p{margin-top:20px;max-width:26em;font-size:clamp(1.0625rem,1.35vw,1.25rem);line-height:1.45;color:#2B2A27}
+.h-hero2-fig{min-width:0}
+.h-dwg{max-height:min(84vh,860px)}
+.h-dwg .gnd{stroke:#111110;stroke-width:1}
+.h-dwg .dm path{stroke:#8A877F}.h-dwg .dm path.ah{fill:#8A877F}
+.h-dwg .dm text{font-size:50px;font-weight:500;fill:#3A3936}
+.h-dwg .co path{stroke:#111110}.h-dwg .co circle{fill:#111110}
+.h-dwg .co text{font-size:52px;font-weight:500;fill:#111110}
+.h-views{max-width:1100px;align-items:flex-end;justify-content:space-around}
+.h-views .v2,.h-views .v3{flex:421 1 0}.h-views .v4{flex:1014 1 0;display:block}
+.r-iso{display:grid;gap:24px;align-items:end;padding-block:8px 56px}
+.r-iso img{display:block;width:100%;height:auto}
+@media (min-width:860px){.h-hero2 .wrap{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}.r-iso{grid-template-columns:1fr 1fr;gap:6%;padding-inline:6%}}
+@media (max-width:859px){.h-hero2 .wrap{display:flex;flex-direction:column-reverse;align-items:stretch}.h-hero2-copy{padding-top:12px}.h-dwg .co{display:none}.h-dwg .dm text{font-size:84px}.h-views .v3{display:block}.h-views .v4{display:none}}
