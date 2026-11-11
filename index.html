@@ -7,7 +7,7 @@
 <meta name="description" content="Ragnar Robotics builds robot technicians. R1, our first, is in development in Miami: one robot that paints, drills, sands and more, with six tools it swaps on its own.">
 <link rel="canonical" href="https://ragnarrobotics.com/">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="theme-color" content="#1E1F21">
+<meta name="theme-color" content="#F4F3EF">
 <meta name="color-scheme" content="light">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -25,9 +25,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://ragnarrobotics.com/#org","name":"Ragnar Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://ragnarrobotics.com/","logo":"https://ragnarrobotics.com/icon-512.png","email":"info@urbanrobotics.com","foundingDate":"2025","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@id":"https://ragnarrobotics.com/company.html#founder"},"description":"Ragnar Robotics builds robot technicians, starting with R1, an interior finishing robot that paints, drills and sands, in development in Miami."},{"@type":"WebSite","@id":"https://ragnarrobotics.com/#site","name":"Ragnar Robotics","url":"https://ragnarrobotics.com/","publisher":{"@id":"https://ragnarrobotics.com/#org"}},{"@type":"Person","@id":"https://ragnarrobotics.com/company.html#founder","name":"Onat Cakici","jobTitle":"Founder","worksFor":{"@id":"https://ragnarrobotics.com/#org"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Florida Institute of Technology"},"sameAs":["https://www.linkedin.com/in/cakici/"]},{"@type":"VideoObject","name":"R1 at work","description":"An 80 second animation from the CAD model of R1 rolling a wall lane by lane, cutting the ceiling line, changing tools, drilling the wall and the ceiling and sanding a patch.","thumbnailUrl":"https://ragnarrobotics.com/assets/video/p3_film_poster.webp","contentUrl":"https://ragnarrobotics.com/assets/video/p3_film_1080.mp4","uploadDate":"2026-11-08T14:00:00+00:00","duration":"PT80S","publisher":{"@id":"https://ragnarrobotics.com/#org"}}]}</script>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<link rel="stylesheet" href="assets/styles.css?v=calm3">
-<link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/styles.css?v=t3b">
+<link rel="preload" href="assets/fonts/geist_var.woff2" as="font" type="font/woff2" crossorigin>
 <script src="assets/site.js?v=2089b5303c" defer></script>
 </head>
 <body>
@@ -41,12 +40,12 @@
       <li><a href="r1.html#specs">Specs</a></li>
       <li><a href="company.html">Company</a></li>
     </ul>
-    <p><a class="btn" href="#pilot">Set up a call</a></p>
+    <p><a class="btn" href="#pilot">Get in touch</a></p>
   </div>
 </nav>
 <header class="site-head dark">
   <div class="wrap row">
-    <a class="brand" href="#top"><img src="assets/brand/ragnar_on_dark.svg" width="151" height="30" alt="Ragnar Robotics home"></a>
+    <a class="brand" href="#top"><img src="assets/brand/ragnar.svg" width="131" height="26" alt="Ragnar Robotics home"></a>
     <nav class="site-nav" aria-label="Main">
       <ul>
         <li><a href="#how">How it works</a></li>
@@ -54,77 +53,65 @@
         <li><a href="company.html">Company</a></li>
       </ul>
     </nav>
-    <a class="btn small" href="#pilot">Set up a call</a>
+    <a class="btn small" href="#pilot">Get in touch</a>
     <a class="menu-open" href="#menu">Menu</a>
     <a class="menu-x" href="#close">Close</a>
   </div>
 </header>
 <main id="main">
-<div class="dark">
-  <section class="hero-film" aria-labelledby="top-h">
-    <input class="vh band-pause" type="checkbox" id="pause-hero" aria-label="Pause the animation">
-    <div class="hero-media">
-      <video class="band-move" muted loop playsinline preload="auto" poster="assets/img/p3_hero_960.webp" width="1920" height="1080" aria-label="CAD animation of R1 driving sideways into a room under construction, then its arm rolling a lane of sage paint up the wall."><source media="(min-width: 760px)" src="assets/video/p3_hero.mp4" type="video/mp4"><source src="assets/video/p3_hero_m.mp4" type="video/mp4"></video>
-      <img class="band-still" src="assets/img/p3_hero_1920.webp" srcset="assets/img/p3_hero_960.webp 960w, assets/img/p3_hero_1920.webp 1920w" sizes="(max-width: 759px) 150vw, 100vw" width="1920" height="1080" alt="CAD animation of R1 driving sideways into a room under construction, then its arm rolling a lane of sage paint up the wall." loading="lazy" decoding="async">
-      <div class="hero-copy wrap">
-        <h1 id="top-h">Robot technicians for buildings</h1>
-        <p class="hero-say">Ragnar Robotics builds robots that paint, drill and sand inside buildings, so your crew finishes more rooms with less labor.</p>
-        <a class="btn" href="#pilot">Get in touch</a>
-      </div>
-      <p class="hero-cap wrap"><label for="pause-hero" class="band-btn"><span class="p">Pause</span><span class="r">Play</span></label></p>
+  <section class="h-hero" id="top" aria-labelledby="top-h">
+    <picture>
+      <source media="(max-width: 759px)" srcset="assets/img/r1_home_m.webp">
+      <img src="assets/img/r1_home_3200.webp" srcset="assets/img/r1_home_1850.webp 1850w, assets/img/r1_home_3200.webp 3700w" sizes="(min-aspect-ratio: 2/1) 100vw, 230vh" width="3700" height="1350" alt="CAD rendering of the R1 robot: an orange base with docked tools, a white mast and a white arm holding a paint roller." fetchpriority="high">
+    </picture>
+    <div class="wrap h-hero-copy">
+      <h1 id="top-h">Robot technicians for buildings</h1>
+      <p>Ragnar Robotics builds robots that paint, drill and sand inside buildings, so your crew finishes more rooms with less labor.</p>
+      <p class="h-links"><a class="btn" href="#pilot">Get in touch</a><a class="tlink" href="r1.html">See R1</a></p>
     </div>
   </section>
-</div>
-
-  <section class="s-sec" id="r1" aria-labelledby="r1-h"><div class="wrap">
-    <div class="s-head">
-      <h2 id="r1-h">Meet R1</h2>
-      <p>One robot for the light, repetitive work inside a building. Its arm picks its own tools from the deck, and a mast lifts it to the top of the wall.</p>
-    </div>
-    <div class="s-meet">
-      <div class="s-feats">
-        <div class="s-feat"><h3>Paints</h3><p>Rolls the wall in lanes and cuts the ceiling line, with paint fed from a sealed tank.</p></div>
-        <div class="s-feat"><h3>Drills and sands</h3><p>Swaps to a drill, a sander or a taping head on its own and catches the dust.</p></div>
-        <div class="s-feat"><h3>Reaches high</h3><p>A three stage mast lifts the arm to 16 ft walls, so nobody is on a ladder.</p></div>
-        <div class="s-feat"><h3>Reports back</h3><p>Photos of every wall and a list of what was done land on your phone.</p></div>
-      </div>
-      <figure class="s-shot"><img src="assets/img/p3_product_1200.webp" srcset="assets/img/p3_product_800.webp 800w, assets/img/p3_product_1200.webp 1200w" sizes="(min-width: 960px) 45vw, 100vw" width="1200" height="1500" alt="CAD rendering of the R1 robot: an orange base with RAGNAR on the side, a white mast and a white arm holding a paint roller." loading="lazy" decoding="async"></figure>
-    </div>
-    <p class="s-note">R1 is in development and has not been built yet. The images are CAD renderings, and the numbers come from our simulations. <a href="r1.html">See R1 up close</a></p>
-  </div></section>
-
-  <section class="s-sec alt" id="how" aria-labelledby="how-h"><div class="wrap">
-    <div class="s-head"><h2 id="how-h">How it works</h2></div>
-    <ol class="s-steps">
-      <li><h3>Scan</h3><p>R1 maps the room and finds every wall, corner, outlet, door and window.</p></li>
-      <li><h3>Plan</h3><p>It plans the job from the scan and the drawings: lanes to paint, holes to drill, patches to sand.</p></li>
-      <li><h3>Work</h3><p>It picks the right tool, does the work and checks the result with a camera as it goes.</p></li>
-      <li><h3>Report</h3><p>You get photos of every wall and a list of what was done.</p></li>
-    </ol>
-  </div></section>
-
-  <section class="s-sec" id="where" aria-labelledby="why-h"><div class="wrap">
-    <div class="s-split">
-      <img src="assets/img/p3_site_1600.webp" srcset="assets/img/p3_site_960.webp 960w, assets/img/p3_site_1600.webp 1600w" sizes="(min-width: 960px) 50vw, 100vw" width="1600" height="900" alt="CAD rendering of R1 on a jobsite floor, its mast raised and its arm rolling sage paint over taped drywall." loading="lazy" decoding="async">
+  <section class="h-sec" id="r1" aria-labelledby="r1-h"><div class="wrap">
+    <div class="h-two">
+      <h2 id="r1-h">R1 does the light, repetitive work inside a building.</h2>
       <div class="txt">
-        <h2 id="why-h">Short on painters?</h2>
-        <p>Labor is 75 to 95 percent of the cost of a professional interior paint job, and painters are hard to hire. R1 is built to take the slow, repetitive part off your crew.</p>
-        <p class="src">Sources: <a href="https://www.nerdwallet.com/home-ownership/home-improvement/learn/save-on-cost-to-paint-a-house">NerdWallet, citing Angi</a>; <a href="https://www.bls.gov/ooh/construction-and-extraction/painters-construction-and-maintenance.htm">U.S. Bureau of Labor Statistics</a>.</p>
-        <a class="btn" href="#pilot">Get in touch</a>
+        <p>Its arm picks its own tools from the deck, and a mast lifts it to the top of the wall. R1 rolls paint in lanes, cuts the ceiling line, drills, sands and tapes, then sends you photos of every wall.</p>
+        <p class="h-note">R1 is in development and has not been built yet. The images are CAD renderings, and the numbers come from our simulations.</p>
+        <a class="tlink" href="r1.html">Dimensions and specifications</a>
       </div>
+    </div>
+    <dl class="h-nums">
+      <div><dd>16 ft</dd><dt>Wall reach, with the mast raised</dt></div>
+      <div><dd>6</dd><dt>Tools it swaps on its own</dt></div>
+      <div><dd>36 in</dd><dt>Door it fits through</dt></div>
+      <div><dd>174 kg</dd><dt>Weight, empty</dt></div>
+    </dl>
+    <div class="h-views">
+      <img class="v1" src="assets/img/r1_cad_side.webp" width="899" height="879" alt="Side view of the R1 CAD model." loading="lazy" decoding="async">
+      <img class="v2" src="assets/img/r1_cad_front.webp" width="331" height="879" alt="Front view of the R1 CAD model." loading="lazy" decoding="async">
+      <img class="v3" src="assets/img/r1_cad_rear.webp" width="331" height="879" alt="Rear view of the R1 CAD model." loading="lazy" decoding="async">
     </div>
   </div></section>
-
-  <section class="s-sec alt" id="pilot" aria-labelledby="pilot-h"><div class="wrap">
-    <div class="s-contact">
-      <h2 id="pilot-h">Talk to us</h2>
-      <p>Pilots start in South Florida. Tell us about your building and we will call you when R1 is ready to work.</p>
-      <div class="row">
-        <a class="btn" href="https://calendly.com/han2000cc/15-minute-meeting-clone">Book a 15 minute call</a>
-        <a class="btn ghost" href="mailto:info@urbanrobotics.com?subject=Ragnar%20Robotics">info@urbanrobotics.com</a>
-      </div>
-      <p class="fine">Ragnar Robotics is based in Miami and was founded by Onat Cakici, an aerospace engineer. <a href="company.html">About the company</a></p>
+  <section class="h-sec" id="how" aria-labelledby="how-h"><div class="wrap">
+    <h2 id="how-h">How it works</h2>
+    <dl class="h-rows">
+      <div><dt>Scan</dt><dd>R1 maps the room and finds every wall, corner, outlet, door and window.</dd></div>
+      <div><dt>Plan</dt><dd>It plans the job from the scan and the drawings: lanes to paint, holes to drill, patches to sand.</dd></div>
+      <div><dt>Work</dt><dd>It picks the right tool, does the work and checks the result with a camera as it goes.</dd></div>
+      <div><dt>Report</dt><dd>You get photos of every wall and a list of what was done.</dd></div>
+    </dl>
+  </div></section>
+  <section class="h-sec" id="where" aria-labelledby="why-h"><div class="wrap h-two">
+    <h2 id="why-h">Short on painters?</h2>
+    <div class="txt">
+      <p>Labor is 75 to 95 percent of the cost of a professional interior paint job, and painters are hard to hire. R1 is built to take the slow, repetitive part off your crew.</p>
+      <p class="h-src">Sources: <a href="https://www.nerdwallet.com/home-ownership/home-improvement/learn/save-on-cost-to-paint-a-house">NerdWallet, citing Angi</a>; <a href="https://www.bls.gov/ooh/construction-and-extraction/painters-construction-and-maintenance.htm">U.S. Bureau of Labor Statistics</a>.</p>
     </div>
+  </div></section>
+  <section class="h-sec h-contact" id="pilot" aria-labelledby="pilot-h"><div class="wrap">
+    <h2 id="pilot-h">Talk to us</h2>
+    <p>Pilots start in South Florida. Tell us about your building and we will call you when R1 is ready to work.</p>
+    <p class="h-links"><a class="btn" href="https://calendly.com/han2000cc/15-minute-meeting-clone" rel="noopener">Book a 15 minute call</a><a class="tlink" href="mailto:info@urbanrobotics.com">info@urbanrobotics.com</a></p>
+    <p class="fine">Ragnar Robotics is based in Miami and was founded by Onat Cakici, an aerospace engineer. <a href="company.html">About the company</a></p>
   </div></section>
 </main>
 <div class="dark">
