@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>R1, the interior work robot: specs and tools | Ragnar Robotics</title>
+<meta name="description" content="How R1 is built: a swerve drive base, a three stage mast and a six axis arm with an onboard station of six tools. Paints, sands, drills and more, to 16 ft.">
+<link rel="canonical" href="https://urbanrobotics.com/r1.html">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#1E1F21">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ragnar Robotics">
+<meta property="og:title" content="R1, the interior work robot: specs and tools | Ragnar Robotics">
+<meta property="og:description" content="How R1 is built: a swerve drive base, a three stage mast and a six axis arm with an onboard station of six tools. Paints, sands, drills and more, to 16 ft.">
+<meta property="og:url" content="https://urbanrobotics.com/r1.html">
+<meta property="og:image" content="https://urbanrobotics.com/assets/img/og_p3.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A CAD rendering of the R1 robot on a warm grey studio backdrop.">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<link rel="stylesheet" href="assets/styles.css?v=0265ceccd3">
+<script src="assets/site.js?v=2089b5303c" defer></script>
+<link rel="preload" href="assets/fonts/big_shoulders_900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/barlow_400.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="menu dark" id="menu" aria-label="Menu" tabindex="-1">
+  <div class="wrap">
+    <ul>
+      <li><a href="./#how">How it works</a></li>
+      <li><a href="./#where">Where it works</a></li>
+        <li><a href="r1.html" aria-current="page">R1</a></li>
+      <li><a href="./#progress">Progress</a></li>
+      <li><a href="r1.html#details">Tools</a></li>
+      <li><a href="r1.html#specs">Specs</a></li>
+      <li><a href="company.html">Company</a></li>
+    </ul>
+    <p><a class="btn" href="./#pilot">Set up a call</a></p>
+  </div>
+</nav>
+<header class="site-head dark">
+  <div class="wrap row">
+    <a class="brand" href="./"><img src="assets/brand/ragnar_on_dark.svg" width="111" height="30" alt="Ragnar Robotics home"></a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="./#how">How it works</a></li>
+        <li><a href="./#where">Where it works</a></li>
+        <li><a href="r1.html" aria-current="page">R1</a></li>
+        <li><a href="company.html">Company</a></li>
+      </ul>
+    </nav>
+    <a class="btn small" href="./#pilot">Set up a call</a>
+    <a class="menu-open" href="#menu">Menu</a>
+    <a class="menu-x" href="#close">Close</a>
+  </div>
+</header>
+<main id="main">
+<div class="dark">
+  <section class="co-hero wrap" aria-labelledby="top-h">
+    <h1 id="top-h">R1, up close</h1>
+    <p class="lead">One robot for the light, repetitive work inside a building: paint, sand, drill, mark, install small parts and check the result. Everything here comes from the CAD model and our simulations; R1 has not been built yet.</p>
+  </section>
+  <div class="studio">
+    <figure><img src="assets/img/p3_hero_1600.webp" srcset="assets/img/p3_hero_800.webp 800w, assets/img/p3_hero_1200.webp 1200w, assets/img/p3_hero_1600.webp 1600w" sizes="(min-width: 760px) 50vw, 100vw" width="1600" height="2000" alt="CAD rendering of R1 on a warm grey studio backdrop: an orange base with six docked tools, a white three stage mast and a white six axis arm holding a paint roller." loading="lazy" decoding="async"></figure>
+    <figure><img src="assets/img/p3_back_1600.webp" srcset="assets/img/p3_back_800.webp 800w, assets/img/p3_back_1200.webp 1200w, assets/img/p3_back_1600.webp 1600w" sizes="(min-width: 760px) 50vw, 100vw" width="1600" height="2000" alt="CAD rendering of R1 from behind: the push handle with the operator screen, the docked tools and the mast." loading="lazy" decoding="async"></figure>
+  </div>
+  <section class="section film-sec" id="film" aria-labelledby="film-h">
+    <div class="wrap"><div class="split film-head">
+      <h2 id="film-h">R1 at work</h2>
+      <div class="body">
+        <p>An 80 second film animated from the CAD model, with every move checked for collisions: R1 drives in sideways, rolls a wall lane by lane, cuts the ceiling line while it drives, docks the roller and picks up the drill, drills anchor holes in the wall and the ceiling, then swaps the drill for the sander and sands a patch on the bare drywall.</p>
+      </div>
+    </div></div>
+    <figure class="film">
+      <video controls preload="none" playsinline width="1920" height="1080" poster="assets/video/p3_film_poster.webp">
+        <source src="assets/video/p3_film_720.mp4" type="video/mp4" media="(max-width: 760px)">
+        <source src="assets/video/p3_film_1080.mp4" type="video/mp4">
+        <a href="assets/video/p3_film_1080.mp4">Download the R1 film (MP4, 80 seconds)</a>
+      </video>
+    </figure>
+  </section>
+</div>
+  <div class="dark" id="r1">
+    <section class="wrap machine" aria-label="R1">
+      <div class="machine-head">
+        <h2 id="p3-h">R1</h2>
+        <div class="body">
+          <p>A swerve drive base, a three stage mast and a six axis arm. The base carries the paint, the batteries and six tools; the mast lifts the arm; the arm swaps tools on its own.</p>
+          <dl class="keys">
+            <div><dt>Wall reach <span>From the baseboard up, with the mast raised</span></dt><dd>16 ft</dd></div>
+            <div><dt>Height, stowed <span>Fits under an 80 in door</span></dt><dd>2.0 m</dd></div>
+            <div><dt>Weight <span>Empty; about 186 kg with a full paint tank</span></dt><dd>174 kg</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="callout">
+        <figure><img src="assets/img/p3_product_1600.webp" srcset="assets/img/p3_product_800.webp 800w, assets/img/p3_product_1200.webp 1200w, assets/img/p3_product_1600.webp 1600w" sizes="(min-width: 1200px) 640px, (min-width: 960px) 56vw, 100vw" width="1600" height="2000" alt="CAD rendering of R1 from the side with its arm reaching out and the paint roller on its wrist." loading="lazy" decoding="async"></figure>
+        <ol class="legend">
+          <li><div><strong>LiDAR.</strong> On top of the mast, it maps the room and finds walls, doors, trim and people.</div></li>
+          <li><div><strong>Three stage mast.</strong> Stows at 2.0 m and lifts the arm so tools reach 16 ft walls and 17 ft ceilings.</div></li>
+          <li><div><strong>Six axis arm.</strong> A collaborative arm with 7.5 kg payload, 0.95 m reach and force sensing at the wrist.</div></li>
+          <li><div><strong>Tool changer.</strong> Passes paint, air, vacuum and signals to the tool, and holds it without power.</div></li>
+          <li><div><strong>Tool station.</strong> Six docks on the deck: roller, sprayer, sander, drill, gripper and tape.</div></li>
+          <li><div><strong>Base.</strong> Two swerve drive modules move it in any direction, including sideways along a wall.</div></li>
+        </ol>
+      </div>
+    </section>
+  </div>
+  <section class="section" id="details" aria-labelledby="details-h"><div class="wrap">
+    <div class="split">
+      <h2 id="details-h">The details</h2>
+      <div class="body"><p class="intro">The parts that do the work, up close.</p></div>
+    </div>
+    <div class="details">
+      <figure class="d-main"><img src="assets/img/p3_macro_paint_1400.webp" srcset="assets/img/p3_macro_paint_800.webp 800w, assets/img/p3_macro_paint_1400.webp 1400w" sizes="(min-width: 900px) 62vw, 100vw" width="1400" height="1400" alt="Close up CAD rendering of the R1 paint head on the arm." loading="lazy" decoding="async"><figcaption><b>Paint head.</b> A standard 9 in roller fed through its core, an edger pad for the lines and a cover that closes while the paint dries.</figcaption></figure>
+      <figure class="d-side"><img src="assets/img/p3_macro_mast_1000.webp" srcset="assets/img/p3_macro_mast_600.webp 600w, assets/img/p3_macro_mast_1000.webp 1000w" sizes="(min-width: 900px) 30vw, 100vw" width="1000" height="1000" alt="Close up CAD rendering of the lidar on top of the R1 mast." loading="lazy" decoding="async"><figcaption><b>Mast head.</b> The lidar sits on top of the inner stage, with a guard around it.</figcaption></figure>
+      <figure class="d-side"><img src="assets/img/p3_macro_deck_1400.webp" srcset="assets/img/p3_macro_deck_800.webp 800w, assets/img/p3_macro_deck_1400.webp 1400w" sizes="(min-width: 900px) 30vw, 100vw" width="1400" height="1400" alt="Close up CAD rendering of the R1 deck with the docked tools." loading="lazy" decoding="async"><figcaption><b>Tool station.</b> Each tool waits in its own dock. The drill clamps to the wall with a vacuum ring, so the arm only has to hold it steady.</figcaption></figure>
+      <figure class="d-wide"><img src="assets/img/p3_macro_base_1400.webp" srcset="assets/img/p3_macro_base_800.webp 800w, assets/img/p3_macro_base_1400.webp 1400w" sizes="100vw" width="1400" height="980" alt="Close up CAD rendering of the R1 base corner with its bumper and depth camera." loading="lazy" decoding="async"><figcaption><b>Base.</b> Paint tank, pump, dust extractor and two battery packs sit low, which keeps R1 stable without feet.</figcaption></figure>
+    </div>
+  </div></section>
+  <section class="section" id="specs" aria-labelledby="specs-h"><div class="wrap"><div class="split">
+    <h2 id="specs-h">Specs</h2>
+    <div class="body">
+      <h3>Design targets</h3>
+      <dl class="specs">
+        <div><dt>Footprint</dt><dd>0.72 by 1.04 m with the bumper; fits a 36 in door</dd></div>
+        <div><dt>Height, stowed</dt><dd>2.0 m; fits under an 80 in door</dd></div>
+        <div><dt>Work height</dt><dd>Walls to 16 ft (5.0 m), ceilings to 17 ft (5.3 m)</dd></div>
+        <div><dt>Weight</dt><dd>About 174 kg empty, 186 kg with a full tank</dd></div>
+        <div><dt>Drive</dt><dd>Two swerve modules and four casters; drives sideways along a wall</dd></div>
+        <div><dt>Lift</dt><dd>Three stage telescopic mast; the arm carriage travels 3.3 m</dd></div>
+        <div><dt>Arm</dt><dd>Six axis collaborative arm, 7.5 kg payload, 0.95 m reach, force sensing</dd></div>
+        <div><dt>Tools</dt><dd>Paint fed roller with edger pad, sprayer, sander with dust extraction, rotary hammer with vacuum clamp, gripper with palm camera, tape applicator</dd></div>
+        <div><dt>Paint</dt><dd>10 L tank and pump in the base</dd></div>
+        <div><dt>Power</dt><dd>Two battery packs, swapped through the rear door</dd></div>
+        <div><dt>Sensing</dt><dd>360 degree LiDAR, four depth cameras on the base, a front camera on the carriage, a wrist camera and a color sensor</dd></div>
+        <div><dt>Operator</dt><dd>10 in screen on the handle, plus a tablet</dd></div>
+      </dl>
+      <p class="specs-note">Numbers come from the current CAD model and our kinematics. The prototype has not been built yet, and these numbers will change as we test it.</p>
+    </div>
+  </div></div></section>
+</main>
+<div class="dark">
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="top">
+        <img src="assets/brand/ragnar_on_dark.svg" width="100" height="27" alt="Ragnar Robotics">
+        <ul>
+          <li><a href="mailto:info@urbanrobotics.com">info@urbanrobotics.com</a></li>
+          <li><a href="company.html">Company</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="terms.html#accessibility">Accessibility</a></li>
+          <li><a href="#top">Back to top</a></li>
+        </ul>
+      </div>
+      <div class="legal">
+        <p>R1 is in development. Images of R1 are CAD renderings, and its specifications are design targets that may change.</p>
+        <p>© 2026 Ragnar Robotics, a brand of Urban Robotics Technologies, Inc. Miami, Florida.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

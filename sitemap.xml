@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://urbanrobotics.com/</loc><lastmod>2026-11-08</lastmod><image:image><image:loc>https://urbanrobotics.com/assets/img/p3_hero_1920.webp</image:loc></image:image><image:image><image:loc>https://urbanrobotics.com/assets/img/p3_site_1600.webp</image:loc></image:image><image:image><image:loc>https://urbanrobotics.com/assets/img/p3_ceiling_1600.webp</image:loc></image:image></url>
-  <url><loc>https://urbanrobotics.com/p3.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://urbanrobotics.com/company.html</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://urbanrobotics.com/privacy.html</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://urbanrobotics.com/terms.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://urbanrobotics.com/</loc><lastmod>2026-11-11</lastmod><image:image><image:loc>https://urbanrobotics.com/assets/img/p3_hero_1920.webp</image:loc></image:image><image:image><image:loc>https://urbanrobotics.com/assets/img/p3_site_1600.webp</image:loc></image:image><image:image><image:loc>https://urbanrobotics.com/assets/img/p3_ceiling_1600.webp</image:loc></image:image></url>
+  <url><loc>https://urbanrobotics.com/r1.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://urbanrobotics.com/company.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://urbanrobotics.com/privacy.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://urbanrobotics.com/terms.html</loc><lastmod>2026-11-11</lastmod></url>
 </urlset>
