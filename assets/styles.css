@@ -166,3 +166,5 @@ h3{font-size:1.0625rem!important;font-weight:600;letter-spacing:-0.01em}
 .r-iso img{display:block;width:100%;height:auto}
 @media (min-width:860px){.h-hero2 .wrap{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}.r-iso{grid-template-columns:1fr 1fr;gap:6%;padding-inline:6%}}
 @media (max-width:859px){.h-hero2 .wrap{display:flex;flex-direction:column-reverse;align-items:stretch}.h-hero2-copy{padding-top:12px}.h-dwg .co{display:none}.h-dwg .dm text{font-size:84px}.h-views .v3{display:block}.h-views .v4{display:none}}
+.brand img{height:22px}
+@media (max-width:759px){.brand img{height:19px}}
