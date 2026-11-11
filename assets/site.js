@@ -1,4 +1,4 @@
-// Porter site: the scroll story scroll story and the paint request form. The page works without it.
+// Ragnar site: the scroll story scroll story and the paint request form. The page works without it.
 (function () {
   'use strict';
   var doc = document.documentElement;
