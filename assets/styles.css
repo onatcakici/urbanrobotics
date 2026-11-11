@@ -54,3 +54,15 @@ h3{font-size:1.25rem!important;line-height:1.25!important}
 @media (min-width:960px){.s-meet{grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:64px}.s-steps{grid-template-columns:repeat(4,1fr)}.s-split{grid-template-columns:1fr 1fr}}
 
 .legend li{grid-template-columns:minmax(0,1fr)}
+
+/* drawings */
+.dwgs{display:grid;gap:8px 0;margin-top:40px;grid-template-columns:minmax(0,2360fr) minmax(0,1180fr) minmax(0,1180fr);align-items:start}
+.dwg{display:block;width:100%;height:auto;overflow:visible}
+.dwg path{fill:none;stroke:#17191C;stroke-width:1;vector-effect:non-scaling-stroke}
+.dwg path.ah{fill:#17191C;stroke:none}
+.dwg text{font-family:var(--font);font-size:58px;font-weight:600;fill:#17191C}
+.dwg tspan{font-weight:400;fill:#6B6F76}
+.dv-top{grid-column:1}
+.dv-iso{grid-column:2/4;justify-self:center;width:70%}
+.specs+h3{margin-top:40px}
+@media (max-width:759px){.dwgs{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 0}.dv-side,.dv-top{grid-column:1/3}.dv-iso{grid-column:1/3;width:80%}.dv-side text,.dv-top text{font-size:88px}}
