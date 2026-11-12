@@ -157,7 +157,7 @@ section{border-bottom:1px solid var(--rule)}
 .dwg .bl text{fill:#fff;font-weight:600;font-size:66px;text-anchor:middle}
 @media (min-width:900px){
   .hero-copy{padding-block:56px 52px}
-  .hero-copy h1{max-width:7em}
+  .hero-copy h1{max-width:10em;font-size:clamp(2.5rem,4.6vw,4.25rem);text-wrap:balance}
   .hero-fig{padding-block:28px 24px;overflow:visible}
   .hero-fig .dwg{width:100%}
   .dwg text{font-size:68px}
