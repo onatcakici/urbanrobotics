@@ -174,11 +174,14 @@ section{border-bottom:1px solid var(--rule)}
 .hero-copy h1{font-size:clamp(2rem,8.7vw,2.75rem);line-height:1.04}
 .hero-copy h1 span{display:block}
 .hero-copy p{margin-top:20px;max-width:26em}
-.hero-fig{display:flex;justify-content:center;align-items:center;padding-block:18px 12px}
-.hero-fig .dwg{width:100%;max-width:440px}
+.hero-fig{display:flex;justify-content:center;align-items:center;padding-block:14px 10px}
+.hero-stage{position:relative;width:100%}
+.hero-stage .dwg{position:relative;z-index:1;width:100%;pointer-events:none}
+.hero-vid{position:absolute;left:0;top:0;width:100%;height:auto;mix-blend-mode:multiply;background:#fff}
+.hero-stage .vt{top:0;right:0;bottom:auto;z-index:2}
 .hero-dwg path:not(.gnd){stroke:#ababab}
 .hero-fig .hero-dwg path.ah{fill:#ababab}
-.hero-dwg .dim{font:500 54px/1 var(--sans);fill:#8a8a8a;letter-spacing:0}
+.hero-dwg .dim{font:500 72px/1 var(--sans);fill:#8a8a8a;letter-spacing:0}
 .hero-dwg .eye{fill:var(--light)}
 .dwg{width:100%;height:auto;overflow:visible}
 .dwg path,.dwg line{fill:none;stroke:#000;stroke-width:1;vector-effect:non-scaling-stroke}
@@ -192,9 +195,9 @@ section{border-bottom:1px solid var(--rule)}
   .hero-copy{padding-block:48px 92px}
   .hero-copy h1{font-size:clamp(2.5rem,calc((100vw - 176px) / 25.4),3.2rem)}
   .hero-copy h1 span{text-wrap:balance}
-  .hero-fig{padding-block:32px 26px}
-  .hero-fig .dwg{max-width:min(560px,(100svh - var(--head) - 124px) * 0.876)}
-  .hero-dwg .dim{font-size:38px}
+  .hero-fig{padding-block:28px 24px}
+  .hero-stage{max-width:min(100%,(100svh - var(--head) - 96px) / 0.962)}
+  .hero-dwg .dim{font-size:46px}
   .dwg text{font-size:68px}
 }
 @media (min-width:1150px){
