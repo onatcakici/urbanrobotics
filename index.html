@@ -24,11 +24,11 @@
 <meta property="og:image:alt" content="Line drawing of the R1 robot beside the words Robot technicians for buildings.">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://ragnarrobotics.com/#org","name":"Ragnar Robotics","legalName":"Urban Robotics Technologies, Inc.","url":"https://ragnarrobotics.com/","logo":"https://ragnarrobotics.com/icon-512.png","email":"hello@ragnarrobotics.com","foundingDate":"2025","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@id":"https://ragnarrobotics.com/company.html#founder"},"description":"Ragnar Robotics builds robot technicians, starting with R1, an interior finishing robot that paints, drills and sands, in development in Miami."},{"@type":"WebSite","@id":"https://ragnarrobotics.com/#site","name":"Ragnar Robotics","url":"https://ragnarrobotics.com/","publisher":{"@id":"https://ragnarrobotics.com/#org"}},{"@type":"Person","@id":"https://ragnarrobotics.com/company.html#founder","name":"Onat Cakici","jobTitle":"Founder","worksFor":{"@id":"https://ragnarrobotics.com/#org"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Florida Institute of Technology"},"sameAs":["https://www.linkedin.com/in/cakici/"]},{"@type":"VideoObject","name":"R1 at work","description":"A 42 second film animated from the CAD model of R1: it rolls in, paints the walls, cuts the ceiling line, drills, sands and changes tools on its own, then its top lifts off the base to show one base with swappable tops.","thumbnailUrl":"https://ragnarrobotics.com/assets/video/r1_film_poster.webp","contentUrl":"https://ragnarrobotics.com/assets/video/r1_film_1080.mp4","uploadDate":"2026-11-13T01:30:00+00:00","duration":"PT42S","publisher":{"@id":"https://ragnarrobotics.com/#org"}}]}</script>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co">
 <link rel="preload" href="assets/fonts/archivo_wide.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/img/r1_side.webp" as="image" type="image/webp" fetchpriority="high">
-<link rel="stylesheet" href="assets/styles.css?v=r7">
+<link rel="stylesheet" href="assets/styles.css?v=r8">
 <script src="assets/site.js?v=r5" defer></script>
 </head>
 <body>
@@ -150,12 +150,34 @@
   </section>
   <section class="inv" id="pilot" aria-labelledby="pilot-h">
     <div class="wrap g">
-      <div class="c12 sh"><h2 id="pilot-h">Send us your task</h2></div>
-      <div class="c34 vlx bd contact">
-        <p class="lead">Pilots start in South Florida. Tell us the job, with a few photos or a short video of how it is done today, and we will show you how a robot would do it.</p>
-        <p class="actions"><a class="btn" href="https://calendly.com/han2000cc/15-minute-meeting-clone" rel="noopener">Book a 15&nbsp;minute call</a><a class="tlink plain" href="mailto:hello@ragnarrobotics.com">hello@ragnarrobotics.com</a></p>
-        <p class="fine">Ragnar is based in Miami and was founded by Onat Cakici, an aerospace engineer. <a href="company.html">About the company</a></p>
+      <div class="c12 sh task-intro">
+        <h2 id="pilot-h">Send us your task</h2>
+        <p class="lead">Tell us the job and add a photo or a short video of how it is done today. We will show you how a robot would do it.</p>
+        <p class="fine">Pilots start in South Florida. Ragnar is based in Miami and was founded by Onat Cakici, an aerospace engineer. <a href="company.html">About the company</a></p>
       </div>
+      <form class="c34 vlx bd task" action="https://formsubmit.co/hello@ragnarrobotics.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="New task from ragnarrobotics.com">
+        <input type="hidden" name="_next" value="https://ragnarrobotics.com/thanks.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="tf"><span>What&rsquo;s the job?</span>
+          <select name="Job" required>
+            <option value="" selected disabled>Choose a job</option>
+            <option>Load and unload a CNC machine</option>
+            <option>Swap plates on 3D printers</option>
+            <option>Move parts between stations</option>
+            <option>Data center work</option>
+            <option>Paint walls and ceilings</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label class="tf"><span>Tell us about it in a sentence or two</span><textarea name="Task" rows="4" required></textarea></label>
+        <label class="tf"><span>Your email</span><input type="email" name="email" autocomplete="email" required></label>
+        <label class="tf"><span>A photo, a short video or a CAD file, if you have one</span><input type="file" name="attachment" accept="image/*,video/*,.stl,.step,.stp,.pdf"></label>
+        <p class="fine">Up to 10&nbsp;MB. For a longer video, put a link in your message.</p>
+        <p class="actions"><button class="btn" type="submit">Send</button><a class="tlink" href="https://calendly.com/han2000cc/15-minute-meeting-clone" rel="noopener">Book a 15&nbsp;minute call</a></p>
+      </form>
     </div>
   </section>
 </main>

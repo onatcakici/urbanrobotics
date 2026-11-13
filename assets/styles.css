@@ -253,6 +253,33 @@ section{border-bottom:1px solid var(--rule)}
 /* contact and footer */
 .contact .lead{max-width:29em}
 .contact .fine{margin-top:36px;max-width:36em}
+
+/* home: task form */
+.task-intro .lead{max-width:26em}
+.task-intro .fine{margin-top:24px;max-width:34em}
+.task{display:grid;gap:22px;align-content:start}
+.task > *{margin:0}
+.task .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.tf{display:grid;gap:8px}
+.tf > span{font-size:0.9375rem;line-height:1.4;color:var(--mute)}
+.task input[type=email],.task select,.task textarea{width:100%;min-height:48px;margin:0;padding:11px 14px;border:1px solid var(--rule);border-radius:0;background:transparent;color:var(--ink);font:400 1.0625rem/1.4 var(--sans);letter-spacing:-0.006em}
+.task textarea{min-height:120px;resize:vertical;line-height:1.5}
+.task select{-webkit-appearance:none;appearance:none;padding-right:40px;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 21px) 50%,calc(100% - 16px) 50%;background-size:5px 5px;background-repeat:no-repeat;cursor:pointer}
+.task select:invalid{color:var(--mute)}
+.task select option{background:#000;color:#fff}
+.task input[type=file]{width:100%;color:var(--mute);font:400 0.9375rem/1.4 var(--sans)}
+.task input[type=file]::file-selector-button{min-height:44px;margin-right:16px;padding:0 18px;border:1px solid var(--rule);border-radius:0;background:transparent;color:var(--ink);font:500 0.9375rem/1 var(--sans);cursor:pointer}
+.task input:focus-visible,.task select:focus-visible,.task textarea:focus-visible{outline:2px solid var(--signal);outline-offset:-2px}
+.task .fine{margin-top:-12px}
+.task .actions{margin-top:6px}
+button.btn{cursor:pointer}
+@media (hover:hover){
+  .task input[type=file]::file-selector-button:hover{border-color:var(--ink)}
+}
+@media (min-width:900px){
+  .task-intro .fine{margin-top:32px}
+}
+
 .foot.sep{border-top:1px solid var(--rule)}
 .foot-top{padding-block:8px}
 .foot-top > *{padding-block:28px}
