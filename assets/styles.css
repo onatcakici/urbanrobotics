@@ -312,11 +312,11 @@ section{border-bottom:1px solid var(--rule)}
 .fam-fig.in .fam-mini{transition-delay:.32s}
 .fam-fig.in .eye{animation:power .8s linear 1.6s both}
 @keyframes power{0%{opacity:0}18%{opacity:0}20%{opacity:1}34%{opacity:1}36%{opacity:.2}50%{opacity:.2}52%{opacity:1}100%{opacity:1}}
-.fam-r1{left:24.6%;top:10.9%;width:27.9%}
-.fam-r2{left:58.8%;top:32.7%;width:20.8%}
-.fam-mini{left:85.9%;top:41.5%;width:11.6%}
-.fam-fig{aspect-ratio:5664 / 2330}
-@media (min-width:700px){.fam-labels{grid-template-columns:1394fr 1938fr 1536fr 796fr}}
+.fam-r1{left:24.5%;top:10.9%;width:27.7%}
+.fam-r2{left:58.5%;top:32.7%;width:20.7%}
+.fam-mini{left:85.5%;top:47.1%;width:12%}
+.fam-fig{aspect-ratio:5692 / 2330}
+@media (min-width:700px){.fam-labels{grid-template-columns:1394fr 1938fr 1536fr 824fr}}
 /* end family */
 
 /* home: task form */
