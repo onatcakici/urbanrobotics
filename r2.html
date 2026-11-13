@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>R2, the machine tending robot: specs | Ragnar Robotics</title>
+<meta name="description" content="How R2 is built: a UR12e arm on an Ewellix lift, with two OnRobot grippers, on the same swerve drive chassis as R1. It loads CNC machines and swaps print plates.">
+<link rel="canonical" href="https://ragnarrobotics.com/r2.html">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ragnar Robotics">
+<meta property="og:title" content="R2, the machine tending robot: specs | Ragnar Robotics">
+<meta property="og:description" content="How R2 is built: a UR12e arm on an Ewellix lift, with two OnRobot grippers, on the same swerve drive chassis as R1. It loads CNC machines and swaps print plates.">
+<meta property="og:url" content="https://ragnarrobotics.com/r2.html">
+<meta property="og:image" content="https://ragnarrobotics.com/assets/img/og_ragnar_family.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Renderings of the R1, R2 and Mini robots standing to scale next to a person outline and a height scale, under the words Robot technicians for the jobs nobody wants to repeat.">
+<meta name="twitter:card" content="summary_large_image">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<link rel="preload" href="assets/fonts/archivo_wide.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/styles.css?v=r13">
+<script src="assets/site.js?v=r9" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="menu" id="menu" aria-label="Menu" tabindex="-1">
+  <ul>
+    <li><a href="./#how">How it works</a></li>
+    <li><a href="r1.html">R1</a></li><li><a href="r2.html" aria-current="page">R2</a></li><li><a href="mini.html">Mini</a></li>
+    <li><a href="r1.html#specs">R1 specifications</a></li>
+    <li><a href="company.html">Company</a></li>
+  </ul>
+  <a class="cta-m" href="#pilot">Talk to us</a>
+</nav>
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/brand/ragnar_wordmark.svg" width="171" height="21" alt="Ragnar Robotics home"></a>
+    <div class="head-r">
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="./#how">How it works</a></li>
+          <li><a href="r1.html">R1</a></li><li><a href="r2.html" aria-current="page">R2</a></li><li><a href="mini.html">Mini</a></li>
+          <li><a href="company.html">Company</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#pilot">Talk to us</a>
+      <a class="menu-open" href="#menu">Menu</a>
+      <a class="menu-x" href="#close">Close</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section aria-labelledby="top-h">
+    <div class="wrap g">
+      <div class="c12 bot-copy"><h1 id="top-h">R2, up close</h1><p class="lead">R2 does the repetitive work in machine shops and print farms: it loads CNC machines, swaps print plates and moves parts between stations. It uses the same chassis as R1, with a lift and an arm on top instead of the mast. R2 is in design. Everything on this page comes from the CAD model.</p></div>
+      <figure class="c34 vl bot-fig"><svg class="dwg bot-dwg" viewBox="-300 -70 1613 1840.4" role="img" aria-label="Side view of R2 from the CAD model, 59.4 inches tall with the lift partly raised and 41 inches long, on the same chassis as R1, with its orange status light on the ring under the arm."><image href="assets/img/r2_side_page.webp" x="0" y="0" width="1233" height="1512"/><path d="M-300 1510.4H1313"/><path d="M-220 1510.4H-40M-220 0H-40M-170 1510.4V0"/><path class="ah" d="M-170 1510.4L-180 1474.4L-160 1474.4Z"/><path class="ah" d="M-170 0L-160 36L-180 36Z"/><text class="dim" transform="translate(-204 755.2) rotate(-90)" text-anchor="middle">59.4 in</text><path d="M32.7 1540.4V1670.4M1068.7 1540.4V1670.4M32.7 1640.4H1068.7"/><path class="ah" d="M32.7 1640.4L68.7 1650.4L68.7 1630.4Z"/><path class="ah" d="M1068.7 1640.4L1032.7 1630.4L1032.7 1650.4Z"/><text class="dim" x="550.7" y="1732.4" text-anchor="middle">41 in</text><rect class="eye" x="587" y="280.9" width="37.5" height="23" data-cx="605.7" data-cy="292.4" data-hx="550.7" data-range="110.1"/></svg></figure>
+    </div>
+  </section>
+  <section id="inside" aria-labelledby="inside-h">
+    <div class="wrap">
+      <div class="g">
+        <div class="c1 sh"><h2 id="inside-h">Inside</h2></div>
+        <div class="c24 vlx bd"><p class="lead">The same chassis as R1, with a lift and a collaborative arm with two grippers on top. The chassis carries the batteries, the computer and the depth cameras, and the deck carries a cassette for raw stock and one for finished parts.</p></div>
+      </div>
+      <dl class="nums keys"><div><dt>Arm reach <span>UR12e, from the shoulder</span></dt><dd>1.3<span class="u"> m</span></dd></div><div><dt>Arm payload <span>Rated, grippers included</span></dt><dd>12.5<span class="u"> kg</span></dd></div><div><dt>Lift travel <span>Ewellix LIFTKIT</span></dt><dd>900<span class="u"> mm</span></dd></div><div><dt>Height <span>As shown, lift partly raised</span></dt><dd>1.51<span class="u"> m</span></dd></div></dl>
+      <div class="g parts">
+        <figure class="c12 parts-fig"><svg class="dwg bot-xr" viewBox="-110 -110 1453 1682" role="img" aria-label="X ray view of R2 with eight numbered parts: 1 UR12e arm, 2 Ewellix lift, 3 two OnRobot 2FG7 grippers, 4 RealSense depth cameras, 5 computer and electronics, 6 battery packs, 7 swerve drive wheels, 8 part cassettes."><image href="assets/img/r2_xray_page.webp" x="0" y="0" width="1233" height="1512"/><g class="bl"><circle cx="645.7" cy="323.4" r="30"/><text x="645.7" y="335.4">1</text></g><g class="bl"><circle cx="532.8" cy="739.8" r="30"/><text x="532.8" y="751.8">2</text></g><g class="bl"><circle cx="825.5" cy="776.4" r="30"/><text x="825.5" y="788.4">3</text></g><g class="bl"><circle cx="857.2" cy="839.9" r="30"/><text x="857.2" y="851.9">4</text></g><g class="bl"><circle cx="800.7" cy="1198.4" r="30"/><text x="800.7" y="1210.4">5</text></g><g class="bl"><circle cx="81.7" cy="1346.4" r="30"/><text x="81.7" y="1358.4">6</text></g><g class="bl"><circle cx="430.5" cy="1415.4" r="30"/><text x="430.5" y="1427.4">7</text></g><g class="bl"><circle cx="664.7" cy="1018.4" r="30"/><text x="664.7" y="1030.4">8</text></g></svg></figure>
+        <ol class="c34 vlx flush legend"><li><div><strong>Arm.</strong> A Universal Robots UR12e: 12.5&nbsp;kg (27.6&nbsp;lb) payload and 1.3&nbsp;m (51&nbsp;in) reach, to load a machine through its door.</div></li><li><div><strong>Lift.</strong> An Ewellix LIFTKIT raises the arm up to 900&nbsp;mm (35&nbsp;in), from low fixtures to the top shelf of a print farm.</div></li><li><div><strong>Two grippers.</strong> OnRobot 2FG7 grippers on a dual quick changer, so it can hold a raw part and a finished part in one visit.</div></li><li><div><strong>Depth cameras.</strong> Four RealSense D435 on the corners of the chassis see all around it. A RealSense D405 on the wrist checks every grip up close.</div></li><li><div><strong>Computer.</strong> Two compute modules and the electronics, inside the chassis.</div></li><li><div><strong>Battery.</strong> Two battery packs, swapped through the rear door.</div></li><li><div><strong>Drive.</strong> Two swerve drive modules and four casters, the same as R1. It can drive sideways along a row of machines.</div></li><li><div><strong>Cassettes.</strong> One for raw stock and one for finished parts, on the deck.</div></li></ol>
+      </div>
+    </div>
+  </section>
+  <section id="specs" aria-labelledby="specs-h">
+    <div class="wrap g">
+      <div class="c1 sh"><h2 id="specs-h">Specifications</h2></div>
+      <div class="c24 vlx flush tbl has-note">
+        <div class="grp"><h3>Size</h3><dl class="rows"><div><dt>Footprint</dt><dd>0.72 by 1.04&nbsp;m (28 by 41&nbsp;in) with the bumper, the same as R1</dd></div><div><dt>Height</dt><dd>1.51&nbsp;m (59.4&nbsp;in) as shown, with the lift partly raised</dd></div></dl></div><div class="grp"><h3>Motion</h3><dl class="rows"><div><dt>Drive</dt><dd>Two swerve modules and four casters; drives sideways</dd></div><div><dt>Lift</dt><dd>Ewellix LIFTKIT for UR, 900&nbsp;mm (35&nbsp;in) of travel</dd></div><div><dt>Arm</dt><dd>Universal Robots UR12e, 12.5&nbsp;kg (27.6&nbsp;lb) payload, 1.3&nbsp;m (51&nbsp;in) reach</dd></div></dl></div><div class="grp"><h3>Tools and parts</h3><dl class="rows"><div><dt>Grippers</dt><dd>Two OnRobot 2FG7 on an OnRobot dual quick changer</dd></div><div><dt>Parts</dt><dd>One cassette for raw stock and one for finished parts on the deck</dd></div></dl></div><div class="grp"><h3>Power and sensing</h3><dl class="rows"><div><dt>Power</dt><dd>Two battery packs, swapped through the rear door</dd></div><div><dt>Sensing</dt><dd>Four RealSense D435 depth cameras on the chassis and a RealSense D405 on the wrist</dd></div><div><dt>Operator</dt><dd>Panel at the rear with start, pause and reset buttons and a key switch</dd></div><div><dt>Safety</dt><dd>An emergency stop at each corner and cliff sensors on the bumpers</dd></div></dl></div>
+        <div class="specs-note"><p class="note">Design targets from the current CAD model and the datasheets of the parts it uses. R2 has not been built yet, and these numbers will change as we build and test it.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="inv" id="pilot" aria-labelledby="pilot-h">
+    <div class="wrap g">
+      <div class="c12 sh"><h2 id="pilot-h">Talk to us</h2></div>
+      <div class="c34 vlx bd contact">
+        <p class="lead">Pilots start in South Florida. Send us a task from your shop and we will show you how R2 would do it.</p>
+        <p class="actions"><a class="btn" href="./#pilot">Send us your task</a><a class="tlink plain" href="https://calendly.com/han2000cc/15-minute-meeting-clone" rel="noopener">Book a 15&nbsp;minute call</a></p>
+        <p class="fine">See the whole family, drawn to scale, on the <a href="./#family">home page</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="foot inv sep">
+  <div class="wrap">
+    <div class="g foot-top">
+      <div class="c12 foot-legal">
+        <p>Our robots are in development. Images of them are CAD renderings, and their specifications are design targets that may change.</p>
+        <p>© 2026 Ragnar Robotics, a brand of Urban Robotics Technologies, Inc. Miami, Florida.</p>
+        <p>Built in Miami by humans, for now.</p>
+      </div>
+      <nav class="c3 vlx foot-nav" aria-label="Site">
+        <ul class="foot-links">
+          <li><a href="./#how">How it works</a></li>
+          <li><a href="r1.html">R1</a></li><li><a href="r2.html">R2</a></li><li><a href="mini.html">Mini</a></li>
+          <li><a href="r1.html#specs">R1 specifications</a></li>
+          <li><a href="company.html">Company</a></li>
+        </ul>
+      </nav>
+      <nav class="c4 vlx foot-nav" aria-label="Contact and legal">
+        <ul class="foot-links">
+          <li class="wide"><a href="mailto:hello@ragnarrobotics.com">hello@ragnarrobotics.com</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="terms.html#accessibility">Accessibility</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="foot-mark"><img src="assets/brand/ragnar_on_dark.svg" width="556" height="101" alt="Ragnar Robotics" loading="lazy" decoding="async"></div>
+  </div>
+</footer>
+</body>
+</html>

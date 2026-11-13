@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://ragnarrobotics.com/</loc><lastmod>2026-11-11</lastmod><image:image><image:loc>https://ragnarrobotics.com/assets/img/r1_side.webp</image:loc></image:image><image:image><image:loc>https://ragnarrobotics.com/assets/img/r1_iso.webp</image:loc></image:image></url>
+  <url><loc>https://ragnarrobotics.com/</loc><lastmod>2026-11-13</lastmod><image:image><image:loc>https://ragnarrobotics.com/assets/img/r1_side.webp</image:loc></image:image><image:image><image:loc>https://ragnarrobotics.com/assets/img/r1_iso.webp</image:loc></image:image></url>
   <url><loc>https://ragnarrobotics.com/r1.html</loc><lastmod>2026-11-11</lastmod><image:image><image:loc>https://ragnarrobotics.com/assets/img/r1_iso.webp</image:loc></image:image><image:image><image:loc>https://ragnarrobotics.com/assets/img/r1_iso_rear.webp</image:loc></image:image></url>
+  <url><loc>https://ragnarrobotics.com/r2.html</loc><lastmod>2026-11-13</lastmod><image:image><image:loc>https://ragnarrobotics.com/assets/img/r2_side_page.webp</image:loc></image:image></url>
+  <url><loc>https://ragnarrobotics.com/mini.html</loc><lastmod>2026-11-13</lastmod><image:image><image:loc>https://ragnarrobotics.com/assets/img/mini_side_page.webp</image:loc></image:image></url>
   <url><loc>https://ragnarrobotics.com/company.html</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://ragnarrobotics.com/privacy.html</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://ragnarrobotics.com/terms.html</loc><lastmod>2026-11-11</lastmod></url>
