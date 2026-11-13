@@ -329,6 +329,7 @@ section{border-bottom:1px solid var(--rule)}
   .fam-labels{margin-top:22px}
   .fam-0{display:block}
   .fam-l{padding:0 24px 0 0;border:0}
+  .fam-l:last-child{padding-right:0}
 }
 @media (min-width:900px){
   .fam{padding-block:8px 64px}
@@ -366,9 +367,9 @@ section{border-bottom:1px solid var(--rule)}
 @keyframes power{0%{opacity:0}18%{opacity:0}20%{opacity:1}34%{opacity:1}36%{opacity:.2}50%{opacity:.2}52%{opacity:1}100%{opacity:1}}
 .fam-r1{left:24.2%;top:10.9%;width:27.4%}
 .fam-r2{left:58%;top:31.7%;width:21.4%}
-.fam-mini{left:85.7%;top:47.1%;width:11.9%}
+.fam-mini{left:84.026%;top:41.356%;width:13.359%}
 .fam-fig{aspect-ratio:5749 / 2330}
-@media (min-width:700px){.fam-labels{grid-template-columns:1394fr 1938fr 1593fr 824fr}}
+@media (min-width:700px){.fam-labels{grid-template-columns:1394fr 1938fr 1499fr 918fr}}
 /* end family */
 
 /* home: task form */
