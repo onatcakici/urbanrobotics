@@ -2,19 +2,41 @@
 (function () {
   'use strict';
   var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js');
 
-  // Looping clips play only while they are on screen, and each has a pause button.
+  // The Robots menu: a mouse opens it on hover, a tap or the keyboard opens it on click.
+  // Escape, a click elsewhere or moving focus out closes it.
+  [].forEach.call(document.querySelectorAll('.dd'), function (dd) {
+    var btn = dd.querySelector('.dd-btn'), t = 0, mouse = false;
+    var set = function (on) { dd.classList.toggle('open', on); btn.setAttribute('aria-expanded', on ? 'true' : 'false'); };
+    btn.addEventListener('pointerdown', function (e) { mouse = e.pointerType === 'mouse'; });
+    btn.addEventListener('click', function (e) { if (mouse && e.detail) set(true); else set(!dd.classList.contains('open')); mouse = false; });
+    dd.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') { clearTimeout(t); set(true); } });
+    dd.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') t = setTimeout(function () { set(false); }, 200); });
+    dd.addEventListener('focusout', function (e) { if (e.relatedTarget && !dd.contains(e.relatedTarget)) set(false); });
+    document.addEventListener('click', function (e) { if (!dd.contains(e.target)) set(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && dd.classList.contains('open')) { set(false); btn.focus(); }
+    });
+  });
+
+  // Looping clips play only while they are on screen, and each has a Pause and Play control.
   var loops = [].slice.call(document.querySelectorAll('video[loop]'));
   function run(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
   loops.forEach(function (v) {
     v.held = still;
     var b = v.parentNode.querySelector('.vt');
     if (!b) return;
-    b.textContent = still ? 'Play' : 'Pause';
+    var word = b.querySelector('.vt-l') || b;
+    var show = function () {
+      word.textContent = v.held ? 'Play' : 'Pause';
+      b.setAttribute('data-state', v.held ? 'paused' : 'playing');
+    };
+    show();
     b.hidden = false;
     b.addEventListener('click', function () {
       v.held = !v.held;
-      b.textContent = v.held ? 'Play' : 'Pause';
+      show();
       if (v.held) v.pause(); else run(v);
     });
   });
