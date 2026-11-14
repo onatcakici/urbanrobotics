@@ -633,3 +633,4 @@ button.btn{cursor:pointer}
   .inv{--paper:#fff;--ink:#000;--mute:#444;--rule:#000;--hair:#bbb}
   section{break-inside:avoid}
 }
+.plate-fig img.mini-side{max-width:300px;height:auto}
