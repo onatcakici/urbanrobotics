@@ -23,11 +23,12 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="R2, the machine tending robot, drawn from the CAD model in side view, next to its name and the words: Loads CNC machines, swaps print plates and moves parts between stations.">
 <meta name="twitter:card" content="summary_large_image">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'none'">
 <link rel="preload" href="assets/fonts/archivo_wide.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/styles.css?v=r19">
+<link rel="stylesheet" href="assets/styles.css?v=r20">
 <script src="assets/site.js?v=r10" defer></script>
+<script src="assets/js/mv-loader.js?v=1" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -76,6 +77,14 @@
       <div class="g parts">
         <figure class="c12 parts-fig"><svg class="dwg bot-xr" viewBox="-110 -110 1453 1682" role="img" aria-label="X ray view of R2 with eight numbered parts: 1 UR12e arm, 2 Ewellix lift, 3 two OnRobot 2FG7 grippers, 4 RealSense depth cameras, 5 computer and electronics, 6 battery packs, 7 swerve drive wheels, 8 part cassettes."><image href="assets/img/r2_xray_page.webp" x="0" y="0" width="1233" height="1512"/><g class="bl"><circle cx="645.7" cy="323.4" r="30"/><text x="645.7" y="335.4">1</text></g><g class="bl"><circle cx="532.8" cy="739.8" r="30"/><text x="532.8" y="751.8">2</text></g><g class="bl"><circle cx="825.5" cy="776.4" r="30"/><text x="825.5" y="788.4">3</text></g><g class="bl"><circle cx="857.2" cy="839.9" r="30"/><text x="857.2" y="851.9">4</text></g><g class="bl"><circle cx="800.7" cy="1198.4" r="30"/><text x="800.7" y="1210.4">5</text></g><g class="bl"><circle cx="81.7" cy="1346.4" r="30"/><text x="81.7" y="1358.4">6</text></g><g class="bl"><circle cx="430.5" cy="1415.4" r="30"/><text x="430.5" y="1427.4">7</text></g><g class="bl"><circle cx="664.7" cy="1018.4" r="30"/><text x="664.7" y="1030.4">8</text></g></svg></figure>
         <ol class="c34 vlx flush legend"><li><div><strong>Arm.</strong> A Universal Robots UR12e: 12.5&nbsp;kg (27.6&nbsp;lb) payload and 1.3&nbsp;m (51&nbsp;in) reach, to load a machine through its door.</div></li><li><div><strong>Lift.</strong> An Ewellix LIFTKIT raises the arm up to 900&nbsp;mm (35&nbsp;in), from low fixtures to the top shelf of a print farm.</div></li><li><div><strong>Two grippers.</strong> OnRobot 2FG7 grippers on a dual quick changer, so it can hold a raw part and a finished part in one visit.</div></li><li><div><strong>Depth cameras.</strong> Four RealSense D435 on the corners of the chassis see all around it. A RealSense D405 on the wrist checks every grip up close.</div></li><li><div><strong>Computer.</strong> Two compute modules and the electronics, inside the chassis.</div></li><li><div><strong>Battery.</strong> Two battery packs, swapped through the rear door.</div></li><li><div><strong>Drive.</strong> Two swerve drive modules and four casters, the same as R1. It can drive sideways along a row of machines.</div></li><li><div><strong>Cassettes.</strong> One for raw stock and one for finished parts, on the deck.</div></li></ol>
+      </div>
+    </div>
+  </section>
+  <section id="model" aria-labelledby="model-h">
+    <div class="wrap g">
+      <div class="c1 sh"><h2 id="model-h">In 3D</h2></div>
+      <div class="c24 vlx flush mv-wrap">
+        <model-viewer class="mv" src="assets/models/r2.glb" alt="R2 in 3D. Drag to turn it." camera-controls disable-zoom touch-action="pan-y" interaction-prompt="auto" shadow-intensity="0.7" camera-orbit="-35deg 75deg auto" field-of-view="28deg" loading="lazy" reveal="auto"><img slot="poster" src="assets/img/r2_3d_poster.webp" width="1200" height="900" alt="" loading="lazy" decoding="async"></model-viewer>
       </div>
     </div>
   </section>

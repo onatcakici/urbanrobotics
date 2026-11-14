@@ -625,6 +625,11 @@ button.btn{cursor:pointer}
   .press-shot.wide{grid-column:1/-1}
 }
 
+/* R2 in 3D */
+.mv-wrap{padding:0 var(--pad) 44px}
+model-viewer.mv{display:block;width:100%;height:auto;aspect-ratio:1/1;background:#f2f2f2;--poster-color:#f2f2f2;--progress-bar-color:#000}
+model-viewer.mv img[slot=poster]{display:block;width:100%;height:100%;object-fit:contain}
+@media (min-width:760px){.mv-wrap{padding-bottom:72px}model-viewer.mv{aspect-ratio:4/3}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{transition:none!important;scroll-behavior:auto!important}
 }
