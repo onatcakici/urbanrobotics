@@ -174,6 +174,9 @@ section{border-bottom:1px solid var(--rule)}
 .hero-copy h1{font-size:clamp(2rem,8.7vw,2.75rem);line-height:1.04}
 .hero-copy h1 span{display:block}
 .hero-copy p{margin-top:20px;max-width:26em}
+.proof-list{display:flex;flex-wrap:wrap;align-items:center;gap:16px 40px;padding-block:18px}
+.proof-list li:first-child{margin-left:-8px}
+.proof-list img{display:block;width:162px;max-width:none;height:70px}
 .hero-fig{display:flex;justify-content:center;align-items:center;padding-block:14px 10px}
 .hero-stage{position:relative;width:100%}
 .hero-stage .dwg{position:relative;z-index:1;width:100%;pointer-events:none}
@@ -406,8 +409,6 @@ button.btn{cursor:pointer}
 .foot-top > *{padding-block:28px}
 .foot-legal p{font-size:0.875rem;line-height:1.55;color:var(--mute);max-width:34em}
 .foot-legal p + p{margin-top:10px}
-.foot-legal .foot-badge{margin-top:22px}
-.foot-badge img{display:block;width:139px;height:60px;margin-left:-6px}
 .foot-legal .foot-tm{margin-top:14px;font-size:0.75rem;line-height:1.5}
 .foot-links li + li{margin-top:9px}
 .foot-links a{font-size:0.9375rem;text-decoration:none;text-underline-offset:4px;text-decoration-thickness:1px}
