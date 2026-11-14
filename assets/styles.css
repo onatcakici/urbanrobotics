@@ -406,6 +406,9 @@ button.btn{cursor:pointer}
 .foot-top > *{padding-block:28px}
 .foot-legal p{font-size:0.875rem;line-height:1.55;color:var(--mute);max-width:34em}
 .foot-legal p + p{margin-top:10px}
+.foot-legal .foot-badge{margin-top:22px}
+.foot-badge img{display:block;width:139px;height:60px;margin-left:-6px}
+.foot-legal .foot-tm{margin-top:14px;font-size:0.75rem;line-height:1.5}
 .foot-links li + li{margin-top:9px}
 .foot-links a{font-size:0.9375rem;text-decoration:none;text-underline-offset:4px;text-decoration-thickness:1px}
 .foot-links a:hover{text-decoration-line:underline}
