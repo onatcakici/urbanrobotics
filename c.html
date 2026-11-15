@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ragnar C, the interior work robot: specs and tools | Ragnar Robotics</title>
+<meta name="description" content="How Ragnar C is built: a swerve drive base, a three stage mast and a six axis arm with an onboard station of six tools. Paints, sands, drills and more, to 16 ft.">
+<link rel="canonical" href="https://ragnarrobotics.com/c.html">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ragnar Robotics">
+<meta property="og:title" content="Ragnar C, the interior work robot: specs and tools | Ragnar Robotics">
+<meta property="og:description" content="How Ragnar C is built: a swerve drive base, a three stage mast and a six axis arm with an onboard station of six tools. Paints, sands, drills and more, to 16 ft.">
+<meta property="og:url" content="https://ragnarrobotics.com/c.html">
+<meta property="og:image" content="https://ragnarrobotics.com/assets/img/og_ragnar_r1.jpg?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ragnar C, the interior finishing robot, drawn from the CAD model in side view, next to its name and the words: Paints, sands, drills and tapes walls and ceilings.">
+<meta name="twitter:card" content="summary_large_image">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+<link rel="preload" href="assets/fonts/archivo_wide.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/styles.css?v=r23">
+<script src="assets/site.js?v=r10" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="menu" id="menu" aria-label="Menu" tabindex="-1">
+  <p class="menu-h">Robots</p>
+  <ul class="menu-bots"><li><a href="m.html"><img src="assets/img/nav_r2.webp" width="52" height="52" alt=""><span><b>Ragnar M</b><span>Machine shops</span></span></a></li><li><a href="c.html" aria-current="page"><img src="assets/img/nav_r1.webp" width="52" height="52" alt=""><span><b>Ragnar C</b><span>Construction</span></span></a></li></ul>
+  <ul>
+    <li><a href="./#how">How it works</a></li>
+    <li><a href="company.html">Company</a></li>
+  </ul>
+  <a class="cta-m" href="./#pilot">Send us your task</a>
+</nav>
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/brand/ragnar_wordmark.svg" width="171" height="21" alt="Ragnar Robotics home"></a>
+    <div class="head-r">
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li class="dd cur"><button class="dd-btn" type="button" aria-expanded="false" aria-controls="robots-dd">Robots</button>
+            <div class="dd-panel" id="robots-dd"><ul><li><a href="m.html"><img src="assets/img/nav_r2.webp" width="56" height="56" alt=""><span><b>Ragnar M</b><span>Machine shops</span></span></a></li><li><a href="c.html" aria-current="page"><img src="assets/img/nav_r1.webp" width="56" height="56" alt=""><span><b>Ragnar C</b><span>Construction</span></span></a></li></ul><a class="dd-all" href="./#family">Both, drawn to scale</a></div>
+          </li>
+          <li class="nav-how"><a href="./#how">How it works</a></li>
+          <li><a href="company.html">Company</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="./#pilot">Send us your task</a>
+      <a class="menu-open" href="#menu">Menu</a>
+      <a class="menu-x" href="#close">Close</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section aria-labelledby="top-h">
+    <div class="wrap g">
+      <div class="c12 ph-title"><h1 id="top-h">Ragnar C, up close</h1></div>
+      <div class="c34 vlx ph-lead"><p class="lead">One robot for the light, repetitive work inside a building: paint, sand, drill, mark, install small parts and check the result.</p></div>
+    </div>
+  </section>
+  <section aria-label="Ragnar C from the front and from the rear">
+    <div class="wrap g pair">
+      <div class="c12"><img src="assets/img/r1_iso.webp?v=61e1e281" width="1140" height="1228" alt="CAD view of Ragnar C from the front right: the base with docked tools, the mast and the arm holding a paint roller." fetchpriority="high"></div>
+      <div class="c34 vl"><img src="assets/img/r1_iso_rear.webp?v=c126ceee" width="1140" height="1340" alt="CAD view of Ragnar C from the rear: the push handle with the operator screen, the docked tools and the mast." decoding="async"></div>
+    </div>
+  </section>
+  <section class="band" aria-label="Ragnar C in the studio">
+    <div class="wrap"><img src="assets/img/r1_studio_eye_2400.webp?v=2359325d" srcset="assets/img/r1_studio_eye_1200.webp?v=e6f72c47 1200w, assets/img/r1_studio_eye_2400.webp?v=2359325d 2400w" sizes="(min-width: 900px) min(1440px, 100vw - 48px), 100vw" width="2400" height="1350" alt="Rendering of Ragnar C in a grey studio with its orange eye light on: the base with its docked tools, the mast with the orange arm carriage and the arm holding a paint roller." loading="lazy" decoding="async"></div>
+  </section>
+  <section id="film" aria-labelledby="film-h">
+    <div class="wrap g">
+      <div class="c1 sh"><h2 id="film-h">Ragnar C at work</h2></div>
+      <div class="c24 vlx bd"><p class="measure">In this 42&nbsp;second film, Ragnar C rolls in and maps the room, paints the walls, cuts the ceiling line, drills anchor holes, sands a patch and changes tools on its own. Then its top lifts off the base: one base, with tops for the trades that come next.</p></div>
+      <figure class="c14 flush film">
+        <video controls preload="none" playsinline width="1920" height="1080" poster="assets/video/r1_film_poster.webp?v=81ee4555">
+          <source src="assets/video/r1_film_720.mp4?v=0030f44d" type="video/mp4" media="(max-width: 760px)">
+          <source src="assets/video/r1_film_1080.mp4?v=a726e4e5" type="video/mp4">
+          <a href="assets/video/r1_film_1080.mp4?v=a726e4e5">Download the Ragnar C film (MP4, 42 seconds)</a>
+        </video>
+      </figure>
+    </div>
+  </section>
+  <section id="machine" aria-labelledby="machine-h">
+    <div class="wrap">
+      <div class="g">
+        <div class="c1 sh"><h2 id="machine-h">The machine</h2></div>
+        <div class="c24 vlx bd"><p class="lead">A swerve drive base, a three stage mast and a six axis arm. The base carries the paint, the batteries and six tools; the mast lifts the arm; the arm swaps tools on its own.</p></div>
+      </div>
+      <dl class="nums keys">
+      <div><dt>Wall reach <span>From the baseboard up, with the mast raised</span></dt><dd>16<span class="u"> ft</span></dd></div>
+      <div><dt>Height, stowed <span>Fits under an 80&nbsp;in door</span></dt><dd>2.0<span class="u"> m</span></dd></div>
+      <div><dt>Weight <span>Empty; about 186&nbsp;kg with a full paint tank</span></dt><dd>174<span class="u"> kg</span></dd></div>
+      <div><dt>Tools <span>Swapped at the docks on the deck</span></dt><dd>6</dd></div>
+      </dl>
+      <div class="g parts">
+        <figure class="c12 parts-fig"><svg class="dwg" viewBox="-830 -2090 2460 2190" role="img" aria-label="Side view of the Ragnar C CAD model with six numbered parts: 1 LiDAR, 2 three stage mast, 3 six axis arm, 4 tool changer, 5 tool station, 6 base."><image href="assets/img/r1_side.webp?v=4362dd87" x="-551" y="-1996" width="2044" height="1999"/><path d="M-770 0H1590"/><path d="M720 -2000L478 -1962"/><circle class="dot" cx="478" cy="-1962" r="10"/><g class="bl"><circle cx="720" cy="-2000" r="60"/><text x="720" y="-1977">1</text></g><path d="M720 -1580L492 -1520"/><circle class="dot" cx="492" cy="-1520" r="10"/><g class="bl"><circle cx="720" cy="-1580" r="60"/><text x="720" y="-1557">2</text></g><path d="M1030 -1620L960 -1335"/><circle class="dot" cx="960" cy="-1335" r="10"/><g class="bl"><circle cx="1030" cy="-1620" r="60"/><text x="1030" y="-1597">3</text></g><path d="M1330 -800L1296 -1080"/><circle class="dot" cx="1296" cy="-1080" r="10"/><g class="bl"><circle cx="1330" cy="-800" r="60"/><text x="1330" y="-777">4</text></g><path d="M-400 -1180L-40 -600"/><circle class="dot" cx="-40" cy="-600" r="10"/><g class="bl"><circle cx="-400" cy="-1180" r="60"/><text x="-400" y="-1157">5</text></g><path d="M-700 -330L-520 -330"/><circle class="dot" cx="-520" cy="-330" r="10"/><g class="bl"><circle cx="-700" cy="-330" r="60"/><text x="-700" y="-307">6</text></g></svg></figure>
+        <ol class="c34 vlx flush legend">
+          <li><div><strong>LiDAR.</strong> On top of the mast, it maps the room and finds walls, doors, trim and people.</div></li>
+          <li><div><strong>Three stage mast.</strong> Stows at 2.0&nbsp;m and lifts the arm so tools reach 16&nbsp;ft walls and 17&nbsp;ft ceilings.</div></li>
+          <li><div><strong>Six axis arm.</strong> A collaborative arm with 7.5&nbsp;kg payload, 0.95&nbsp;m reach and force sensing at the wrist.</div></li>
+          <li><div><strong>Tool changer.</strong> Passes paint, air, vacuum and signals to the tool, and holds it without power.</div></li>
+          <li><div><strong>Tool station.</strong> Six docks on the deck: roller, sprayer, sander, drill, gripper and tape.</div></li>
+          <li><div><strong>Base.</strong> Two swerve drive modules move it in any direction, including sideways along a wall.</div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <section id="details" aria-labelledby="details-h">
+    <div class="wrap plates">
+      <div class="pcol">
+        <div class="plates-h"><h2 id="details-h">The details</h2><p>The parts that do the work, up close.</p></div>
+        <figure><img src="assets/img/r1_paint_1400.webp" srcset="assets/img/r1_paint_800.webp 800w, assets/img/r1_paint_1400.webp 1400w" sizes="(min-width: 900px) min(720px, 50vw), 100vw" width="1400" height="1400" alt="Close up CAD rendering of the Ragnar C paint head on the arm." loading="lazy" decoding="async"><figcaption><b>Paint head.</b> A standard 9&nbsp;in roller fed through its core, an edger pad for the lines and a cover that closes while the paint dries.</figcaption></figure>
+        <figure><img src="assets/img/r1_base_1400.webp" srcset="assets/img/r1_base_800.webp 800w, assets/img/r1_base_1400.webp 1400w" sizes="(min-width: 900px) min(720px, 50vw), 100vw" width="1400" height="980" alt="Close up CAD rendering of the Ragnar C base: the ribbed service door, the light line and a depth camera behind the black glass band." loading="lazy" decoding="async"><figcaption><b>Base.</b> Paint tank, pump, dust extractor and two battery packs sit low, which keeps Ragnar C stable without feet.</figcaption></figure>
+      </div>
+      <div class="pcol">
+        <figure><img src="assets/img/r1_deck_1400.webp" srcset="assets/img/r1_deck_800.webp 800w, assets/img/r1_deck_1400.webp 1400w" sizes="(min-width: 900px) min(720px, 50vw), 100vw" width="1400" height="1400" alt="Close up CAD rendering of the Ragnar C deck with the docked tools." loading="lazy" decoding="async"><figcaption><b>Tool station.</b> Each tool waits in its own dock. The drill clamps to the wall with a vacuum ring, so the arm only has to hold it steady.</figcaption></figure>
+        <figure><img src="assets/img/r1_eye_1400.webp?v=e790ee5e" srcset="assets/img/r1_eye_800.webp?v=cfdb1d87 800w, assets/img/r1_eye_1400.webp?v=e790ee5e 1400w" sizes="(min-width: 900px) min(720px, 50vw), 100vw" width="1400" height="1400" alt="Close up CAD rendering of the work camera on the Ragnar C carriage, set in a hexagonal ring light." loading="lazy" decoding="async"><figcaption><b>Work camera.</b> It rides up and down the mast with the arm, in a ring light, so Ragnar C always sees the wall it is working on and photographs every finished wall.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <section id="dimensions" aria-labelledby="dims-h">
+    <div class="wrap">
+      <div class="g">
+        <div class="c1 sh"><h2 id="dims-h">Dimensions</h2></div>
+        <div class="c24 vlx bd"><p class="lead">The side, front, rear and top views are at the same scale, with the mast stowed.</p></div>
+      </div>
+    <div class="sheet">
+      <div class="d-side"><svg class="dwg" viewBox="-830 -2090 2360 2360" role="img" aria-label="Side view of Ragnar C with dimensions: 1.04 m long and 2.00 m tall with the mast stowed."><image href="assets/img/r1_side.webp?v=4362dd87" x="-551" y="-1996" width="2044" height="1999"/><path d="M-518 30V180M518 30V180M-518 150H518"/><path class="ah" d="M-518 150L-482 160L-482 140Z"/><path class="ah" d="M518 150L482 140L482 160Z"/><text x="0" y="228" text-anchor="middle">1.04 m <tspan>(41 in)</tspan></text><path d="M-560 0H-730M180 -1994H-730M-700 0V-1994"/><path class="ah" d="M-700 0L-690 -36L-710 -36Z"/><path class="ah" d="M-700 -1994L-710 -1958L-690 -1958Z"/><text transform="translate(-726 -997) rotate(-90)" text-anchor="middle">2.00 m <tspan>(78.5 in)</tspan></text></svg></div>
+      <div class="d-front"><svg class="dwg" viewBox="-590 -2090 1180 2360" role="img" aria-label="Front view of Ragnar C with its width: 0.72 m."><image href="assets/img/r1_front.webp" x="-376" y="-1996" width="752" height="1999"/><path d="M-374 30V180M346 30V180M-374 150H346"/><path class="ah" d="M-374 150L-338 160L-338 140Z"/><path class="ah" d="M346 150L310 140L310 160Z"/><text x="-14" y="228" text-anchor="middle">0.72 m <tspan>(28 in)</tspan></text></svg></div>
+      <div class="d-rear"><svg class="dwg" viewBox="-590 -2090 1180 2360" role="img" aria-label="Rear view of Ragnar C showing the push handle and the operator screen."><image href="assets/img/r1_rear.webp" x="-376" y="-1996" width="752" height="1999"/></svg></div>
+      <div class="d-top"><svg class="dwg" viewBox="-830 -470 2360 940" role="img" aria-label="Top view of Ragnar C with the arm reaching forward. Ragnar C is 0.72 m wide."><image href="assets/img/r1_top.webp" x="-552" y="-390" width="2045" height="752"/><path d="M-530 360H-730M-530 -360H-730M-700 360V-360"/><path class="ah" d="M-700 360L-690 324L-710 324Z"/><path class="ah" d="M-700 -360L-710 -324L-690 -324Z"/><text transform="translate(-726 0) rotate(-90)" text-anchor="middle">0.72 m <tspan>(28 in)</tspan></text></svg></div>
+      <div class="d-iso"><img src="assets/img/r1_iso.webp?v=61e1e281" width="1140" height="1228" alt="Three quarter view of the Ragnar C CAD model." loading="lazy" decoding="async"></div>
+    </div>
+    </div>
+  </section>
+  <section id="specs" aria-labelledby="specs-h">
+    <div class="wrap g">
+      <div class="c1 sh"><h2 id="specs-h">Specifications</h2></div>
+      <div class="c24 vlx flush tbl">
+        <div class="grp"><h3>Size and weight</h3><dl class="rows">
+          <div><dt>Footprint</dt><dd>0.72 by 1.04&nbsp;m (28 by 41&nbsp;in) with the bumper; fits a 36&nbsp;in door</dd></div>
+          <div><dt>Height, stowed</dt><dd>2.0&nbsp;m (78.5&nbsp;in); fits under an 80&nbsp;in door</dd></div>
+          <div><dt>Work height</dt><dd>Walls to 5.0&nbsp;m (16&nbsp;ft), ceilings to 5.3&nbsp;m (17&nbsp;ft)</dd></div>
+          <div><dt>Weight</dt><dd>About 174&nbsp;kg (384&nbsp;lb) empty, 186&nbsp;kg (410&nbsp;lb) with a full tank</dd></div>
+        </dl></div>
+        <div class="grp"><h3>Motion</h3><dl class="rows">
+          <div><dt>Drive</dt><dd>Two swerve modules and four casters; drives sideways along a wall</dd></div>
+          <div><dt>Lift</dt><dd>Three stage telescopic mast; the arm carriage travels 3.3&nbsp;m (10.8&nbsp;ft)</dd></div>
+          <div><dt>Arm</dt><dd>Six axis collaborative arm, 7.5&nbsp;kg (16.5&nbsp;lb) payload, 0.95&nbsp;m (37&nbsp;in) reach, force sensing</dd></div>
+        </dl></div>
+        <div class="grp"><h3>Tools and paint</h3><dl class="rows">
+          <div><dt>Tools</dt><dd>Paint fed roller with edger pad, sprayer, sander with dust extraction, rotary hammer with vacuum clamp, gripper with palm camera, tape applicator</dd></div>
+          <div><dt>Tool change</dt><dd>Automatic, at six docks on the deck</dd></div>
+          <div><dt>Paint</dt><dd>10&nbsp;L (2.6&nbsp;gal) tank and pump in the base</dd></div>
+        </dl></div>
+        <div class="grp"><h3>Power and sensing</h3><dl class="rows">
+          <div><dt>Power</dt><dd>Two battery packs, swapped through the rear door</dd></div>
+          <div><dt>Sensing</dt><dd>360&nbsp;degree LiDAR, four depth cameras on the base, a front camera on the carriage, a wrist camera and a color sensor</dd></div>
+          <div><dt>Operator</dt><dd>10&nbsp;in screen on the handle, plus a tablet</dd></div>
+        </dl></div>
+      </div>
+    </div>
+  </section>
+  <section class="inv" id="pilot" aria-labelledby="pilot-h">
+    <div class="wrap g">
+      <div class="c12 sh"><h2 id="pilot-h">Talk to us</h2></div>
+      <div class="c34 vlx bd contact">
+        <p class="lead">Pilots start in South Florida. Tell us about your building and we will call you when Ragnar C is ready to work.</p>
+        <p class="actions"><a class="btn" href="https://calendly.com/ragnarrobotics/intro" rel="noopener">Book a 15&nbsp;minute call</a><a class="tlink plain" href="mailto:hello@ragnarrobotics.com">hello@ragnarrobotics.com</a></p>
+        <p class="fine">Ragnar is based in Miami and was founded by Onat Cakici, an aerospace engineer. <a href="company.html">About the company</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="foot inv sep">
+  <div class="wrap">
+    <div class="g foot-top">
+      <div class="c12 foot-legal">
+        <p>© 2026 Ragnar Robotics, a brand of Urban Robotics Technologies, Inc. Miami, Florida.</p>
+        <p>Built in Miami by humans, for now.</p>
+      </div>
+      <nav class="c3 vlx foot-nav" aria-label="Site">
+        <ul class="foot-links">
+          <li><a href="./#how">How it works</a></li>
+          <li><a href="m.html">Ragnar M</a></li><li><a href="c.html">Ragnar C</a></li>
+          <li><a href="company.html">Company</a></li>
+          <li><a href="press.html">Press</a></li>
+        </ul>
+      </nav>
+      <nav class="c4 vlx foot-nav" aria-label="Contact and legal">
+        <ul class="foot-links">
+          <li class="wide"><a href="mailto:hello@ragnarrobotics.com">hello@ragnarrobotics.com</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="terms.html#accessibility">Accessibility</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="foot-mark"><img src="assets/brand/ragnar_on_dark.svg" width="556" height="101" alt="Ragnar Robotics" loading="lazy" decoding="async"></div>
+  </div>
+</footer>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "46b439e327c74472a907cba465087139"}'></script>
+</body>
+</html>
