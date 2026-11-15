@@ -370,14 +370,12 @@ section{border-bottom:1px solid var(--rule)}
 .fam-fig.pre .eye{opacity:0}
 .fam-fig.in .fam-bot{opacity:1;transform:none;transition:transform 1.4s cubic-bezier(.16,.84,.24,1),opacity .7s ease}
 .fam-fig.in .fam-r2{transition-delay:.16s}
-.fam-fig.in .fam-mini{transition-delay:.32s}
 .fam-fig.in .eye{animation:power .8s linear 1.6s both}
 @keyframes power{0%{opacity:0}18%{opacity:0}20%{opacity:1}34%{opacity:1}36%{opacity:.2}50%{opacity:.2}52%{opacity:1}100%{opacity:1}}
-.fam-r1{left:24.2%;top:10.9%;width:27.4%}
-.fam-r2{left:58%;top:31.7%;width:21.4%}
-.fam-mini{left:84.026%;top:41.356%;width:13.359%}
-.fam-fig{aspect-ratio:5749 / 2330}
-@media (min-width:700px){.fam-labels{grid-template-columns:1394fr 1938fr 1499fr 918fr}}
+.fam-r1{left:28.799%;top:10.9%;width:32.607%}
+.fam-r2{left:69.021%;top:31.7%;width:25.466%}
+.fam-fig{aspect-ratio:4831 / 2330}
+@media (min-width:700px){.fam-labels{grid-template-columns:1394fr 1938fr 1499fr}}
 /* end family */
 
 /* home: task form */
@@ -635,4 +633,3 @@ button.btn{cursor:pointer}
   .inv{--paper:#fff;--ink:#000;--mute:#444;--rule:#000;--hair:#bbb}
   section{break-inside:avoid}
 }
-.plate-fig img.mini-side{max-width:300px;height:auto}
