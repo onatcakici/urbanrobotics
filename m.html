@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ragnar M, the CNC machine tending robot: specs | Ragnar Robotics</title>
-<meta name="description" content="Ragnar M loads Haas, DN Solutions, Mazak, Okuma and other CNC mills and lathes, and tends industrial 3D printers. A Fairino FR5 arm on a fixed riser, on the same base as Ragnar C.">
+<meta name="description" content="Ragnar M is a mobile robot built to load CNC mills and lathes and to tend industrial 3D printers. A Fairino FR5 arm on a fixed riser, on the same base as Ragnar C.">
 <link rel="canonical" href="https://ragnarrobotics.com/m.html">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#ffffff">
@@ -16,19 +16,19 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ragnar Robotics">
 <meta property="og:title" content="Ragnar M, the CNC machine tending robot: specs | Ragnar Robotics">
-<meta property="og:description" content="Ragnar M loads Haas, DN Solutions, Mazak, Okuma and other CNC mills and lathes, and tends industrial 3D printers. A Fairino FR5 arm on a fixed riser, on the same base as Ragnar C.">
+<meta property="og:description" content="Ragnar M is a mobile robot built to load CNC mills and lathes and to tend industrial 3D printers. A Fairino FR5 arm on a fixed riser, on the same base as Ragnar C.">
 <meta property="og:url" content="https://ragnarrobotics.com/m.html">
 <meta property="og:image" content="https://ragnarrobotics.com/assets/img/og_ragnar_r2.jpg?v=6">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Ragnar M, the CNC machine tending robot, drawn from the CAD model in side view, next to its name and the words: Loads CNC machines, swaps print plates and moves parts between stations.">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ItemPage","@id":"https://ragnarrobotics.com/m.html","url":"https://ragnarrobotics.com/m.html","name":"Ragnar M, the CNC machine tending robot","description":"Ragnar M loads Haas, DN Solutions, Mazak, Okuma and other CNC mills and lathes, and tends industrial 3D printers. A Fairino FR5 arm on a fixed riser, on the same base as Ragnar C.","primaryImageOfPage":{"@type":"ImageObject","url":"https://ragnarrobotics.com/assets/img/m_iso.webp"},"publisher":{"@id":"https://ragnarrobotics.com/#org"},"isPartOf":{"@id":"https://ragnarrobotics.com/#site"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ragnar Robotics","item":"https://ragnarrobotics.com/"},{"@type":"ListItem","position":2,"name":"Ragnar M","item":"https://ragnarrobotics.com/m.html"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ItemPage","@id":"https://ragnarrobotics.com/m.html","url":"https://ragnarrobotics.com/m.html","name":"Ragnar M, the CNC machine tending robot","description":"Ragnar M is a mobile robot built to load CNC mills and lathes and to tend industrial 3D printers. A Fairino FR5 arm on a fixed riser, on the same base as Ragnar C.","primaryImageOfPage":{"@type":"ImageObject","url":"https://ragnarrobotics.com/assets/img/m_iso.webp"},"publisher":{"@id":"https://ragnarrobotics.com/#org"},"isPartOf":{"@id":"https://ragnarrobotics.com/#site"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ragnar Robotics","item":"https://ragnarrobotics.com/"},{"@type":"ListItem","position":2,"name":"Ragnar M","item":"https://ragnarrobotics.com/m.html"}]}]}</script>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'none'">
 <link rel="preload" href="assets/fonts/archivo_wide.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/styles.css?v=r27">
-<script src="assets/site.js?v=r10" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=r28">
+<script src="assets/site.js?v=r11" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -82,9 +82,9 @@
     <div class="wrap g">
       <div class="c1 sh"><h2 id="how-h">How it works</h2></div>
       <dl class="c24 vlx flush steps numbered">
-        <div><dt>Scan</dt><dd>Ragnar M maps the shop and finds every machine, rack and station it will work around.</dd></div>
-        <div><dt>Plan</dt><dd>It plans the job from the scan: parts to load, plates to swap, stations to visit.</dd></div>
-        <div><dt>Work</dt><dd>It does the work and checks the result with a camera as it goes.</dd></div>
+        <div><dt>Set up</dt><dd>We prepare one machine: the door, the work holding and the cycle signal. We make the cassettes for your part.</dd></div>
+        <div><dt>Park</dt><dd>Ragnar M parks at the machine and finds the vise with its wrist camera.</dd></div>
+        <div><dt>Work</dt><dd>It unloads the finished part and loads the next one, cycle after cycle. Once one machine runs well, the same robot can cover the next.</dd></div>
         <div><dt>Report</dt><dd>You get photos and a log of everything it did.</dd></div>
       </dl>
     </div>
@@ -93,7 +93,7 @@
     <div class="wrap g">
       <div class="c1 sh"><h2 id="mach-h">Machines</h2></div>
       <div class="c24 vlx flush tbl">
-        <div class="grp"><h3>CNC mills and lathes</h3><dl class="rows"><div><dt>Haas</dt><dd>VF series, Mini Mill, UMC and ST lathes</dd></div><div><dt>DN Solutions</dt><dd>DNM mills, Lynx and Puma lathes</dd></div><div><dt>Mazak</dt><dd>VCN mills and Quick Turn lathes</dd></div><div><dt>Okuma</dt><dd>Genos M mills and Genos L lathes</dd></div><div><dt>Hurco</dt><dd>VM and VMX mills</dd></div><div><dt>Brother</dt><dd>Speedio</dd></div><div><dt>FANUC</dt><dd>Robodrill</dd></div><div><dt>DMG Mori</dt><dd>CMX mills and NLX lathes</dd></div><div><dt>Tormach</dt><dd>1100M and 770M</dd></div></dl></div><div class="grp"><h3>3D printers</h3><dl class="rows"><div><dt>HP</dt><dd>Multi Jet Fusion 5600 and 1200 parts, from unpacking to finishing</dd></div><div><dt>Formlabs</dt><dd>Form 4 and Form Wash</dd></div><div><dt>Stratasys</dt><dd>F170, F270 and F370</dd></div><div><dt>Markforged</dt><dd>Mark Two and X7</dd></div><div><dt>UltiMaker</dt><dd>Factor 4, S7 and S8</dd></div><div><dt>Print farms</dt><dd>Bambu Lab and Prusa</dd></div></dl></div><div class="grp"><h3>What it needs</h3><dl class="rows"><div><dt>Door</dt><dd>An automatic door, or one we fit</dd></div><div><dt>Work holding</dt><dd>An air vise or an air chuck</dd></div><div><dt>Signal</dt><dd>The machine tells the robot when a cycle ends</dd></div><div><dt>Reach</dt><dd>We check it on your machine before a pilot</dd></div></dl></div>
+        <div class="grp"><h3>CNC mills and lathes</h3><dl class="rows"><div><dt>Haas</dt><dd>VF series, Mini Mill, UMC and ST lathes</dd></div><div><dt>DN Solutions</dt><dd>DNM mills, Lynx and Puma lathes</dd></div><div><dt>Mazak</dt><dd>VCN mills and Quick Turn lathes</dd></div><div><dt>Okuma</dt><dd>Genos M mills and Genos L lathes</dd></div><div><dt>Hurco</dt><dd>VM and VMX mills</dd></div><div><dt>Brother</dt><dd>Speedio</dd></div><div><dt>FANUC</dt><dd>Robodrill</dd></div><div><dt>DMG Mori</dt><dd>CMX mills and NLX lathes</dd></div><div><dt>Tormach</dt><dd>1100M and 770M</dd></div></dl></div><div class="grp"><h3>3D printers</h3><dl class="rows"><div><dt>HP</dt><dd>Multi Jet Fusion 5600 and 1200 parts, from unpacking to finishing</dd></div><div><dt>Formlabs</dt><dd>Form 4 and Form Wash</dd></div><div><dt>Stratasys</dt><dd>F170, F270 and F370</dd></div><div><dt>Markforged</dt><dd>Mark Two and X7</dd></div><div><dt>UltiMaker</dt><dd>Factor 4, S7 and S8</dd></div><div><dt>Print farms</dt><dd>Bambu Lab and Prusa</dd></div></dl></div><div class="grp"><h3>What it needs</h3><dl class="rows"><div><dt>Door</dt><dd>An automatic door, or one we fit</dd></div><div><dt>Work holding</dt><dd>An air vise or an air chuck</dd></div><div><dt>Signal</dt><dd>The machine tells the robot when a cycle ends</dd></div><div><dt>Reach</dt><dd>We check it on your machine before a pilot</dd></div><div><dt>Cycle time</dt><dd>Cycles of ten minutes or more suit it best, so one robot can cover more than one machine</dd></div></dl></div>
       </div>
     </div>
   </section>
@@ -142,7 +142,7 @@
     <div class="wrap g">
       <div class="c1 sh"><h2 id="specs-h">Target specifications</h2></div>
       <div class="c24 vlx flush tbl">
-        <div class="grp"><h3>Size</h3><dl class="rows"><div><dt>Footprint</dt><dd>28 by 41&nbsp;in (0.72 by 1.04&nbsp;m) with the bumper; fits a 36&nbsp;in door</dd></div><div><dt>Height</dt><dd>42&nbsp;in (1.07&nbsp;m) with the arm folded</dd></div></dl></div><div class="grp"><h3>Motion</h3><dl class="rows"><div><dt>Drive</dt><dd>Two hub motor wheels and four casters</dd></div><div><dt>Arm</dt><dd>Fairino FR5 on a fixed riser, 11&nbsp;lb (5&nbsp;kg) payload, 36.3&nbsp;in (922&nbsp;mm) reach</dd></div></dl></div><div class="grp"><h3>Tools and parts</h3><dl class="rows"><div><dt>Gripper</dt><dd>Electric parallel gripper</dd></div><div><dt>Parts</dt><dd>One cassette for raw stock and one for finished parts on the deck</dd></div></dl></div><div class="grp"><h3>Power and sensing</h3><dl class="rows"><div><dt>Power</dt><dd>One battery pack, swapped through the rear door</dd></div><div><dt>Computer</dt><dd>NVIDIA Jetson Orin Nano Super</dd></div><div><dt>Sensing</dt><dd>A 2D lidar behind the front glass band, a RealSense D435 depth camera at the front corner and a RealSense D405 on the wrist</dd></div><div><dt>Operator</dt><dd>Panel at the rear with a 10.1&nbsp;in touch screen, start, pause and reset buttons and a key switch</dd></div><div><dt>Safety</dt><dd>An emergency stop at each corner, cliff sensors on the bumpers and a safety bumper all around; the lidar stops it for obstacles</dd></div></dl></div>
+        <div class="grp"><h3>Size</h3><dl class="rows"><div><dt>Footprint</dt><dd>28 by 41&nbsp;in (0.72 by 1.04&nbsp;m) with the bumper; fits a 36&nbsp;in door</dd></div><div><dt>Height</dt><dd>42&nbsp;in (1.07&nbsp;m) with the arm folded</dd></div></dl></div><div class="grp"><h3>Motion</h3><dl class="rows"><div><dt>Drive</dt><dd>Two hub motor wheels and four casters</dd></div><div><dt>Arm</dt><dd>Fairino FR5 on a fixed riser, 11&nbsp;lb (5&nbsp;kg) payload, 36.3&nbsp;in (922&nbsp;mm) reach</dd></div></dl></div><div class="grp"><h3>Tools and parts</h3><dl class="rows"><div><dt>Gripper</dt><dd>Electric parallel gripper</dd></div><div><dt>Parts</dt><dd>One cassette for raw stock and one for finished parts on the deck, made for your part</dd></div><div><dt>Part weight</dt><dd>Up to about 6.5&nbsp;lb (3&nbsp;kg); the gripper uses the rest of the 11&nbsp;lb payload</dd></div></dl></div><div class="grp"><h3>Power and sensing</h3><dl class="rows"><div><dt>Power</dt><dd>One battery pack, swapped through the rear door</dd></div><div><dt>Computer</dt><dd>NVIDIA Jetson Orin Nano Super</dd></div><div><dt>Sensing</dt><dd>A 2D lidar behind the front glass band, a RealSense D435 depth camera at the front corner and a RealSense D405 on the wrist</dd></div><div><dt>Operator</dt><dd>Panel at the rear with a 10.1&nbsp;in touch screen, start, pause and reset buttons and a key switch</dd></div><div><dt>Safety</dt><dd>An emergency stop at each corner, cliff sensors on the bumpers and a safety bumper all around; the lidar stops it for obstacles</dd></div></dl></div>
       </div>
     </div>
   </section>

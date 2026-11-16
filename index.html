@@ -29,8 +29,8 @@
 <link rel="preload" href="assets/fonts/archivo_wide.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/img/m_loop_poster.webp?v=a44f7e67" as="image" type="image/webp" fetchpriority="high">
-<link rel="stylesheet" href="assets/styles.css?v=r27">
-<script src="assets/site.js?v=r10" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=r28">
+<script src="assets/site.js?v=r11" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -100,7 +100,7 @@
       <div class="g">
         <div class="c12 plate-copy">
           <h2 id="r2-h">Ragnar M keeps your machines running.</h2>
-          <p class="lead">It drives to the machine that needs it, unloads the finished part and loads the next one from its cassettes. Between machines, it swaps print plates and moves parts between stations. One robot serves the whole shop, instead of one arm bolted to each machine. It works with the mills and lathes most shops run, from Haas and DN Solutions to Mazak and Okuma.</p>
+          <p class="lead">It parks at a machine, unloads the finished part and loads the next one from its cassettes, cycle after cycle. When that machine is covered, the same robot can drive to the next one, swap print plates or move parts between stations. You do not need an arm bolted to each machine.</p>
           <ol class="sk-key">
             <li>Takes a block of stock from its cassette</li>
             <li>Loads it into the vise</li>
@@ -208,6 +208,19 @@
             <option>Something else</option>
           </select>
         </label>
+        <div class="cnc-q" data-for="Load and unload a CNC machine">
+          <label class="tf"><span>Machine make and model</span><input type="text" name="Machine" autocomplete="off"></label>
+          <label class="tf"><span>How long does one cycle run?</span><input type="text" name="Cycle time" autocomplete="off"></label>
+          <label class="tf"><span>Does it have an automatic door and an air vise or chuck?</span>
+            <select name="Door and work holding">
+              <option value="" selected>Choose one</option>
+              <option>Both</option>
+              <option>Only one of them</option>
+              <option>Neither</option>
+              <option>Not sure</option>
+            </select>
+          </label>
+        </div>
         <label class="tf"><span>Tell us about it in a sentence or two</span><textarea name="Task" rows="4" required></textarea></label>
         <label class="tf"><span>Your email</span><input type="email" name="email" autocomplete="email" required></label>
         <label class="tf"><span>A photo, a short video or a CAD file, if you have one</span><input type="file" name="attachment" accept="image/*,video/*,.stl,.step,.stp,.pdf"></label>

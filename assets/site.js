@@ -191,4 +191,15 @@
       if (open) open.focus();
     }
   });
+  // The CNC questions show only when the CNC job is chosen.
+  var jobSel = document.querySelector('select[name="Job"]'), cncQ = document.querySelector('.cnc-q');
+  if (jobSel && cncQ) {
+    var showCnc = function () {
+      var on = jobSel.value === cncQ.getAttribute('data-for');
+      cncQ.hidden = !on;
+      Array.prototype.forEach.call(cncQ.querySelectorAll('input, select'), function (el) { el.disabled = !on; });
+    };
+    jobSel.addEventListener('change', showCnc);
+    showCnc();
+  }
 })();
