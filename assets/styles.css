@@ -635,3 +635,4 @@ button.btn{cursor:pointer}
 }
 .news-date{color:var(--mute);font-size:0.9375rem;margin:0}
 .news-item h2{margin-bottom:12px}
+.plate-fig .plate-vid{width:100%;max-width:680px;height:auto;mix-blend-mode:multiply;background:#fff}
