@@ -633,3 +633,5 @@ button.btn{cursor:pointer}
   .inv{--paper:#fff;--ink:#000;--mute:#444;--rule:#000;--hair:#bbb}
   section{break-inside:avoid}
 }
+.news-date{color:var(--mute);font-size:0.9375rem;margin:0}
+.news-item h2{margin-bottom:12px}
