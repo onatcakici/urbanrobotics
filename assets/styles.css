@@ -373,7 +373,7 @@ section{border-bottom:1px solid var(--rule)}
 .fam-fig.in .eye{animation:power .8s linear 1.6s both}
 @keyframes power{0%{opacity:0}18%{opacity:0}20%{opacity:1}34%{opacity:1}36%{opacity:.2}50%{opacity:.2}52%{opacity:1}100%{opacity:1}}
 .fam-r1{left:28.799%;top:10.9%;width:32.607%}
-.fam-r2{left:68.570%;top:31.824%;width:25.875%}
+.fam-r2{left:68.930%;top:33.771%;width:27.179%}
 .fam-fig{aspect-ratio:4831 / 2330}
 @media (min-width:700px){.fam-labels{grid-template-columns:1394fr 1938fr 1499fr}}
 /* end family */
